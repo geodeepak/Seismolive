@@ -11,7 +11,7 @@ There are several options to install MacPorts, but I recommend to install the _M
 
 Once MacPorts is available on your system, installing ObsPy and all dependencies is as easy as executing the following command:
 
-  sudo port install py27-obspy
+    sudo port install py27-obspy
 
 The port should install and run smoothly with Python 2.7 (`py27-obspy`), but some limitations apply to Python 2.6. In case you encounter any problem do not hesitate to fill a ticket against the port. 
 
@@ -20,9 +20,12 @@ The port should install and run smoothly with Python 2.7 (`py27-obspy`), but som
 With Python 2.6 there seem be some issues, which I assume are not directly related to ObsPy or the port itself. If gcc >=4.5 (variant +gcc45 .. +gcc47) is used to compile scipy (py26-scipy) and py26-obspy, the port would install without problem, but will not be completely functional. 
 
 If you need to install it with Python 2.6,  please use the following procedure:
-- Install `py26-scipy` with the `+gcc44` variant: 
-  `sudo port -v install py26-scipy +gcc44` 
- (Note: py26-scipy +gcc47, the default is currently not functional anyway)
+- Install `py26-scipy` with the `+gcc44` variant (Note: py26-scipy +gcc47, the default is currently not functional anyway): 
+
+    sudo port -v install py26-scipy +gcc44 
+ 
 - Install `py26-obspy` with the `+gcc44` variant: 
-  `sudo port -v install py26-obspy +gcc44`
+
+    sudo port -v install py26-obspy +gcc44
+
 - The `+gcc43` variant works as well.
