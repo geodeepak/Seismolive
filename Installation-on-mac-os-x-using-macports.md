@@ -1,6 +1,6 @@
 ###  Installing MacPorts
 
-There are several options to install MacPorts, but I recommend to edit the _Mac OS X Installer_ which is probably the standard approach. All authoritative details on installing MacPorts are found [here](http://www.macports.org/install.php). 
+There are several options to install MacPorts, but I recommend to use the _Mac OS X Installer_ which is probably the standard approach. All authoritative details on installing MacPorts are found [here](http://www.macports.org/install.php). 
 
 1. Install Xcode from Apple Developer Connection. The version to install will depend on your OSX version and the required components are specified on MacPorts' [website](http://www.macports.org/install.php). 
 1. Accept the License Terms, if Xcode 4 and later was installed.
