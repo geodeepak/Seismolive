@@ -19,7 +19,7 @@ The port should install and run smoothly with Python 2.7 (`py27-obspy`), but som
 
 With Python 2.6 there seem be some issues, which I assume are not directly related to ObsPy or the port itself. If gcc >=4.5 (variant +gcc45 .. +gcc47) is used to compile scipy (py26-scipy) and py26-obspy, the port would install without problem, but will not be completely functional. 
 
-If for some reason you need to install ObsPy with Python 2.6, use the `+gcc44` variant for both `py26-scipy`  and `py26-obspy`. The `+gcc43` variant works as well. The default variant `py26-scipy +gcc47` is currently not functional. The procedure to use is the following to use are the following:
+If for some reason you need to install ObsPy with Python 2.6, use the `+gcc44` variant for both `py26-scipy`  and `py26-obspy`. The `+gcc43` variant works as well. The default variant `py26-scipy +gcc47` is currently not functional. The procedure to use is the following:
 
     sudo port -v install py26-scipy +gcc44 
     sudo port -v install py26-obspy +gcc44
