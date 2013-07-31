@@ -21,11 +21,10 @@ With Python 2.6 there seem be some issues, which I assume are not directly relat
 
 If you need to install it with Python 2.6,  please use the following procedure:
 - Install `py26-scipy` with the `+gcc44` variant (Note: py26-scipy +gcc47, the default is currently not functional anyway): 
+- Install `py26-obspy` with the `+gcc44` variant: 
+- The `+gcc43` variant works as well.
 
     sudo port -v install py26-scipy +gcc44 
- 
-- Install `py26-obspy` with the `+gcc44` variant: 
-
     sudo port -v install py26-obspy +gcc44
 
-- The `+gcc43` variant works as well.
+
