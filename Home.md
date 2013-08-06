@@ -50,7 +50,7 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
 * [obspy.xseed](http://docs.obspy.org/packages/obspy.xseed.html) - Converter for Dataless SEED, [XML-SEED](http://adsabs.harvard.edu/abs/2004AGUFMSF31B..03T) and SEED RESP files
 
 ### Waveform import/export plug-ins:
-* [obspy.css](http://docs.obspy.org/packages/obspy.css.html) - CSS read support
+* [obspy.css](http://docs.obspy.org/master/packages/obspy.css.html) - CSS read support
 * [obspy.datamark](http://docs.obspy.org/packages/obspy.datamark.html) - DATAMARK read support
 * [obspy.gse2](http://docs.obspy.org/packages/obspy.gse2.html) - GSE2 and GSE1 read and write support
 * [obspy.mseed](http://docs.obspy.org/packages/obspy.mseed.html) - MiniSEED read and write support
@@ -66,7 +66,7 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
 * [obspy.earthworm](http://docs.obspy.org/packages/obspy.earthworm.html) - [Earthworm](http://folkworm.ceri.memphis.edu/ew-doc/) request client
 * [obspy.fdsn](http://docs.obspy.org/packages/obspy.fdsn.html) - [FDSN Web services](http://www.fdsn.org/webservices/) request client (experimental, not present in obspy <= 0.9)
 * [obspy.iris](http://docs.obspy.org/packages/obspy.iris.html) - [IRIS DMC Core Web services](http://www.iris.edu/ws) request client (service will be retired by IRIS in december 2013. use obspy.fdsn in the future.)
-* [obspy.neic](http://docs.obspy.org/packages/obspy.neic.html) - [NEIC](http://earthquake.usgs.gov/regional/neic/) CWB QueryServer request client (experimental, not present in obspy <= 0.9)
+* [obspy.neic](http://docs.obspy.org/master/packages/obspy.neic.html) - [NEIC](http://earthquake.usgs.gov/regional/neic/) CWB QueryServer request client (experimental, not present in obspy <= 0.9)
 * [obspy.neries](http://docs.obspy.org/packages/obspy.neries.html) - [NERIES Seismic Data Portal](http://www.seismicportal.eu/jetspeed/portal/) request client
 * [obspy.seishub](http://docs.obspy.org/packages/obspy.seishub.html) - [SeisHub](https://github.com/barsch/seishub.core) database client
 
