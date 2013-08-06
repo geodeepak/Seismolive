@@ -45,7 +45,7 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
 * [obspy.imaging](http://docs.obspy.org/packages/obspy.imaging.html) - Imaging spectograms, beachballs and waveforms
 * [obspy.realtime](http://docs.obspy.org/packages/obspy.realtime.html) - Extends the ObsPy core classes with real time functionalities (''experimental'')
 * [obspy.signal](http://docs.obspy.org/packages/obspy.signal.html) - Filters, triggers, instrument correction, rotation, array analysis, beamforming
-* [obspy.station](http://docs.obspy.org/packages/obspy.station.html) - Support for [FDSN StationXML](http://www.fdsn.org/xml/station/) (experimental, not present in obspy <= 0.9)
+* obspy.station - Support for [FDSN StationXML](http://www.fdsn.org/xml/station/) (experimental, not present in obspy <= 0.9)
 * [obspy.taup](http://docs.obspy.org/packages/obspy.taup.html) - Calculates and visualizes travel times
 * [obspy.xseed](http://docs.obspy.org/packages/obspy.xseed.html) - Converter for Dataless SEED, [XML-SEED](http://adsabs.harvard.edu/abs/2004AGUFMSF31B..03T) and SEED RESP files
 
@@ -64,7 +64,7 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
 ### Database or Web service access clients:
 * [obspy.arclink](http://docs.obspy.org/packages/obspy.arclink.html) - [ArcLink/WebDC](http://www.webdc.eu) request client
 * [obspy.earthworm](http://docs.obspy.org/packages/obspy.earthworm.html) - [Earthworm](http://folkworm.ceri.memphis.edu/ew-doc/) request client
-* [obspy.fdsn](http://docs.obspy.org/packages/obspy.fdsn.html) - [FDSN Web services](http://www.fdsn.org/webservices/) request client (experimental, not present in obspy <= 0.9)
+* obspy.fdsn - [FDSN Web services](http://www.fdsn.org/webservices/) request client (experimental, not present in obspy <= 0.9)
 * [obspy.iris](http://docs.obspy.org/packages/obspy.iris.html) - [IRIS DMC Core Web services](http://www.iris.edu/ws) request client (service will be retired by IRIS in december 2013. use obspy.fdsn in the future.)
 * [obspy.neic](http://docs.obspy.org/master/packages/obspy.neic.html) - [NEIC](http://earthquake.usgs.gov/regional/neic/) CWB QueryServer request client (experimental, not present in obspy <= 0.9)
 * [obspy.neries](http://docs.obspy.org/packages/obspy.neries.html) - [NERIES Seismic Data Portal](http://www.seismicportal.eu/jetspeed/portal/) request client
