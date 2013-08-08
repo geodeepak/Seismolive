@@ -68,7 +68,8 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
 * [obspy.iris](http://docs.obspy.org/packages/obspy.iris.html) - [IRIS DMC Core Web services](http://www.iris.edu/ws) request client (service will be retired by IRIS in december 2013. use obspy.fdsn in the future.)
 * [obspy.neic](http://docs.obspy.org/master/packages/obspy.neic.html) - [NEIC](http://earthquake.usgs.gov/regional/neic/) CWB QueryServer request client (experimental, not present in obspy <= 0.9)
 * [obspy.neries](http://docs.obspy.org/packages/obspy.neries.html) - [NERIES Seismic Data Portal](http://www.seismicportal.eu/jetspeed/portal/) request client
-* [obspy.seishub](http://docs.obspy.org/packages/obspy.seishub.html) - [SeisHub](https://github.com/barsch/seishub.core) database client
+* [obspy.seedlink](http://docs.obspy.org/packages/obspy.seishub.html) - [SeisHub](https://github.com/barsch/seishub.core) database client
+* [obspy.seishub](http://docs.obspy.org/packages/obspy.seedlink.html) - [SeedLink](http://www.seiscomp3.org/wiki/doc/applications/seedlink) request client (experimental / not well tested)
 
 ## Use Cases / Applications Using ObsPy
 
