@@ -82,13 +82,13 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
    * [Running ObsPy in a PiCloud](http://blog.picloud.com/2011/09/26/introducing-environments-run-anything-on-picloud/)
    * [Using ObsPy with py2exe](http://www.geophysique.be/en/2011/08/09/using-obspy-modules-with-py2exe/)
    * [Whisper](http://code-whisper.isterre.fr/html)
-   * [Wavesdownloader](http://webservices.rm.ingv.it/wavesdownloader/)
+   * [Wavesdownloader](http://webservices.rm.ingv.it/wavesdownloader/) [(on GitHub)](https://github.com/fabriziobernardi/wavesdownloader)
    * [ADMIRE project](http://www.admire-project.eu/)
    * [pSysmon](http://www.stefanmertl.com/science/category/software/psysmon/)
    * [MIIC](http://theo1.geo.uni-leipzig.de/wordpress/)
    * [ObsPyDMT](https://github.com/kasra-hosseini/obspyDMT)
    * [seedlink plotter](https://github.com/bonaime/seedlink_plotter)
-   * [pyTDMT - Python Time Domain Moment Tensor](http://webservices.rm.ingv.it/pyTDMT/)
+   * [pyTDMT - Python Time Domain Moment Tensor](http://webservices.rm.ingv.it/pyTDMT/) [(on GitHub)](https://github.com/fabriziobernardi/pydmt)
 
 ## References
 
