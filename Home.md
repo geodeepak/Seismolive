@@ -59,7 +59,7 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
 * [obspy.segy](http://docs.obspy.org/packages/obspy.segy.html) - SEGY read and write support
 * [obspy.sh](http://docs.obspy.org/packages/obspy.sh.html) - Q and ASC read and write support (file formats of [SeismicHandler](http://www.seismic-handler.org))
 * [obspy.wav](http://docs.obspy.org/packages/obspy.wav.html) - WAV (audio) read and write support
-* obspy.y - Support for Nanometrics Y file format (experimental, not present in obspy <= 0.9)
+* obspy.y - Nanometrics Y file format read support (experimental, not present in obspy <= 0.9)
 
 ### Database or Web service access clients:
 * [obspy.arclink](http://docs.obspy.org/packages/obspy.arclink.html) - [ArcLink/WebDC](http://www.webdc.eu) request client
