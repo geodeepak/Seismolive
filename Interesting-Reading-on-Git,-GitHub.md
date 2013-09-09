@@ -5,7 +5,7 @@
    - can be done using [defunkt/hub](https://github.com/defunkt/hub)
    - or via a simple POST command, e.g. using `curl`:
 ```bash
-curl --user megies --data '{"issue": "2", "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/megies/test/pulls
+curl --user megies --reqeust POST --data '{"issue": "2", "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/megies/test/pulls
 ```
       - **issue**: number of the *already existing* normal issue
       - **head**: *repository/branch* that should be pulled in
