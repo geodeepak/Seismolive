@@ -2,6 +2,8 @@ This is a sketch of the git branching model for ObsPy. A pdf version can be obta
 
 The important point is that adding new features and changing existing features has to be kept separate from pure bugfixes. This is necessary to be able to maintain the current stable version with bugfixes (and eventual bug fix releases) without mixing in feature changes. Changed features are only merged into the release branch when a new feature release is made.
 
+This means that the tip of "releases" branch will always reflect the behavior of the last stable release plus additional bug fixes since the last release. The tip of the "master" branch will incorporate *both* bugfixes since the last stable release *plus* eventual new features or feature changes.
+
 ### Branching model
 [[images/obspy_dev_model.png]]
 
