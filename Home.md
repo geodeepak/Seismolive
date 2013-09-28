@@ -105,8 +105,8 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
  * Performance Tips:
     * [Python](http://wiki.python.org/moin/PythonSpeed/PerformanceTips)
     * [NumPy and ctypes](http://www.scipy.org/Cookbook/Ctypes)
-    * [SciPy](http://www.scipy.org/PerformancePython)
-    * [NumPy Book](http://www.tramy.us/numpybook.pdf)
+    * [SciPy](http://wiki.scipy.org/PerformancePython)
+    * [NumPy Book](http://csc.ucdavis.edu/~chaos/courses/nlp/Software/NumPyBook.pdf)
  * [[Testing, Debugging & Profiling]]
  * [[Sphinx Documentation]]
  * [Notes on the performed svn to git migration](wiki/Svn-to-git-migration)
