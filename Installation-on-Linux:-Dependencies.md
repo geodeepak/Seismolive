@@ -8,9 +8,13 @@ It is recommended to install the required dependencies via the package manager o
       sudo apt-get install python-dev
       sudo apt-get install python-setuptools
       sudo apt-get install python-numpy
+      sudo apt-get install python-numpy-abi9
       sudo apt-get install python-scipy
       sudo apt-get install python-matplotlib
       sudo apt-get install python-lxml
+      sudo apt-get install python-sqlalchemy
+      sudo apt-get install python-suds
+      sudo apt-get install libgfortran3
       sudo apt-get install ipython         # strongly recommended, not necessary
 ```
  * openSUSE
