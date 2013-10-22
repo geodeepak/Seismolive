@@ -14,6 +14,7 @@ It is recommended to install the required dependencies via the package manager o
       sudo apt-get install python-lxml
       sudo apt-get install python-sqlalchemy
       sudo apt-get install python-suds
+      sudo apt-get install gfortran
       sudo apt-get install libgfortran3
       sudo apt-get install ipython         # strongly recommended, not necessary
 ```
