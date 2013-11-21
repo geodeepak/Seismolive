@@ -105,7 +105,7 @@ or checkout out our git repository and install it from there.
 $ git clone https://github.com/obspy/obspy.git
 $ cd obspy
 $ pip install .         # for a normal installation
-$ pip install -e -v .   # for a developers installation
+$ pip install -e . -v    # for a developers installation
 ```
 
 ### Testing the installation
