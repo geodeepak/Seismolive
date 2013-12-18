@@ -17,12 +17,10 @@ See  http://docs.python.org/using/windows.html#excursus-setting-environment-vari
         * http://sourceforge.net/projects/scipy/files/
         * http://sourceforge.net/projects/matplotlib/files/matplotlib/
       * or fetch the unofficial Windows 64 bit releases from
-        http://www.lfd.uci.edu/~gohlke/pythonlibs/ (get the MKL builds for NumPy).
+        * http://www.lfd.uci.edu/~gohlke/pythonlibs/ (get the MKL builds for NumPy).
  2. ObsPy and further dependencies can be downloaded via easy_install of the
     Distribute package. Download and run from the windows command line the 
-    Python script  http://python-distribute.org/distribute_setup.py. You may
-    also find the file in the ObsPy repository via 
-    https://svn.obspy.org/trunk/obspy.core/distribute_setup.py.
+    Python script  http://python-distribute.org/distribute_setup.py.
     ```bash
     python.exe distribute_setup.py
     ```
