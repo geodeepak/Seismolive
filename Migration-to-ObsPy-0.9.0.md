@@ -43,7 +43,7 @@ inv = client.get_stations(starttime=t1, endtime=t2, network="IU",
 # Instrument correction directly from StationXML without the need for temporary
 # files.
 st.attach_response(inv)
-st.remove_response(output="VEL")
+st.remove_response(output="VEL", water_level=..., pre_filt=..., ...)
 
 ```
 
@@ -153,10 +153,12 @@ Inventory created at 2013-12-02T05:55:15.000000Z
 The [inventory class](http://docs.obspy.org/master/packages/autogen/obspy.station.inventory.Inventory.html#obspy.station.inventory.Inventory) It is a hierarchical structure, starting with a list of [networks](http://docs.obspy.org/master/packages/autogen/obspy.station.network.Network.html#obspy.station.network.Network), each containing a list of [stations](http://docs.obspy.org/master/packages/autogen/obspy.station.station.Station.html#obspy.station.station.Station) which again each contains a list of [channels](http://docs.obspy.org/master/packages/autogen/obspy.station.channel.Channel.html#obspy.station.channel.Channel). The [responses](http://docs.obspy.org/master/packages/autogen/obspy.station.response.html#module-obspy.station.response) are attached to the channels.
 
 ```python
->>> inv[0]
+>>> net = inv[0]
+>>> net
 <obspy.station.network.Network at 0x10ac50e10>
 
->>> print inv[0][0]
+>>> sta = net[0]
+>>> print sta
 Station Z52A (Williamson, GA, USA)
     Station Code: Z52A
     Channel Count: 40/40 (Selected/Total)
@@ -166,7 +168,8 @@ Station Z52A (Williamson, GA, USA)
     Available Channels:
             Z52A..BHE, Z52A..BHN, Z52A..BHZ
 
->>> print inv[0][0][0]
+>>> cha = sta[0]
+>>> print cha
 Channel 'BHE', Location ''
     Timerange: 2012-04-11T00:00:00.000000Z - 2599-12-31T23:59:59.000000Z
     Latitude: 33.19, Longitude: -84.42, Elevation: 252.0 m, Local Depth: 0.0 m
@@ -177,7 +180,7 @@ Channel 'BHE', Location ''
     Sensor: Guralp CMG3T/Quanterra 330 Linear Phase Composite
     Response information available
 
->>> print inv[0][0][0].response
+>>> print cha.response
 Channel Response
     From M/S (velocity in meters per second) to COUNTS (digital counts)
     Overall Sensitivity: 6.30907e+08 defined at 0.200 Hz
@@ -192,7 +195,7 @@ Channel Response
 The [get\_evalresp\_response()](http://docs.obspy.org/master/packages/autogen/obspy.station.response.Response.get_evalresp_response.html#obspy.station.response.Response.get_evalresp_response) method will call some functions within evalresp to generate the response.
 
 ```python
-resp_ob = inv[0][0][0].response
+resp_ob = cha.response
 response, freqs = resp_ob.get_evalresp_response(0.1, 16384, output="VEL")
 ```
 
@@ -200,6 +203,7 @@ Some convenience methods to perform an instrument correction on `Stream` and `Tr
 
 ```python
 st = read("...")
+inv = read_inventory("...")
 st.attach_response(inv)
-st.remove_response(output="VEL")
+st.remove_response(output="VEL", water_level=..., pre_filt=..., ...)
 ```
