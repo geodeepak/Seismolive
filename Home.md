@@ -12,6 +12,13 @@ ObsPy is an open-source project dedicated to provide a **Python framework for pr
 
 The goal of the ObsPy project is to facilitate **rapid application development for seismology**.
 
+## News
+##### [January 9 2014] Release of ObsPy 0.9.0
+ObsPy 0.9.0 offers (amongst many other things) two major new features: support for the FDSN webservices and the FDSN StationXML format.
+* [Release including full changelog](https://github.com/obspy/obspy/releases/tag/0.9.0)
+* [Migration guide to ObsPy 0.9.0](Migration to ObsPy 0.9.0)
+
+
 ## Getting Started
 
 The [ObsPy Gallery](http://gallery.obspy.org) and its related [ObsPy Tutorial](http://tutorial.obspy.org) are maybe the best point to get a first impression of what ObsPy is all about. The tutorial is a collection of short example programs with explanations and program output. For help getting started with Python, have a look at this [collection of links to Tutorials](wiki/Python-Tutorials).
