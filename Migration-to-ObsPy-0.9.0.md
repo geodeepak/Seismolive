@@ -1,6 +1,9 @@
 ObsPy 0.9.0 ([changelog](https://github.com/obspy/obspy/releases/tag/0.9.0)) offers (amongst many other things) two major new features: support for the [FDSN webservices](http://www.fdsn.org/webservices/) and the [FDSN StationXML](http://www.fdsn.org/xml/station/) format. This guide is intended to ease the transition for users to the new version. This will be necessary for many people as the IRIS datacenter [shut down](http://www.iris.edu/dms/nodes/dmc/news/2013/03/new-fdsn-web-services-and-retirement-of-deprecated-services/) its old webservices so existing codes needs to be adjusted accordingly.
 
-## TL;DR
+ - [TL;DR (short summary)](#tldr)
+ - [Detailed notes on FDSN/StationXML changes](#Detailed-Changes)
+
+# TL;DR
 
 The old obspy.iris client does not work anymore - so instead of this:
 
@@ -47,6 +50,7 @@ st.remove_response(output="VEL", water_level=..., pre_filt=..., ...)
 
 ```
 
+# Detailed Changes
 ## FDSN Webservices
 
 Usage of the new webservices is quite similiar to the existing ObsPy clients. The client should work for all datacenters implementing the FDSN webservice standard.
