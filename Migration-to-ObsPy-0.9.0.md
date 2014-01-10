@@ -50,6 +50,10 @@ inv = client.get_stations(starttime=t1, endtime=t2, network="IU",
 st.attach_response(inv)
 st.remove_response(output="VEL", water_level=..., pre_filt=..., ...)
 
+# If you only care about instrument correction this can also be simplified.
+st = client.get_waveforms("IU", "ANMO", "00", "BHZ", t1, t2, attach_response=True)
+st.remove_response(output="VEL")
+
 ```
 
 # Detailed Changes
