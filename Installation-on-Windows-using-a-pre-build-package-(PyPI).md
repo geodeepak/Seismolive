@@ -36,6 +36,12 @@ See  http://docs.python.org/using/windows.html#excursus-setting-environment-vari
     easy_install pyreadline
     easy_install ipython
     ```
+ 5. In order to run the whole test suite you will need a few more packages
+    ```bash
+    easy_install flake8
+    easy_install nose
+    easy_install mock
+    ```
 
 ### ObsPy
 
