@@ -47,8 +47,43 @@ Out[14]: b'l'
 ### native_str
 Some libraries have troubles with `future.builtins.str` for a single code base python 2 and 3 support. For these cases, `native_str` is your friend, e.g.:
 ```python
-np.ctypeslib.ndpointer(dtype='int32', ndim=1, flags=native_str('C_CONTIGUOUS')
-```               
+np.ctypeslib.ndpointer(dtype='int32', ndim=1, flags=native_str('C_CONTIGUOUS'))
+```
 
+### decode and encode
+A single code base bytes and str support for python 2 and 3 is quite a challenge. The following examples shows how the following the following python 3 decode encode can work with python 2:
 
+#### python 3
+```python
+>>> byte = b'b\xc3\xa4h'
+>>> print(byte.decode())
+bäh
+>>> string = "bäh"
+>>> print(string.encode())
+b'b\xc3\xa4h'
+```
+
+#### python 2 (python 3 compatible via future library)
+See also the future package [str](http://python-future.org/str_object.html?highlight=decode#str), (bytes)[http://python-future.org/what_else.html?highlight=decode#bytes] documentation. However, quite a few external libraries cannot deal with these types from the future package.
+```python
+>>> from __future__ import print_function
+>>> from future.builtins import str, bytes
+>>> byte = bytes(b'b\xc3\xa4h')
+>>> print(byte.decode())
+bäh
+>>> string = str(u"bäh")
+b'b\xc3\xa4h'
+```
+
+#### python 2 (python 3 compatible via 'utf-8' argument)
+This is quite similar to the ipython's [py3compat](https://github.com/ipython/ipython/blob/master/IPython/utils/py3compat.py#L20) and the method of the old [#203 pull request](https://github.com/obspy/obspy/pull/203/files#diff-bc24580f1745d517c0153521a8f6570fR32)
+```python
+>>> from __future__ import print_function
+>>> byte = b'b\xc3\xa4h'
+>>> print(byte.decode('utf-8'))
+bäh
+>>> string = u"bäh"
+>>> string.encode('utf-8')
+'b\xc3\xa4h'
+```
 
