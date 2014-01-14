@@ -6,7 +6,7 @@ The easiest way to install ObsPy under Mac is to use the fully self contained OS
 
 ### MacPorts
 
-A very convenient method to install ObsPy on various Mac OS X versions and along with various other python packages is though the MacPorts Projects package management system (http://www.macports.org). This is especially true for users already using MacPorts. Not-yet-users of MacPorts are encouraged to give it a try! The method via MacPorts would install all dependencies and ObsPy either from a pre-compiled binary package or from source. Here the details:
+A very convenient method to install ObsPy on various versions of Mac OS X and Python, along with a large choice other Python packages is though the MacPorts Projects package management system (http://www.macports.org). This is especially true for users already using MacPorts. Not-yet-users of MacPorts are encouraged to give it a try! The method via MacPorts would install all dependencies and ObsPy either from a pre-compiled binary package or from source. Here the details:
 
   * [[Installation using MacPorts|Installation on Mac OS X using MacPorts]]
 
