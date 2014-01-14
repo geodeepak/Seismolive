@@ -3,7 +3,7 @@ We use the [future](http://python-future.org/) library and only support python >
 ### str vs. bytes
 On Python 3 strings are now internally utf-8, bytes are their ascii representation (see e.g. this brilliant [video](http://pyvideo.org/video/948/pragmatic-unicode-or-how-do-i-stop-the-pain)).
 
-[lxml](http://lxml.de) can deal with strings and bytes but treats them differently. Strings must not have an xml encoding declaration - it will raise otherwise. Bytes on the other hand can, and probably should (otherwise it defaults to utf-8) have an encoding declaration.
+[lxml](http://lxml.de) can deal with strings and bytes but treats them differently. Strings must not have an xml encoding declaration - it will raise otherwise. Bytes on the other hand can, and probably should (otherwise it defaults to utf-8) have an encoding declaration, see also [lxml FAQ](http://lxml.de/FAQ.html#why-can-t-lxml-parse-my-xml-from-unicode-strings).
 
 The idea is to internally make the natural choice to represent raw content like waveforms, XML files or URL request by bytes and BytesIO. We internally convert them to utf-8 / str such that the user of the library, will only deal with strings (e.g. `Trace.stats`).
 
