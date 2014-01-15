@@ -1,4 +1,4 @@
-We use the [future](http://python-future.org/) library and only support python >= 3.3. The motivation for Python 3 is best summarized in this [article](http://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html). A nice Howto on supporting python 3 in a single code base can be found [here](http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/).
+We use the [future](http://python-future.org/) library and only support python >= 3.3. The motivation for Python 3 is best summarized in this [article](http://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html). [Porting-to-python-3](http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/) is a nice description how to support python 3 via a single code base.
 
 ### str vs. bytes
 On Python 3 strings are now internally utf-8, bytes are their ascii representation (see e.g. this brilliant [video](http://pyvideo.org/video/948/pragmatic-unicode-or-how-do-i-stop-the-pain)).
