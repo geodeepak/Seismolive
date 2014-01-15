@@ -1,11 +1,13 @@
-We use the [future](http://python-future.org/) library and only support python >= 3.3. The motivation for Python 3 is best summarized in this [article](http://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html)
+We use the [future](http://python-future.org/) library and only support python >= 3.3. The motivation for Python 3 is best summarized in this [article](http://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html).
+
+Another nice article on porting to python 3 can be found [here](http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/).
 
 ### str vs. bytes
 On Python 3 strings are now internally utf-8, bytes are their ascii representation (see e.g. this brilliant [video](http://pyvideo.org/video/948/pragmatic-unicode-or-how-do-i-stop-the-pain)).
 
 [lxml](http://lxml.de) can deal with strings and bytes but treats them differently. Strings must not have an xml encoding declaration - it will raise otherwise. Bytes on the other hand can, and probably should (otherwise it defaults to utf-8) have an encoding declaration, see also [lxml FAQ](http://lxml.de/FAQ.html#why-can-t-lxml-parse-my-xml-from-unicode-strings).
 
-The idea is to internally make the natural choice to represent raw content like waveforms, XML files or URL request by bytes and BytesIO. We internally convert them to utf-8 / str such that the user of the library, will only deal with strings (e.g. `Trace.stats`).
+The idea is to to represent raw content like waveforms, XML files or URL request by bytes and BytesIO. We internally convert them to utf-8 / str such that the user of the library, will only deal with strings (e.g. `Trace.stats`).
 
 ### hastattr
 Python 3 `hasattr()` expects an `AttributeError` no `KeyError` to be raised if the attribute is not found. Thus in order to allow `hasattr()` of an `AttribDict`, `__getattr__` must raise an `AttributeError` instead of an `KeyError`. This was not the case in the past. This change effects many places in our code and might also break some third party code.
