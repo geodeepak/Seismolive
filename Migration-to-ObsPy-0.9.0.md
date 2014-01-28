@@ -5,7 +5,7 @@ ObsPy 0.9.0 ([changelog](https://github.com/obspy/obspy/releases/tag/0.9.0)) off
    - [FDSN Webservices](Migration-to-ObsPy-0.9.0#fdsn-webservices)
    - [StationXML](Migration-to-ObsPy-0.9.0#stationxml)
 
-# TL;DR
+# TL;DR (Summary)
 
 The old obspy.iris client does not work anymore - so instead of this:
 
