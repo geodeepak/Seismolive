@@ -160,7 +160,7 @@ Inventory created at 2013-12-02T05:55:15.000000Z
             TA.Z52A..BHE, TA.Z52A..BHN, TA.Z52A..BHZ
 ```
 
-The [inventory class](http://docs.obspy.org/master/packages/autogen/obspy.station.inventory.Inventory.html#obspy.station.inventory.Inventory) It is a hierarchical structure, starting with a list of [networks](http://docs.obspy.org/master/packages/autogen/obspy.station.network.Network.html#obspy.station.network.Network), each containing a list of [stations](http://docs.obspy.org/master/packages/autogen/obspy.station.station.Station.html#obspy.station.station.Station) which again each contains a list of [channels](http://docs.obspy.org/master/packages/autogen/obspy.station.channel.Channel.html#obspy.station.channel.Channel). The [responses](http://docs.obspy.org/master/packages/autogen/obspy.station.response.html#module-obspy.station.response) are attached to the channels.
+The [inventory class](http://docs.obspy.org/packages/autogen/obspy.station.inventory.Inventory.html#obspy.station.inventory.Inventory) It is a hierarchical structure, starting with a list of [networks](http://docs.obspy.org/packages/autogen/obspy.station.network.Network.html#obspy.station.network.Network), each containing a list of [stations](http://docs.obspy.org/packages/autogen/obspy.station.station.Station.html#obspy.station.station.Station) which again each contains a list of [channels](http://docs.obspy.org/packages/autogen/obspy.station.channel.Channel.html#obspy.station.channel.Channel). The [responses](http://docs.obspy.org/packages/autogen/obspy.station.response.html#module-obspy.station.response) are attached to the channels.
 
 ```python
 >>> net = inv[0]
@@ -202,14 +202,14 @@ Channel Response
 
 #### Dealing with the Instrument Response
 
-The [get\_evalresp\_response()](http://docs.obspy.org/master/packages/autogen/obspy.station.response.Response.get_evalresp_response.html#obspy.station.response.Response.get_evalresp_response) method will call some functions within evalresp to generate the response.
+The [get\_evalresp\_response()](http://docs.obspy.org/packages/autogen/obspy.station.response.Response.get_evalresp_response.html#obspy.station.response.Response.get_evalresp_response) method will call some functions within evalresp to generate the response.
 
 ```python
 resp_ob = cha.response
 response, freqs = resp_ob.get_evalresp_response(0.1, 16384, output="VEL")
 ```
 
-Some convenience methods to perform an instrument correction on `Stream` and `Trace` objects are available and most users will want to use those. The [attach\_response()](http://docs.obspy.org/master/packages/autogen/obspy.core.stream.Stream.attach_response.html?highlight=attach_response#obspy.core.stream.Stream.attach_response) method will attach matching responses to each Trace if they are available within the inventory object. The [remove\_response()](http://docs.obspy.org/master/packages/autogen/obspy.core.trace.Trace.remove_response.html?highlight=remove_response#obspy.core.trace.Trace.remove_response) method deconvolves the instrument response in-place. As always see the docs for a full list of options and a more detailed explanation.
+Some convenience methods to perform an instrument correction on `Stream` and `Trace` objects are available and most users will want to use those. The [attach\_response()](http://docs.obspy.org/packages/autogen/obspy.core.stream.Stream.attach_response.html?highlight=attach_response#obspy.core.stream.Stream.attach_response) method will attach matching responses to each Trace if they are available within the inventory object. The [remove\_response()](http://docs.obspy.org/packages/autogen/obspy.core.trace.Trace.remove_response.html?highlight=remove_response#obspy.core.trace.Trace.remove_response) method deconvolves the instrument response in-place. As always see the docs for a full list of options and a more detailed explanation.
 
 ```python
 st = read("...")
