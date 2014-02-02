@@ -66,14 +66,14 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
 * [obspy.segy](http://docs.obspy.org/packages/obspy.segy.html) - SEGY read and write support
 * [obspy.sh](http://docs.obspy.org/packages/obspy.sh.html) - Q and ASC read and write support (file formats of [SeismicHandler](http://www.seismic-handler.org))
 * [obspy.wav](http://docs.obspy.org/packages/obspy.wav.html) - WAV (audio) read and write support
-* obspy.y - Nanometrics Y file format read support (experimental, not present in obspy <= 0.9)
+* [obspy.y](http://docs.obspy.org/packages/obspy.y.html) - Nanometrics Y file format read support (experimental)
 
 ### Database or Web service access clients:
 * [obspy.arclink](http://docs.obspy.org/packages/obspy.arclink.html) - [ArcLink/WebDC](http://www.webdc.eu) request client
 * [obspy.earthworm](http://docs.obspy.org/packages/obspy.earthworm.html) - [Earthworm](http://folkworm.ceri.memphis.edu/ew-doc/) request client
-* obspy.fdsn - [FDSN Web services](http://www.fdsn.org/webservices/) request client (experimental, not present in obspy <= 0.9)
-* [obspy.iris](http://docs.obspy.org/packages/obspy.iris.html) - [IRIS DMC Core Web services](http://www.iris.edu/ws) request client (service will be retired by IRIS in december 2013. use obspy.fdsn in the future.)
-* [obspy.neic](http://docs.obspy.org/master/packages/obspy.neic.html) - [NEIC](http://earthquake.usgs.gov/regional/neic/) CWB QueryServer request client (experimental, not present in obspy <= 0.9)
+* [obspy.fdsn](http://docs.obspy.org/packages/obspy.fdsn.html) - [FDSN Web services](http://www.fdsn.org/webservices/) request client (experimental)
+* [obspy.iris](http://docs.obspy.org/packages/obspy.iris.html) - [IRIS DMC Core Web services](http://www.iris.edu/ws) request client (deprecated since December 2013. Use obspy.fdsn instead.)
+* [obspy.neic](http://docs.obspy.org/master/packages/obspy.neic.html) - [NEIC](http://earthquake.usgs.gov/regional/neic/) CWB QueryServer request client (experimental)
 * [obspy.neries](http://docs.obspy.org/packages/obspy.neries.html) - [NERIES Seismic Data Portal](http://www.seismicportal.eu/jetspeed/portal/) request client
 * [obspy.seedlink](http://docs.obspy.org/packages/obspy.seedlink.html) - [SeedLink](http://www.seiscomp3.org/wiki/doc/applications/seedlink) request client (experimental / not well tested)
 * [obspy.seishub](http://docs.obspy.org/packages/obspy.seishub.html) - [SeisHub](https://github.com/barsch/seishub.core) database client
