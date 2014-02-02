@@ -15,7 +15,7 @@ The goal of the ObsPy project is to facilitate **rapid application development f
 ## News
 ##### [January 9 2014] Release of ObsPy 0.9.0
 ObsPy 0.9.0 offers (amongst many other things) two major new features: support for the FDSN webservices and the FDSN StationXML format.
-* [Release including full changelog](releases/tag/0.9.0)
+* [Release including full changelog](../releases/tag/0.9.0)
 * [Migration guide to ObsPy 0.9.0](wiki/Migration-to-ObsPy-0.9.0)
 
 
