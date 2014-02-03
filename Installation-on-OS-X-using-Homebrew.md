@@ -39,7 +39,11 @@ Now make sure that
 $ which pip
 ```
 
-evaluate to `/usr/local/bin/pip` and use it to install [virtualenv](http://www.virtualenv.org/).
+evaluate to `/usr/local/bin/pip` and use it to install [virtualenv](http://www.virtualenv.org/):
+
+```bash
+$ pip install virtualenv
+```
 
 virtualenv provides functionality to create virtual Python environment that do not interfere with each other. This guide will install ObsPy and dependencies to a virtualenv. To create a virtual environment, again make sure that 
 
