@@ -5,7 +5,7 @@ Before installing Homebrew you will need to install a compiler as OS X does not 
 Installing Homebrew is then simply a manner of pasting the following line in a terminal:
 
 ```bash
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ```
 
 You will then want to put the Homebrew directory at the very top of your `$PATH` variable. One possibiliy of doing this is appending the following line to your `~/.bash_profile` file.
