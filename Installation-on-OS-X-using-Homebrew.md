@@ -28,10 +28,10 @@ $ brew link --force freetype  # You can also try to install matplotlib with the 
 ### Installing Python
 
 ```bash
-$ brew install python --framework
+$ brew install python
 ```
 
-The `--framework` flag tells Homebrew to install Python to a OSX custom directory structure. This is useful for later on installing graphical utilities. This command will also install `distribute` and `pip`, both invaluable tools for managing Python installations.
+This command will also install `distribute` and `pip`, both invaluable tools for managing Python installations.
 
 Now make sure that
 
