@@ -39,7 +39,7 @@ Now make sure that
 $ which pip
 ```
 
-evaluate to `/usr/local/bin/pip` and use it to install [virtualenv](http://www.virtualenv.org/):
+evaluate to `/usr/local/bin/pip` and use it to install [virtualenv](http://www.virtualenv.org/)
 
 ```bash
 $ pip install virtualenv
@@ -48,16 +48,16 @@ $ pip install virtualenv
 virtualenv provides functionality to create virtual Python environment that do not interfere with each other. This guide will install ObsPy and dependencies to a virtualenv. To create a virtual environment, again make sure that 
 
 ```bash
-$ virtualenv --system-site-packages  # Do NOT forget the system-site-packages
+$ which virtualenv
 ```
 
 evaluates to `/usr/local/bin/virtualenv` and execute
 
 ```bash
-$ virtualenv obspy_virtualenv
+$ virtualenv --system-site-packages obspy_virtualenv # Do NOT forget the system-site-packages
 ```
 
-The argument is the folder where the environment is installed to. You can choose any one you like. Once it is done, activate it via
+The argument `obspy_virtualenv` is the folder where the environment is installed to. You can choose any one you like. Once it is done, activate it via
 
 ```bash
 $ source obspy_virtualenv/bin/activate
