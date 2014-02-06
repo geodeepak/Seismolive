@@ -132,3 +132,12 @@ def process(*args):
 p = multiprocessing.Pool(processes=2)
 p.map(process, xrange(50))
 ```
+
+### Further information
+
+* https://github.com/xianyi/OpenBLAS/issues/294
+* http://gcc.gnu.org/bugzilla/show_bug.cgi?id=60035
+* https://github.com/numpy/numpy/issues/654
+* https://github.com/numpy/numpy/pull/4194
+* https://github.com/celery/celery/issues/1842
+* http://mail.scipy.org/pipermail/numpy-discussion/2012-August/063589.html
