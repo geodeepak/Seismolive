@@ -33,6 +33,9 @@ These notes describe installing ObsPy on the following platforms:
 * [[Windows|Installation on Windows]]
 * [[FreeBSD|Installation on FreeBSD]]
 
+If you intend on performing parallel processing with Python and Obspy, please read the following.
+* [[Notes on Parallel Processing with Python and ObsPy|Notes on Parallel Processing with Python and ObsPy]]
+
 ## Stay Informed
 
 If you are using ObsPy we **strongly recommend** for you to join the [ [obspy-users] mailing list](http://lists.obspy.org/listinfo/obspy-users). This list will be the place where new additions, important changes and bug fixes will be announced. The list can also be used to contact other ObsPy users for open discussions.
