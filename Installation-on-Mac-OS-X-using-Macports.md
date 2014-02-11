@@ -18,7 +18,7 @@ This will install ObsPy (port `py27-obspy`) as one of the `site-packages` of the
 
     sudo port select python python27
 
-Hint: MacPorts avoids any changes to your OS X base system, therefore this selection is implemented by creating symbolic links in `opt/local/bin`. In order to ensure the selection is effective, your search path variable `$PATH` should be set in a way to give precedence to directory `/opt/local/bin`.
+Hint: MacPorts avoids any changes to your OS X base system, therefore this selection is implemented by creating symbolic links in `opt/local/bin`. To ensure the selection is effective, your search path variable `$PATH` should be set in a way to give precedence to directory `/opt/local/bin`.
 
 If for some reason you prefer to install ObsPy against the Python 2.6 interpreter, the corresponding port is `py26-obspy`. You can have both versions installed at the same time.
 
