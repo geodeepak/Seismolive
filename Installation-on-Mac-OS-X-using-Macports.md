@@ -23,13 +23,13 @@ Hint: MacPorts avoids any changes to your OS X base system, therefore this selec
 If for some reason you prefer to install ObsPy against the Python 2.6 interpreter, the corresponding port is `py26-obspy`. You can have both versions installed at the same time.
 
 
-### Upgrading your ObsPy ###
+### Upgrading your ObsPy installation ###
 
-When a new version of ObsPy becomes available via Macports, you can use the following sequences to update your Macports based ObsPy installation:
+When a new version of ObsPy becomes available via MacPorts, you can use the following sequences to update your MacPorts-based ObsPy installation:
 
     sudo port selfupdate
     sudo port upgrade py27-obspy
 
-The old version is only deactivated, so you could switch back in case you find it useful. If you prefer to clean up your system, remove the old version by executing:
+The old version is not removed but only deactivated, so you could switch back if you find this useful. If you prefer to clean up your system and to remove the old version, executing:
 
     sudo port uninstall py27-obspy and inactive
