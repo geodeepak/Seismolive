@@ -14,7 +14,7 @@ Once MacPorts is correctly deployed on your system, installing ObsPy and all dep
 
     sudo port install py27-obspy
 
-This will install ObsPy (port `py27-obspy`) as one of the `site-packages` of the Python 2.7 interpreter provided by MacPorts (port `python27`). It is a distinct instance of Python and independent of the system's version. All required dependencies are installed automatically. You need to use MacPort's Python interpreter, which is usually located in `/opt/local/bin/python2.7`, to be able to import the ObsPy package. You can make this Python instance your default by executing:
+This will install ObsPy (port `py27-obspy`) as one of the `site-packages` of the Python 2.7 interpreter provided by MacPorts (port `python27`). It is a distinct instance of Python and independent of the system's version. All required dependencies are installed automatically. You need to use MacPort's Python interpreter, which is usually located in `/opt/local/bin/python2.7`, to be able to import the ObsPy package. You can make this Python instance your default interpreter by executing:
 
     sudo port select python python27
 
