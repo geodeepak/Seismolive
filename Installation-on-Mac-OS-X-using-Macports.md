@@ -1,7 +1,6 @@
-
 ###  Installing MacPorts ###
 
-If you have not done already installed and used MacPorts before, you first need do so. There are several options to install MacPorts, but I recommend to use the _Mac OS X Installer_ which is probably the standard approach. All authoritative details on installing MacPorts can be found [here](http://www.macports.org/install.php). Summary of the necessary steps:
+If you have not already installed MacPorts, you need first do this before installing ObsPy. There are several options to install MacPorts, but I recommend to use the _Mac OS X Installer_ which is probably the standard approach. All authoritative details on installing MacPorts can be found [here](http://www.macports.org/install.php). Summary of the necessary steps:
 
 1. Install _Xcode_ from _Apple Developer Connection_ or _Mac App Store_. The version to install will depend on your _OS X_ version. Note that for recent _XCode_ (notable 4.3 and later) you will need to install the _command line tools_ explicitly. 
 1. Accept the License Terms, if Xcode 4 or later was installed. All steps to setup XCode correctly are found on MacPorts' [website](http://www.macports.org/install.php). 
