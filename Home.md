@@ -123,3 +123,4 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
  * [[Interesting reading on git, github]]
  * [[Debian packaging]]
  * [[How to: Add a new Submodule]]
+ * [[Anaconda Tips]]
