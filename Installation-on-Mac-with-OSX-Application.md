@@ -1,3 +1,12 @@
+# OUTDATED!
+
+***
+***
+**The App will not receive any future updates and it does not contain the latest ObsPy version. We will leave it up for a while because some people might still want it. It is simply too much work to keep it up to date!**
+***
+***
+
+
 Due to the fact that the OSX installation of ObsPy and mainly its dependencies has proven to be problematic, a completely self-contained version of ObsPy and all its dependencies is offered here. Its intention is to facilitate the usage of ObsPy on OSX but the underlying Python installation can of course also be used for other purposes. It currently contains Python 2.7.2 and the [[modules listed here|Installation on Mac with OSX Application: Contents]].
 
 [![OSX install](https://raw.github.com/obspy/obspy/master/misc/installer/osx_app/screenshots/thumb_image.png)](https://raw.github.com/obspy/obspy/master/misc/installer/osx_app/screenshots/image.png)
@@ -33,3 +42,4 @@ The application will periodically check for updates or you can check manually. I
 ## Deinstallation
 
 Just move the Application to the Trash.
+***
