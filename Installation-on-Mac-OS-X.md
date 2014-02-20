@@ -1,8 +1,8 @@
 ### App
 
-The easiest way to install ObsPy under Mac is to use the fully self contained OSX Application of ObsPy and all its dependencies. No need to install anything else, just this one application. This is great for acquiring a fully working ObsPy environment very quickly. It might prove problematic to install additional modules if your OS X version and the one where the app has been compiled on differ too much. In that case please consider one of the options presented below.
+**The App will not receive any future updates and it does not contain the latest ObsPy version. We will leave it up for a while because some people might still want it. Please use one of the methods mentioned below to install ObsPy! It is just too much work to keep the App up to date. Thanks for your understanding.**
 
-  * [[OSX Application|Installation on Mac with OSX Application]]
+  * **DEPRECATED!!** [[OSX Application|Installation on Mac with OSX Application]]
 
 ### MacPorts
 
