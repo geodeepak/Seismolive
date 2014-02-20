@@ -2,7 +2,7 @@
 
 ***
 ***
-**The App will not receive any future updates and it does not contain the latest ObsPy version. We will leave it up for a while because some people might still want it. It is simply too much work to keep it up to date!**
+**The App will not receive any future updates and it does not contain the latest ObsPy version. We will leave it up for a while because some people might still want it. It is simply too much work to keep it up to date! Please use another method to install ObsPy.**
 ***
 ***
 
