@@ -1,4 +1,4 @@
-### App
+### DEPRECATED! App
 
 **The App will not receive any future updates and it does not contain the latest ObsPy version. We will leave it up for a while because some people might still want it. Please use one of the methods mentioned below to install ObsPy! It is just too much work to keep the App up to date. Thanks for your understanding.**
 
