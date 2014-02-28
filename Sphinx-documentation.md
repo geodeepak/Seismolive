@@ -1,7 +1,7 @@
 The API reference documentation of ObsPy is generated with Sphinx. In order to build it locally by you own, run
 ```
 #!sh
-cd /path/to/obspy/trunk/misc/docs
+cd /path/to/obspy/misc/docs
 make pep8
 make coverage
 make html
