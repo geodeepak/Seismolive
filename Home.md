@@ -100,6 +100,7 @@ _Note: Documentation for current master snapshot can be found [here](http://docs
    * [ObsPyDMT](https://github.com/kasra-hosseini/obspyDMT)
    * [seedlink plotter](https://github.com/bonaime/seedlink_plotter)
    * [pyTDMT - Python Time Domain Moment Tensor](http://webservices.rm.ingv.it/pyTDMT/) [(on GitHub)](https://github.com/fabriziobernardi/pydmt)
+   * [MSNoise - Monitoring Seismic Velocity Changes using Ambient Seismic Noise](http://msnoise.org/) [(on GitHub)](https://github.com/ROBelgium/MSNoise)
 
 ## References
 
