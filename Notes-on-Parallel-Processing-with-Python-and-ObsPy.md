@@ -25,7 +25,7 @@ p.map(process, xrange(50))
 For a more thorough investigation the first step is to find out what BLAS/LAPACK implementation your NumPy and SciPy installations are linked against:
 
 ```bash
-$ python -c "import numpy; numpy.show_config"
+$ python -c "import numpy; numpy.show_config()"
 lapack_opt_info:
     libraries = ['openblas', 'openblas']
     library_dirs = ['/usr/local/opt/openblas/lib']
