@@ -13,8 +13,8 @@ The goal of the ObsPy project is to facilitate **rapid application development f
 ## News
 ##### [May 4 2014] Release of ObsPy 0.9.2
 ObsPy 0.9.2 is a maintenance release and contains the collective bug fixes and minor feature improvements of around 150 commits so we advise all users to upgrade.
+* [Release including full changelog](../releases/tag/0.9.2)
 
-Full changelog: https://github.com/obspy/obspy/releases/tag/0.9.2
 ##### [January 9 2014] Release of ObsPy 0.9.0
 ObsPy 0.9.0 offers (amongst many other things) two major new features: support for the FDSN webservices and the FDSN StationXML format.
 * [Release including full changelog](../releases/tag/0.9.0)
