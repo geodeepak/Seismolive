@@ -4,7 +4,7 @@ To install Homebrew follow the installation instructions on their homepage (make
 
 ### Installing Python and other required packages
 
-The Fortran compiler is required by NumPy, SciPy, and ObsPy; the other libraries are required for lxml, matplotlib, ipython, and basemap. Also install a non-system version of Python.
+The Fortran compiler is required by NumPy, SciPy, and ObsPy; the other libraries are required for lxml, matplotlib, ipython, and basemap. Also install a non-system version of Python. `pyqt` is optional but recommended.
 
 ```bash
 $ brew update
