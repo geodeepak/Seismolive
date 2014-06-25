@@ -1,2 +1,0 @@
- * [[Installation using a pre-build package (PyPI)|Installation on Windows using a pre-build package (PyPI)]]
- * [[Installation from source (recommended only for developers)|Installation on Windows From Source]]
