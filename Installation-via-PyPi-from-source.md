@@ -1,5 +1,10 @@
-## via Package Management
-It is recommended to install the required dependencies via the package manager of your Linux distribution, e.g. .. 
+## Dependencies
+
+ObsPy has a number of dependencies, for the full and up-to-date list go the the 
+
+[[Dependencies Page|Dependencies]]
+
+To install them, please follow the instructions for the operating system of your choice on this wiki. The following list a couple of possibilities to install (possibly not complete set but should get you started) the dependencies on different Linux distributions.
 
  * Debian/Ubuntu
 ```bash
@@ -8,7 +13,7 @@ It is recommended to install the required dependencies via the package manager o
       sudo apt-get install python-dev
       sudo apt-get install python-setuptools
       sudo apt-get install python-numpy
-      sudo apt-get install python-numpy-abi9
+      sudo apt-get install python-numpy-dev
       sudo apt-get install python-scipy
       sudo apt-get install python-matplotlib
       sudo apt-get install python-lxml
@@ -16,7 +21,7 @@ It is recommended to install the required dependencies via the package manager o
       sudo apt-get install python-suds
       sudo apt-get install gfortran
       sudo apt-get install libgfortran3
-      sudo apt-get install ipython         # strongly recommended, not necessary
+      sudo apt-get install ipython
 ```
  * openSUSE
 ```bash
@@ -30,7 +35,7 @@ It is recommended to install the required dependencies via the package manager o
       sudo zypper install python-matplotlib
       sudo zypper install python-matplotlib-tk
       sudo zypper install python-lxml
-      sudo zypper install IPython             # strongly recommended, not necessary
+      sudo zypper install IPython
 ```
  * Fedora (see also http://vfamilyserver.org/blog/2013/01/installing-obspy-on-fedora-18/)
 ```bash
