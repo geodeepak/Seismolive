@@ -61,7 +61,7 @@ If you are using ObsPy we **strongly recommend** you to join the [ [obspy-announ
 
 There also is a [feed for commits](https://github.com/obspy/obspy/commits/master.atom). To get emails concerning issues make a GitHub login, 'watch' our repository and set up email notifications for your GitHub account.
 
-## [Documentation](http://docs.obspy.org)
+## Documentation
 
  - for the latest stable release
     - [start page](http://docs.obspy.org)
