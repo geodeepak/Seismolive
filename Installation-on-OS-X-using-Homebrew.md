@@ -8,7 +8,7 @@ The Fortran compiler is required by NumPy, SciPy, and ObsPy; the other libraries
 
 ```bash
 $ brew update
-$ brew install gfortran libxml2 libxslt freetype python geos zmq
+$ brew install gfortran libxml2 libxslt freetype python geos zmq pyqt
 $ brew link --force freetype
 ```
 
@@ -81,61 +81,16 @@ To check if everything works as expected you can run ObsPy's included test suite
 $ obspy-runtests
 ```
 
+This will run all tests and provides a way to report any potential errors to us. No occurring errors means that you now have a fully working ObsPy installation. Head over to the [Tutorial](http://docs.obspy.org/tutorial/) to learn how to use it.
+
 ### IPython HTML Notebook
 
-The above instructions also install a fully working [IPython HTML notebook](http://ipython.org/notebook.html).
+The above instructions also install a fully working [IPython HTML notebook](http://ipython.org/notebook.html), to launch it type:
 
 ```bash
 $ ipython notebook 
-
-This will run all tests and provides a way to report any potential errors to us. No occurring errors means that you now have a fully working ObsPy installation. Head over to the [Tutorial](http://docs.obspy.org/tutorial/) to learn how to use it.
+```
 
 ### Additional useful Python Packages
-
-This section describes the installation of some more potentially useful Python packages.
-
-
-```
-
-which drops you in a browser ready for action.
-
-#### Basemap
-
-The [basemap package](http://matplotlib.org/basemap/) is an add-on for matplotlib giving you the possibility to plot maps similar to GMT. It currently cannot be installed via `pip` so it must be installed from source. Use Homebrew to install a dependency
-
-```bash
-$ brew install geos
-```
-
-then download the latest source version from their homepage and 
-
-```bash
-$ tar -xzf basemap-1.x.x.tar.gz
-$ cd basemap-1.x.x
-$ pip install .
-```
-
-#### Qt Bindings
-
-Two sets of Python bindings for the Qt cross-platform application and UI framework are in existence. Both are (except for some licensing issues) virtually identical from a usage perspective. Thankfully that arduous task is greatly simplified by utilizing Homebrew once again.
-
-[PySide](http://qt-project.org/wiki/PySide) can simply be installed with the help of `pip` and Homebrew:
-
-```bash
-$ /usr/local/bin/pip install sphinx
-$ brew install pyside
-```
-
-This might take a while so grab a coffee or lunch.
-
-Installing [PyQt](http://www.riverbankcomputing.com/software/pyqt) is also rather simple.
-
-```bash
-$ brew install pyqt
-```
-
-This will also take a while.
-
-#### Other packages
 
 Other useful packages like [pandas](http://pandas.pydata.org/), [requests](http://docs.python-requests.org/en/latest/), [colorama](https://pypi.python.org/pypi/colorama), [SymPy](http://sympy.org/), [scikit-learn](http://scikit-learn.org/), and countless more can be installed with `pip`.
