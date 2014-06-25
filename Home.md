@@ -32,14 +32,15 @@ ObsPy 0.9.0 offers (amongst many other things) two major new features: support f
 The [ObsPy Gallery](http://gallery.obspy.org) and its related [ObsPy Tutorial](http://tutorial.obspy.org) are maybe the best point to get a first impression of what ObsPy is all about. The tutorial is a collection of short example programs with explanations and program output. For help getting started with Python, have a look at this [collection of links to Tutorials](wiki/Python-Tutorials).
 
 ## Installation
-ObsPy is currently [running and tested](http://tests.obspy.org) on Linux (32 and 64 bit), Windows XP/Vista/7/8 (32 bit and/or 64 bit) and Mac OS X (32 and 64 bit Intel and untested support for 32 and 64 bit PPC).
 
-These notes describe installing ObsPy on the following platforms:
+ObsPy is currently [running and tested](http://tests.obspy.org) on Linux (32 and 64 bit), Windows XP/Vista/7/8 (32 bit and/or 64 bit) and Mac OS X.
 
-* [[Debian/Ubuntu|Installation on Linux via Apt Repository]]
-* [[Mac OS X|Installation on Mac OS X]]
-* [[Windows|Installation on Windows]]
-* [[FreeBSD|Installation on FreeBSD]]
+Detailed informations on installing the latest stable version of ObsPy on various operating systems:
+
+* [[Debian/Ubuntu|Installation on Linux via Apt Repository]] via the package manager
+* Mac OSX via [[Homebrew|Installation on OS X using Homebrew]] or [[MacPorts|Installation on Mac OS X using Macports]]
+* Windows from a [[pre-build package (PyPI)|Installation on Windows using a pre-build package (PyPI)]] or from [[source|Installation on Windows From Source]]
+* [[FreeBSD|Installation on FreeBSD]] via the package manager
 
 If you intend on performing parallel processing with Python and Obspy, please read the following.
 * [[Notes on Parallel Processing with Python and ObsPy|Notes on Parallel Processing with Python and ObsPy]]
