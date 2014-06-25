@@ -42,7 +42,7 @@ Detailed informations on installing the latest stable version of ObsPy on variou
 * Windows from a [[pre-build package (PyPI)|Installation on Windows using a pre-build package (PyPI)]] or from [[source|Installation on Windows From Source]]
 * [[FreeBSD|Installation on FreeBSD]] via the package manager
 * via [[Anaconda|Installation via Anaconda]], a scientific Python distribution
-* [[Generic|Installation via PyPi/from source]] applicable to Linux and OSX
+* via [[PyPi or from source|Installation via PyPi/from source]], applicable to Linux and OSX
 
 If you intend on performing parallel processing with Python and Obspy, please read the following.
 * [[Notes on Parallel Processing with Python and ObsPy|Notes on Parallel Processing with Python and ObsPy]]
