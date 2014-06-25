@@ -22,7 +22,7 @@ evaluates to `/usr/local/bin/pip` before continuing.
 
 ### Installing the Scientific Python Stack and other ObsPy dependencies
 
-Use `pip` to install the remaining ObsPy dependencies and a few must-have packages.
+Use `pip` to install the remaining ObsPy dependencies and a few must-have packages:
 
 ```bash
 $ pip install ipython
@@ -42,7 +42,7 @@ $ pip install tornado jinja2
 
 ### Installing ObsPy
 
-To install the latest stable version, simply type
+To install the latest stable version type:
 
 ```bash
 $ pip install obspy
@@ -58,19 +58,19 @@ to update to the latest stable version.
 
 #### Installing the latest master
 
-If you a have a good reason (make sure to have one, otherwise install the latest stable version as described above) to use the latest master from Github, you can either use
+If you a have a good reason (make sure to have one, otherwise install the latest stable version as described above) to use the latest master from GitHub, you can either use
 
 ```bash
 $ pip install obspy==dev
 ```
 
-or checkout out our git repository and install it from there.
+or checkout out the git repository.
 
 ```bash
 $ git clone https://github.com/obspy/obspy.git
 $ cd obspy
 $ pip install .         # for a normal installation
-$ pip install -e . -v    # for a developers installation
+$ pip install -e -v .   # for an editable installation
 ```
 
 ### Testing the installation
