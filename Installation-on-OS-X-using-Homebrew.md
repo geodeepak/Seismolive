@@ -22,7 +22,7 @@ evaluates to `/usr/local/bin/pip` before continuing.
 
 ### Installing the Scientific Python Stack and other ObsPy dependencies
 
-You can use `pip` to install the remaining ObsPy dependencies and must-haves.
+Use `pip` to install the remaining ObsPy dependencies and a few must-have packages.
 
 ```bash
 $ pip install ipython
