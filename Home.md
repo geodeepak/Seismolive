@@ -44,7 +44,7 @@ Detailed informations on installing the latest stable version of ObsPy on variou
 * via [[Anaconda|Installation via Anaconda]], a scientific Python distribution
 * via [[PyPi or from source|Installation via PyPi/from source]], applicable to Linux and OSX
 
-If you intend on performing parallel processing with Python and Obspy, please read the following.
+If you intend on performing parallel processing with Python and Obspy, please read the following:
 * [[Notes on Parallel Processing with Python and ObsPy|Notes on Parallel Processing with Python and ObsPy]]
 
 ## Stay Informed
