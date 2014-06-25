@@ -15,7 +15,7 @@ ObsPy has a number of dependencies that need to be available when installing fro
 * sqlalchemy
 * suds (for ObsPy < 0.10)
 * suds-jurko (for ObsPy >= 0.10)
-* argparse (for ObsPy > 0.10 and Python 2.6)
+* argparse (for ObsPy >= 0.10 and Python 2.6)
 
 ##### Optional, but recommended dependencies
 
@@ -23,6 +23,6 @@ ObsPy has a number of dependencies that need to be available when installing fro
 
 ##### Additional dependencies required/optional for running the test suite
 * flake8
-* mock (for ObsPy > 0.10 and Python < 3.3)
+* mock (for ObsPy >= 0.10 and Python < 3.3)
 * nose
 * pyimgur (for ObsPy >= 0.10)
