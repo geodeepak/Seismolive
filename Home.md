@@ -45,6 +45,7 @@ If you intend on performing parallel processing with Python and Obspy, please re
 
 If you are using ObsPy we **strongly recommend** you to join the [ [obspy-announcements] ](http://lists.obspy.org/listinfo/obspy-announcements) and the [ [obspy-users] ](http://lists.obspy.org/listinfo/obspy-users) mailing lists. The **[obspy-announcements]** list will be the place where new additions, important changes and bug fixes will be announced and thus will be very low volume. The **[obspy-users]** list is used to contact other ObsPy users for questions and open discussions.
 
+
 #### [obspy-announcements]
 
   * [Subscribe](mailto:obspy-announcements-request@lists.swapbytes.de?subject=subscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20subscribe.) / [Unsubscribe](mailto:obspy-announcements-request@lists.swapbytes.de?subject=unsubscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20unsubscribe.)
@@ -55,6 +56,11 @@ If you are using ObsPy we **strongly recommend** you to join the [ [obspy-announ
   * [Subscribe](mailto:obspy-users-request@lists.swapbytes.de?subject=subscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20subscribe.) / [Unsubscribe](mailto:obspy-users-request@lists.swapbytes.de?subject=unsubscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20unsubscribe.)
   * [Post a message](mailto:users@obspy.org)
   * [Browse the archive](http://lists.obspy.org/pipermail/obspy-users/)
+
+
+#### Follow us on Twitter
+
+For more frequent news and general information on Python in seismology/science, follow us on twitter: **[@obspy](https://twitter.com/obspy)**
 
 There also is a [feed for commits](https://github.com/obspy/obspy/commits/master.atom). To get emails concerning issues make a GitHub login, 'watch' our repository and set up email notifications for your GitHub account.
 
