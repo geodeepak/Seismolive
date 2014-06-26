@@ -112,4 +112,3 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
  * [[Interesting reading on git, github]]
  * [[Debian packaging]]
  * [[How to: Add a new Submodule]]
- * [[Anaconda Tips]]
