@@ -37,11 +37,11 @@ ObsPy is currently [running and tested](http://tests.obspy.org) on Linux (32 and
 
 Detailed informations on installing the latest stable version of ObsPy on various operating systems:
 
+* via [[Anaconda|Installation via Anaconda]], a scientific Python distribution **(works without root access)**
 * [[Debian/Ubuntu|Installation on Linux via Apt Repository]] via the package manager
 * Mac OS X via [[Homebrew|Installation on OS X using Homebrew]] or [[MacPorts|Installation on Mac OS X using Macports]]
 * Windows from a [[pre-build package (PyPI)|Installation on Windows using a pre-build package (PyPI)]] or from [[source|Installation on Windows From Source]]
 * [[FreeBSD|Installation on FreeBSD]] via the package manager
-* via [[Anaconda|Installation via Anaconda]], a scientific Python distribution **(works without root access)**
 * via [[PyPi or from source|Installation via PyPi/from source]], applicable to Linux and OSX
 
 If you intend on performing parallel processing with Python and Obspy, please read the following:
