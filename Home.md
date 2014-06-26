@@ -47,6 +47,7 @@ Detailed informations on installing the latest stable version of ObsPy on variou
 * Windows from a [[pre-build package (PyPI)|Installation on Windows using a pre-build package (PyPI)]] or from [[source|Installation on Windows From Source]]
 * [[FreeBSD|Installation on FreeBSD]] via the package manager
 * via [[PyPi or from source|Installation via PyPi/from source]], applicable to Linux and OSX
+* for a reproducable installation mostly aimed at servers and clusters, have a look at the [Salt formula for ObsPy](https://github.com/obspy/obspy/tree/master/misc/installer/salt-formula)
 
 If you intend on performing parallel processing with Python and Obspy, please read the following:
 * [[Notes on Parallel Processing with Python and ObsPy|Notes on Parallel Processing with Python and ObsPy]]
