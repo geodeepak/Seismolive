@@ -1,10 +1,58 @@
-## Dependencies
+### Dependencies
 
-ObsPy has a number of dependencies, for the full and up-to-date list go the the 
+ObsPy has a number of dependencies, for the full and up-to-date list go the [[Dependencies Page|Dependencies]].
 
-[[Dependencies Page|Dependencies]]
+To install them, please follow the instructions for the operating system of your choice on this wiki. At the end of this page is a list with a couple of possibilities to install the dependencies on different Linux distributions.
 
-To install them, please follow the instructions for the operating system of your choice on this wiki. The following list a couple of possibilities to install (possibly not complete set but should get you started) the dependencies on different Linux distributions.
+ObsPy can only be installed from source if all dependencies have been installed or can be automatically installed during the installation procedure. Most Python dependencies (except NumPy) will be installed automatically during the installation of ObsPy if they are not available.
+
+### On non-root Access
+
+Many institutions don't grant root access to their computers. In that case there are a couple of possibilities:
+
+* **Recommended**: The [[Anaconda|Installation-via-Anaconda]] installer works without root access and is very convenient. 
+* Another possibility is to use the provided system Python and install packages on top of it with the help of so called [virtual environments](http://virtualenv.readthedocs.org).
+* `pip` can (in most cases) install Python packages locally: `pip install --user PACKAGE`
+* Install a complete Python distribution from source. This is for advanced users only but easy enough if you know what you are doing.
+
+### Installing ObsPy
+
+#### Stable Version
+
+Recommended for normal users that do not intend on contributing code to ObsPy. If you have internet access on the machine:
+
+```bash
+$ pip install obspy
+```
+
+Otherwise download the latest tarball from [PyPi](https://pypi.python.org/pypi/obspy) and type:
+
+```bash
+$ pip install obspy-0.x.x.zip
+```
+
+#### Development Version
+
+This version is intended for developers or testers of the latest cutting-edge features of ObsPy. Normal users should always install a stable version.
+
+The latest version of ObsPy is available on GitHub. Assuming git is installed you can get it with:
+
+```bash
+$ git clone git@github.com:obspy/obspy.git
+```
+
+Otherwise a [zip archive](https://github.com/obspy/obspy/archive/master.zip) of the latest development version is also available but not suitable if you plan on modifying ObsPy.
+
+Once you acquired it you can install an editable version of ObsPy with:
+
+```bash
+$ cd obspy
+$ pip install -e .
+```
+
+### Dependencies with Package Managers
+
+*These are possibly not complete and/or up-to-date sets but they should get you started.*
 
  * Debian/Ubuntu
 ```bash
@@ -49,77 +97,4 @@ To install them, please follow the instructions for the operating system of your
       yum install -y python-suds
       yum install -y python-sqlalchemy
       yum install -y gcc-gfortran
-```
-
-## Manually from Source
-If necessary (e.g. in case your Python is too old), you still have the possibility of compiling your local Python source tree, which is described in the following (or in this automated script: https://github.com/obspy/sandbox/blob/master/buildbots/install_python.sh ):
-
-### Python
-
-Download the [Python (e.g. 2.6) tar ball](http://www.python.org/download). Install the
-Dependencies: _libreadline5-dev sqlite3 libsqlite3-dev tk8.5 tk8.5-dev tcl8.5 tcl8.5-dev gcc-4.3_ (older tk/tcl libraries plus developer versions do it also). Then do:
-```bash
-mkdir -p $HOME/local/src
-cd $HOME/local/src
-tar -xzf /path/to/Python2.6.tgz
-cd Python 2.6
-./configure --prefix=$HOME/local --enable-unicode=ucs4 && make && make install
-export PATH=$HOME/local/bin:$PATH
-```
-
-**Note:** Do not forget to set the PATH, all the following commands need to be executed by the new local python. The unicode option is needed as NumPy uses 4 bytes unicode and Python interpreter defaults on 2 bytes unicode.
-
-### easy_install
-
-All the following packages are installed via [Distribute](http://pypi.python.org/pypi/distribute) easy_install. Currently there is no official installer for the  Distribute package. But you may just download and run from command line [the Python script](http://python-distribute.org/distribute_setup.py).
-```bash
-wget http://nightly.ziade.org/distribute_setup.py
-python distribute_setup.py
-```
-
-All the following packages are installed via easy_install into your local Python tree. The packages (called eggs) are installed your local python site-packages directory $HOME/local/lib/python2.6/site-packages. All installed packages are listed in $HOME/local/lib/python2.6/site-packages/easy-install.pth. For deinstallation of a package, remove it's entry from the easy_install.pth and delete the corresponding egg file from the site-packages directory.
-
-### NumPy
-
-The installation of [NumPy](http://numpy.scipy.org/) directly via PyPI is often problematic. The better way is to locally compile the package and the local binary via easy\_install to the correct place. Download the NumPy tar ball from http://sourceforge.net/projects/numpy/files.
-Dependencies: _fftw3 fftw3-dev libatlas3gf-base libatlas-base-dev libatlas-headers gfortran_ (any other fortran compiler and headers, developer versions of lapack and blas do it also)
-```bash
-cd $HOME/local/src
-tar -xzf /path/to/numpy-1.3.0.tar.gz
-cd numpy-1.3.0
-python -c 'import setuptools; execfile("setup.py")' bdist_egg
-easy_install dist/numpy-1.3.0-py2.6-linux-i686.egg
-```
-
-### SciPy
-As for NumPy it is better to compile  SciPy locally and install it via easy\_install. Download the SciPy tar ball from http://sourceforge.net/projects/scipy/files.
-Dependencies: same as NumPy plus _g++_
-```bash
-cd $HOME/local/src
-tar -xzf /path/to/scipy-7.1.0.tar.gz
-cd scipy-7.1.0
-python -c 'import setuptools; execfile("setup.py")' bdist_egg
-easy_install dist/scipy-0.7.1-py2.6-linux-i686.egg
-```
-
-### matplotlib
-
-As for NumPy and SciPy it is less problematic to compile matplotlib locally and install it via easy\_install. Download the tar ball from  http://sourceforge.net/projects/matplotlib/files/matplotlib/.
-Dependencies: _libfreetype6 libfreetype6-dev libpng12-0 libpng12-dev zlib1g zlib1g-dev pkg-config_
-```bash
-cd $HOME/local/src
-tar -xzf /path/to/matplotlib-0.99.1.1.tar.gz
-cd matplotlib-0.99.1.1
-vi setup.cfg # comment wxagg and macosx
-python -c 'import setuptools; execfile("setup.py")' bdist_egg
-easy_install dist/matplotlib-0.99.1.1_r0-py2.6-linux-i686.egg
-```
-
-### lxml, IPython
-
-lxml (2.2.2) and IPython (0.10) are mostly unproblematic to install, just grab and install them from PyPI.
-Dependencies: _libxml2 libxml2-dev libxslt1.1 libxslt1-dev zlib1g zlib1g zlib1g-dev_
-```bash
-easy_install ipython
-easy_install lxml
 ```
