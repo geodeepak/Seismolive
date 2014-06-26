@@ -8,11 +8,11 @@ The goal of the ObsPy project is to facilitate **rapid application development f
 
 Please support the project by acknowledging the use of it. This helps us keep it alive. If you use ObsPy (directly or as a dependency of another package) for work resulting in an academic publication, we would be grateful if one of the following papers is cited:
 
-* <em>Moritz Beyreuther, Robert Barsch, Lion Krischer, Tobias Megies, Yannik Behr and Joachim Wassermann</em> (2010)<br>
+* <em>M. Beyreuther, R. Barsch, L. Krischer, T. Megies, Y. Behr and J. Wassermann</em> (2010)<br>
   [ObsPy: A Python Toolbox for Seismology](http://www.seismosoc.org/publications/SRL/SRL_81/srl_81-3_es/)<br>
   _SRL_, 81(3), 530-533<br>
   DPI: [10.1785/gssrl.81.3.530](http://dx.doi.org/10.1785/gssrl.81.3.530)
-* <em>Tobias Megies, Moritz Beyreuther, Robert Barsch, Lion Krischer, Joachim Wassermann</em> (2011)<br>
+* <em>T. Megies, M. Beyreuther, R. Barsch, L. Krischer, J. Wassermann</em> (2011)<br>
   [ObsPy – What can it do for data centers and observatories?](http://www.annalsofgeophysics.eu/index.php/annals/article/view/4838)<br>
   _Annals Of Geophysics_, 54(1), 47-58<br>
   DOI: [10.4401/ag-4838](http://dx.doi.org/10.4401%2Fag-4838)
