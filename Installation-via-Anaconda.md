@@ -6,17 +6,17 @@
 
 To install ObsPy you need a C and a Fortran compiler (does not apply on Windows). On Linux use the package management system of your distribution, on OS X best use Homebrew or MacPorts. Package names are potentially `gcc` and `gfortran`.
 
-### Install some additional packages via Anaconda
+### Install flake8 and basemap
+
+These two packages are missing from the default Anaconda distribution.
 
 ```bash
 $ conda install flake8 basemap
 ```
 
-### Install remaining packages via pip
+### Install obspy
 
 ```bash
-$ pip install suds  # For ObsPy < 0.10
-$ pip install suds-jurko  # For ObsPy >= 0.10
 $ pip install obspy
 ```
 
