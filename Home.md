@@ -17,7 +17,8 @@ Please support the project by acknowledging the use of it. This helps us keep it
   _Annals Of Geophysics_, 54(1), 47-58<br>
   DOI: [10.4401/ag-4838](http://dx.doi.org/10.4401%2Fag-4838)
 
-Alternatively you can also directly cite the used ObsPy version: [DOIs for released ObsPy versions](https://zenodo.org/search?ln=en&p=obspy&action_search=)
+Alternatively you can also directly cite the used ObsPy version:<br>
+[DOIs for released ObsPy versions](https://zenodo.org/search?ln=en&p=obspy&action_search=)
 
 ## News
 ##### [May 4 2014] Release of ObsPy 0.9.2
