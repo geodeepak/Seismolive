@@ -9,7 +9,7 @@ To install ObsPy you need a C and a Fortran compiler (does not apply on Windows)
 ### Install some additional packages via Anaconda
 
 ```bash
-$ conda install nose mock basemap flake8 sqlalchemy
+$ conda install flake8 basemap
 ```
 
 ### Install remaining packages via pip
