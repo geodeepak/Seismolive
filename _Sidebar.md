@@ -1,5 +1,3 @@
-# Repository Status
-
 [![Build Status](https://travis-ci.org/obspy/obspy.svg?branch=master)](https://travis-ci.org/obspy/obspy)
 
 [![PEP8 Status](https://www.obspy.org/pep8.svg?branch=master)](http://pep8.obspy.org)
