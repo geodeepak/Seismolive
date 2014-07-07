@@ -11,14 +11,14 @@ Please support the project by acknowledging the use of it. This helps us keep it
 * <em>M. Beyreuther, R. Barsch, L. Krischer, T. Megies, Y. Behr and J. Wassermann</em> (2010)<br>
   [ObsPy: A Python Toolbox for Seismology](http://www.seismosoc.org/publications/SRL/SRL_81/srl_81-3_es/)<br>
   _SRL_, 81(3), 530-533<br>
-  DPI: [10.1785/gssrl.81.3.530](http://dx.doi.org/10.1785/gssrl.81.3.530)
+  DOI: [10.1785/gssrl.81.3.530](http://dx.doi.org/10.1785/gssrl.81.3.530)
 * <em>T. Megies, M. Beyreuther, R. Barsch, L. Krischer, J. Wassermann</em> (2011)<br>
   [ObsPy – What can it do for data centers and observatories?](http://www.annalsofgeophysics.eu/index.php/annals/article/view/4838)<br>
   _Annals Of Geophysics_, 54(1), 47-58<br>
   DOI: [10.4401/ag-4838](http://dx.doi.org/10.4401%2Fag-4838)
 
 Alternatively you can also directly cite the used ObsPy version:<br>
-[DOIs for released ObsPy versions](https://zenodo.org/search?ln=en&p=obspy&action_search=)
+[DOIs for released ObsPy versions](https://zenodo.org/search?ln=en&p=obspy&action_search=) (e.g. for ObsPy 0.9.2: [10.5281/zenodo.10648](http://dx.doi.org/10.5281/zenodo.10648))
 
 ## News
 ##### [May 4 2014] Release of ObsPy 0.9.2
