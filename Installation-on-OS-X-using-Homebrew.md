@@ -4,7 +4,7 @@ To install Homebrew follow the installation instructions on their homepage (make
 
 ### Installing Python, the Scientific Python Stack and other required packages
 
-The `gcc` formula provides the `gfortran` compiler required by NumPy, SciPy, and ObsPy; the other libraries are required for ipython. Also install a non-system, up-to-date, version of Python. `zmq` and `pyqt` are required for IPython notebook and Qt console, respectively.
+The `gcc` formula provides the `gfortran` compiler required by NumPy, SciPy, and ObsPy. Also install a non-system, up-to-date, version of Python. `zmq` and `pyqt` are required for IPython notebook and Qt console, respectively.
 
 ```bash
 $ brew tap Homebrew/python
