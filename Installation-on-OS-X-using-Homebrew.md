@@ -2,14 +2,14 @@
 
 To install Homebrew follow the installation instructions on their homepage (make sure the [listed requirements](https://github.com/Homebrew/homebrew/wiki/Installation#requirements) are fulfilled).
 
-### Installing Python and other required packages
+### Installing Python, the Scientific Python Stack and other required packages
 
-The Fortran compiler is required by NumPy, SciPy, and ObsPy; the other libraries are required for lxml, matplotlib, ipython, and basemap. Also install a non-system version of Python. `pyqt` is optional but recommended.
+The `gcc` formula provides the `gfortran` compiler required by NumPy, SciPy, and ObsPy; the other libraries are required for ipython. Also install a non-system, up-to-date, version of Python. `zmq` and `pyqt` are required for IPython notebook and Qt console, respectively.
 
 ```bash
+$ brew tap Homebrew/python
 $ brew update
-$ brew install gfortran libxml2 libxslt freetype python geos zmq pyqt
-$ brew link --force freetype
+$ brew install gcc python numpy scipy matplotlib matplotlib-basemap zmq pyqt
 ```
 
 Make sure that
@@ -20,24 +20,13 @@ $ which pip
 
 evaluates to `/usr/local/bin/pip` before continuing. 
 
-### Installing the Scientific Python Stack and other ObsPy dependencies
+### Installing other ObsPy dependencies
 
 Use `pip` to install the remaining ObsPy dependencies and a few must-have packages:
 
 ```bash
-$ pip install ipython
-$ pip install future # For ObsPy >= 0.10
-$ pip install numpy
-$ pip install scipy
-$ pip install matplotlib
-$ pip install suds # Only for ObsPy < 0.10
-$ pip install suds-jurko # For ObsPy >= 0.10
-$ pip install lxml
-$ pip install sqlalchemy
-$ pip install --allow-external basemap --allow-unverified basemap basemap
-$ pip install mock nose flake8
-$ pip install pyzmq
-$ pip install tornado jinja2
+$ pip install mock flake8 # For obspy-runtests
+$ pip install ipython\[all\] # IPython and its main optional dependencies
 ```
 
 ### Installing ObsPy
