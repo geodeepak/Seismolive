@@ -17,7 +17,7 @@ $ sudo yum install gcc-gfortran
 $ sudo zypper install gcc-fortran
 
 # OSX with Homebrew
-$ brew install gfortran
+$ brew install gcc
 ```
 
 
