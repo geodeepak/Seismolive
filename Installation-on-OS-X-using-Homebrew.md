@@ -37,7 +37,7 @@ To install the latest stable version type:
 $ pip install obspy
 ```
 
-you can than at any point type
+you can then at any point type
 
 ```bash
 $ pip install --upgrade obspy
