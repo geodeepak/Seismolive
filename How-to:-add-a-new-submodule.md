@@ -3,4 +3,3 @@
  - add to `KEYWORDS` in setup.py
  - add docs module skeleton: misc/docs/source/packages/obspy.$SUBMODULE.rst
  - add to docs module overview: misc/docs/source/packages/index.rst
- - add to wiki docs overview: https://github.com/obspy/obspy/wiki
