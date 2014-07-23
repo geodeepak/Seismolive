@@ -17,6 +17,7 @@ Currently supported releases are:
     - quantal *(i386, amd64)*
     - raring *(i386, amd64)*
     - saucy *(i386, amd64)*
+    - trusty *(i386, amd64)*
  * [Raspbian Wheezy (hard-float)](http://www.raspbian.org/)
 
 If you are unsure about the codename of your installation you can use the following command to display it:
