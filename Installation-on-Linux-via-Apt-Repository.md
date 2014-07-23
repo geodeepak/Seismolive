@@ -6,7 +6,7 @@ Replace **CODENAME** with the  codename of your [Debian](http://en.wikipedia.org
 deb http://deb.obspy.org CODENAME main
 ```
 
-Currently supported releases are:
+Currently supported releases are (see http://deb.obspy.org/pool/main/p/python-obspy/ for a list of current packages):
 
  * Debian:
     - squeeze *(i386, amd64)*
