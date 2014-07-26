@@ -4,7 +4,7 @@
 
 ### Fortran compiler
 
-To install ObsPy you currently need a C and a Fortran compiler (does not apply on Windows). A C compiler should already be available or, in the case of OSX, is a requirement for the package managers. On Linux use the package management system of your distribution, on OS X best use [Homebrew](http://brew.sh/) or [MacPorts](http://www.macports.org/). The package name is potentially `gfortran`, e.g.
+To install ObsPy you currently need a C and a Fortran compiler (does not apply on Windows*). A C compiler should already be available or, in the case of OSX, is a requirement for the package managers. On Linux use the package management system of your distribution, on OS X best use [Homebrew](http://brew.sh/) or [MacPorts](http://www.macports.org/). The package name is potentially `gfortran`, e.g.
 
 ```bash
 # Debian and Ubuntu (derivates)
@@ -19,6 +19,8 @@ $ sudo zypper install gcc-fortran
 # OSX with Homebrew
 $ brew install gcc
 ```
+*Anaconda for Windows ships with C and Fortran compilers, however compiling on a 64bit Windows may require a small patch by changing line no. 331 in ```AnacondaInstallDir\Lib\site-packages\numpy\distutils\fcompiler\gnu.py```
+to ```pass #raise NotImplementedError("Only MS compiler supported with gfortran on win64")```.
 
 
 ### Install obspy
