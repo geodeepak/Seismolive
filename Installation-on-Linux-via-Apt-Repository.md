@@ -12,11 +12,7 @@ Currently supported releases are (see http://deb.obspy.org/pool/main/p/python-ob
     - squeeze *(i386, amd64)*
     - wheezy *(i386, amd64, [armv6l](http://www.raspbian.org/))*
  * Ubuntu:
-    - lucid *(i386, amd64)*
     - precise *(i386, amd64)*
-    - quantal *(i386, amd64)*
-    - raring *(i386, amd64)*
-    - saucy *(i386, amd64)*
     - trusty *(i386, amd64)*
  * [Raspbian Wheezy (hard-float)](http://www.raspbian.org/)
 
@@ -44,3 +40,5 @@ If you want to uninstall ObsPy and all unneeded dependencies just do:
 ```bash
 sudo apt-get remove python-obspy
 ```
+
+Starting with ObsPy 0.10.0 support for Python3 will be introduced. For newer Debian (starting with "jessie") and Ubuntu (starting with "trusty") releases, `python3-obspy` package will be available. Furthermore ObsPy's test suites will be moved to separate packages `python-obspy-dbg` and `python3-obspy-dbg`.
