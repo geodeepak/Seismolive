@@ -41,4 +41,4 @@ If you want to uninstall ObsPy and all unneeded dependencies just do:
 sudo apt-get remove python-obspy
 ```
 
-Starting with ObsPy 0.10.0 support for Python3 will be introduced. For newer Debian (starting with "jessie") and Ubuntu (starting with "trusty") releases, `python3-obspy` package will be available. Furthermore ObsPy's test suites will be moved to separate packages `python-obspy-dbg` and `python3-obspy-dbg`.
+Starting with ObsPy 0.10.0 support for Python3 will be introduced. For newer Debian (starting with "jessie") and Ubuntu (starting with "trusty") releases, `python3-obspy` package will be available. Furthermore data and image files only needed to run ObsPy's test suites will be moved to a separate package `python-obspy-dbg` which can be opted-out when installing with e.g. `aptitude install -R python-obspy`.
