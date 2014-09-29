@@ -105,6 +105,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [Pisces: A practical seismological database library in Python](http://jkmacc-lanl.github.io/pisces/) [(on GitHub)](https://github.com/jkmacc-lanl/pisces)
    * [HASHpy: Python wrapped fork of HASH first motion focal mechanism code](https://github.com/markcwill/hashpy)
    * [waveloc](http://amaggi.github.io/waveloc/index.html) [(on GitHub)](https://github.com/amaggi/rt-waveloc)
+   * [scisola](http://students.ceid.upatras.gr/~triantafyl/scisola/) [(on GitHub)](https://github.com/nikosT/scisola)
 
 ## Developer Corner
 
