@@ -51,7 +51,7 @@ np.ctypeslib.ndpointer(dtype='int32', ndim=1, flags=native_str('C_CONTIGUOUS'))
 ```
 
 ### decode and encode
-A single code base bytes and str support for python 2 and 3 is quite a challenge. The following examples shows how the following the following python 3 decode encode can work with python 2:
+A single code base bytes and str support for python 2 and 3 is quite a challenge. The following examples shows how the following python 3 decode encode can work with python 2:
 
 #### python 3
 ```python
