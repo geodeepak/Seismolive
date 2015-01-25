@@ -51,6 +51,10 @@ np.ctypeslib.ndpointer(dtype='int32', ndim=1, flags=native_str('C_CONTIGUOUS'))
 ```
 
 ### decode and encode
+It's pretty simple: _always_ use `str`, unless communicating externally, because you should use a definite encoding. In other words, all file reading should be decoded (either through the text mode, or loading binary and decoding manually) and all file writing should be encoded. Python 2 allows you to be a bit lazy and mix the two; Python 3 does not.
+
+The typical pitfall is: Our tests are reading bytes but not decoding them, and the writes in the new code are not encoding the strings to bytes.
+
 A single code base bytes and str support for python 2 and 3 is quite a challenge. The following examples shows how the following python 3 decode encode can work with python 2:
 
 #### python 3
