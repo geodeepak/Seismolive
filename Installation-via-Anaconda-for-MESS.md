@@ -1,6 +1,8 @@
 # Installation of Anaconda Python/ObsPy for MESS
 
-Please go to http://continuum.io/downloads, download and run the Anaconda installer for Python 2.7.
+Please go to http://continuum.io/downloads, download and run the Anaconda installer for Python 2.7:
+
+[[images/anaconda.png]]
 
 **Note:** On Mac/Linux, at the end of installation please confirm `"yes"` when asked if Anaconda Python should be prepended to your `PATH` environment variable.
 
@@ -23,6 +25,10 @@ After successful installation you should be able to start the IPython Notebook (
 ipython notebook
 ```
 
-The IPython Notebook should open in a new browser window or tab.
+The IPython Notebook should open in a new browser window or tab:
+
+[[images/ipython_notebook_server.png]]
 
 Click on `"New Notebook"`, type in the following commands and run the command cell (either click on arrow symbol or type CTRL-Enter).
+
+[[images/ipython_notebook_import_obspy.png]]
