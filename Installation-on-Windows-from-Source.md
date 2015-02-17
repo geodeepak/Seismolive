@@ -10,7 +10,7 @@ See  http://docs.python.org/using/windows.html#excursus-setting-environment-vari
 
 ### C and gfortran Compiler
 
-Building ObsPy requires a C as well as a gfortran compiler. ObsPy has been successfully built using the free GNU compiler of the MinGW project (32- and 64-bit) and Microsoft Visual Studio (32- and 64-bit). See also http://wiki.cython.org/64BitCythonExtensionsOnWindows.
+Building ObsPy requires a C as well as a gfortran compiler. ObsPy has been successfully built using the free GNU compiler of the MinGW project (32- and 64-bit) and Microsoft Visual Studio (32- and 64-bit). See also https://github.com/cython/cython/wiki/64BitCythonExtensionsOnWindows.
 
 ### Git Client
 
