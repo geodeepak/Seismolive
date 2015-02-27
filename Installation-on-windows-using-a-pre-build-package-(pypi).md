@@ -19,10 +19,10 @@ See  http://docs.python.org/using/windows.html#excursus-setting-environment-vari
       * or fetch the unofficial Windows 64 bit releases from
         * http://www.lfd.uci.edu/~gohlke/pythonlibs/ (get the MKL builds for NumPy).
  2. ObsPy and further dependencies can be downloaded via easy_install of the
-    Distribute package. Download and run from the windows command line the 
-    Python script  http://python-distribute.org/distribute_setup.py.
+    Setuptools package. Download and run from the windows command line the 
+    Python script  https://bootstrap.pypa.io/ez_setup.py.
 
-        python.exe distribute_setup.py
+        python.exe ez_setup.py
 
  3. The following depended Python module are needed.
     Run from windows command line:
