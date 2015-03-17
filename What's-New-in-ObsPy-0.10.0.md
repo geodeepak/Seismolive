@@ -89,30 +89,30 @@ st.taper(max_percentage=0.05, type="hann")
 Thanks a bunch to everyone who made this possible! Contributors responsible for the changes in 0.10.0 in alphabetical order:
 
 * Benjamin Sullivan
-* Bernhard Morgenstern
-* Claudio Satriano
-* Elliott Sales de Andrade
-* Emanuel Antunes
+* [Bernhard Morgenstern](https://github.com/bmorg)
+* [Claudio Satriano](https://github.com/claudiodsf)
+* [Elliott Sales de Andrade](https://github.com/QuLogic)
+* [Emanuel Antunes](https://github.com/EPAnt)
 * Henri Martin
-* Joachim Wassermann
-* John Leeman
-* Laura Ermert
-* Leonardo Uieda
-* Lion Krischer
-* Lukas Heiniger
-* Marc Grunberg
+* [Joachim Wassermann](https://github.com/jwassermann)
+* [John Leeman](https://github.com/jrleeman)
+* [Laura Ermert](https://github.com/lermert)
+* [Leonardo Uieda](https://github.com/leouieda)
+* [Lion Krischer](https://github.com/krischer)
+* [Lukas Heiniger](https://github.com/3rdcycle)
+* [Marc Grunberg](https://github.com/marcopovitch)
 * Marius Isken
-* Mark Williams
-* Mortiz Beyreuther
-* Nicolas Rothenhäusler
-* Paul Kaeufl
-* Robert Barsch
-* Sébastien Bonaimé
-* sfieux
-* Thomas Lecocq
-* Tobias Megies
-* Tommaso Fabbri
-* Yannik Behr
+* [Mark Williams](https://github.com/markcwill)
+* [Moritz Beyreuther](https://github.com/mbyt)
+* [Nicolas Rothenhäusler](https://github.com/Rothenhouser)
+* [Paul Kaeufl](https://github.com/kaeufl)
+* [Robert Barsch](https://github.com/barsch)
+* [Sébastien Bonaimé](https://github.com/bonaime)
+* [sfieux](https://github.com/sfieux)
+* [Thomas Lecocq](https://github.com/ThomasLecocq)
+* [Tobias Megies](https://github.com/megies)
+* [Tommaso Fabbri](https://github.com/tfabbri)
+* [Yannik Behr](https://github.com/yannikbehr)
 
 
 ## Full Changelog
