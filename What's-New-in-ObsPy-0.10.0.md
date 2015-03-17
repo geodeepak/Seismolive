@@ -119,8 +119,8 @@ Thanks a bunch to everyone who made this possible! Contributors responsible for 
 
 - Highlights:
   * Python3 support
-  * anaconda support
-  * New formats: AH, CNV, NDK, Datamark, NLLOC, PDAS, ZMAP
+  * Anaconda support
+  * New formats: AH, CNV, Datamark, NDK, NLLOC, PDAS, ZMAP
   * ObsPy licensed under LGPL v3.0 now as a whole.
 - General:
   * Support for Python 3.3 and 3.4 in addition to 2.6 and 2.7
@@ -136,8 +136,6 @@ Thanks a bunch to everyone who made this possible! Contributors responsible for 
     * scipy < 0.10
 - obspy.ah
   * New submodule for reading the AH (Ad Hoc) waveform format
-- obspy.kinemetrics
-  * New submodule for reading the Kinemetrics EVT waveform format
 - obspy.arclink:
   * add support for Poles and Zeros type "B" (Analog, Hz), see #899
 - obspy.core:
@@ -168,6 +166,8 @@ Thanks a bunch to everyone who made this possible! Contributors responsible for 
   * The projections of Catalog.plot() have been modified slightly to provide equal-area projections:
     * The `"cyl"` projection is now named `"global"`. It is now the Mollweide projection.
     * The '"local"` projection now uses the Albers Equal Area projection.
+- obspy.kinemetrics
+  * New submodule for reading the Kinemetrics EVT waveform format
 - obspy.mseed:
   * Support for reading and writing all encodings supported by libmseed.
   * proper error reporting while reading
@@ -213,12 +213,12 @@ Thanks a bunch to everyone who made this possible! Contributors responsible for 
   * add `get_coordinates()` method to inventory and network objects (see #740)
   * read/write support for DataAvailability tags in StationXML files.
   * write support for SACPZ ASCII representation of channel responses.
+- obspy.taup:
+  * Replaced Fortran implementation with much more powerful Python port of Java TauP. This enabled us to drop all Fortran code, which simplifies releases and builds tremendously.
 - obspy.xseed:
   * add support for Poles and Zeros type "B" (Analog, Hz), see #899
 - obspy.zmap:
   * New module which adds ZMAP read/write support
-- obspy.taup:
-  * replaced fortran implementation through much more powerfull python port of java taup. This enabled us to drop all fortan code, which simplifies releases and builds tremendously.
 - scripts:
   * All scripts now require argparse instead of optparse.
   * All scripts now accept -V or --version to print version information.
