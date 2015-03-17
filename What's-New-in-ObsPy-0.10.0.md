@@ -21,7 +21,7 @@ ObsPy now supports Python 3.3 and 3.4 in addition to the existing support of Pyt
 
 ### Anaconda Support
 
-With all the changes in the new ObsPy version we are finally able to offer (Ana)conda packages for all platforms and Python versions. This might seem small but this is a huge time and problem saver when installing ObsPy and other scientific Python packages. Thus this is now the recommended way to install ObsPy. You only need to download Anaconda/Miniconda and install ObsPy including all dependencies with:
+With all the changes in the new ObsPy version we are finally able to offer (Ana)conda packages for all platforms and Python versions. This might seem small but this is a huge time and problem saver when installing ObsPy and other scientific Python packages. Thus this is now the recommended way to install ObsPy. You only need to download Anaconda/Miniconda and then you can simply install ObsPy including all dependencies by running:
 
 ```bash
 $ conda install -c obspy obspy
