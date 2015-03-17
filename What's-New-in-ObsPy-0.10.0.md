@@ -4,6 +4,12 @@ ObsPy 0.10.0 is once again our biggest release yet with over 2200 single commits
 
 We strongly encourage all users to update to the new version as it will effectively end support for the 0.9.x line.
 
+---
+
+> Aside from the occasional change and new feature, there never was any formal funding for ObsPy and it has been developed by enthusiastic volunteers. If you use ObsPy, please make sure to properly [acknowledge](https://github.com/obspy/obspy/wiki#acknowledging) us so we can justify investing time into it.
+
+---
+
 
 ## Major New Features
 
