@@ -7,8 +7,8 @@ On Python 3 strings are now internally Unicode, bytes are their encoded represen
 
 The idea is to to represent raw content like waveforms, XML files or URL request by bytes and BytesIO. We internally convert them to Unicode / str such that the user of the library, will only deal with strings (e.g. `Trace.stats`).
 
-### hastattr
-Python 3 `hasattr()` expects an `AttributeError` no `KeyError` to be raised if the attribute is not found. Thus in order to allow `hasattr()` of an `AttribDict`, `__getattr__` must raise an `AttributeError` instead of an `KeyError`. This was not the case in the past. This change effects many places in our code and might also break some third party code.
+### hasattr
+Python 3 `hasattr()` expects an `AttributeError` no `KeyError` to be raised if the attribute is not found. Thus in order to allow `hasattr()` of an `AttribDict`, `__getattr__` must raise an `AttributeError` instead of an `KeyError`. This was not the case in the past. This change affects many places in our code and might also break some third party code.
 
 ### doctests, unicode prefix
 Doctests are a pain to maintain for a python 2 and python 3 compatible code base. The problem is that the python 3 aware `str` / the compatibility `future.builtins.str` will result in:
@@ -28,7 +28,7 @@ Doctests are a pain to maintain for a python 2 and python 3 compatible code base
 Thus there is a "u" prefix in python2 which will cause the doctests to fail. Solutions range from trying to use print everywhere, use `#doctest: +ELLIPSIS` (e.g. ..."hello"), or just skipping the test. They are all quite awful. 
 
 ### arbitrary order dictionaries
-In contrast to Python 2 dictionaries are now really arbitrary order and the order changes often between test runs. `sorted` is here your frind.
+In contrast to Python 2 dictionaries are now really arbitrary order and the order changes often between test runs. `sorted` is here your friend.
 
 ### accessing single characters in byte strings
 ```python
@@ -68,7 +68,7 @@ b'b\xc3\xa4h'
 ```
 
 #### python 2 (python 3 compatible via future library)
-See also the future package [str](http://python-future.org/str_object.html?highlight=decode#str), (bytes)[http://python-future.org/what_else.html?highlight=decode#bytes] documentation. However, quite a few external libraries cannot deal with these types from the future package.
+See also the future package [str](http://python-future.org/str_object.html?highlight=decode#str), [bytes](http://python-future.org/what_else.html?highlight=decode#bytes) documentation. However, quite a few external libraries cannot deal with these types from the future package.
 ```python
 >>> from __future__ import print_function
 >>> from future.builtins import str, bytes
