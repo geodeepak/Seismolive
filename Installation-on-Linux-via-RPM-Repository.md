@@ -51,3 +51,8 @@ or
 If you wish to install Python 2 packages instead, then simply use `python-obspy`
 in the command above. There is also a `python-obspy-docs` package for offline
 browsing of the documentation (not available for all distributions).
+
+NOTE: Because the `obspy.neries` module is deprecated, it is not available by default.
+If you require this module, then install `python3-suds-jurko` or `python-suds-jurko`
+(also available in this repository). Please note that `obspy.neries` will be removed
+in ObsPy 0.11.0.
