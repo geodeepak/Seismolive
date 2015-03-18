@@ -90,6 +90,7 @@ Thanks a bunch to everyone who made this possible! Contributors responsible for 
 
 * Benjamin Sullivan
 * [Bernhard Morgenstern](https://github.com/bmorg)
+* [Chad Trabant](https://github.com/CTrabant)
 * [Claudio Satriano](https://github.com/claudiodsf)
 * [Elliott Sales de Andrade](https://github.com/QuLogic)
 * [Emanuel Antunes](https://github.com/EPAnt)
