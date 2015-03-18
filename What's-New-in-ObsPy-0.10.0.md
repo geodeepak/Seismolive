@@ -41,8 +41,8 @@ ObsPy's biggest draw has always been its unified and comprehensive file format s
 |----------|-------------------------------------------------------------------------------------------|
 | AH       | Read support for the Ad Hoc waveform format of the Lamont-Doherty Geological Observatory. |
 | CNV      | Write support for the CNV event summary format used by the VELEST program.                |
+| Kinemetrics EVT | Read support for the Kinemetrics EVT format.                                     |
 | NDK      | Read support for the NDK files distributed by the GCMT project.                           |
-| Datamark | Read support for the DataMark waveform format.                                            |
 | NLLOC    | Read/Write support for the NonLinLoc file formats.                                        |
 | PDAS     | Read support for PDAS waveform files.                                                     |
 | ZMAP     | Read/Write support for ZMAP event file format.                                            |
