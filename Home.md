@@ -44,6 +44,7 @@ Detailed information on installing the latest stable version of ObsPy on various
 * via [[Anaconda|Installation via Anaconda]], a scientific Python distribution (all systems) **(works without root access)**
   * Installation information for [MESS 2015](https://www.geophysik.uni-muenchen.de/MESS): see [[here|Installation via Anaconda for MESS]]
 * [[Debian/Ubuntu|Installation on Linux via Apt Repository]] via the package manager
+* [[Fedora/CentOS|Installation on Linux via RPM Repository]] via the package manager
 * Mac OS X via [[Homebrew|Installation on OS X using Homebrew]] or [[MacPorts|Installation on Mac OS X using Macports]]
 * Windows from a [[pre-build package (PyPI)|Installation on Windows using a pre-build package (PyPI)]] or from [[source|Installation on Windows From Source]]
 * [[FreeBSD|Installation on FreeBSD]] via the package manager
