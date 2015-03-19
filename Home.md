@@ -21,14 +21,23 @@ Alternatively you can also directly cite the used ObsPy version:<br>
 [DOIs for released ObsPy versions](https://zenodo.org/search?ln=en&p=obspy&action_search=) (e.g. for ObsPy 0.9.2: [10.5281/zenodo.10648](http://dx.doi.org/10.5281/zenodo.10648))
 
 ## News
+
+##### [March 19 2015] Release of ObsPy 0.10.0
+ObsPy 0.10.0 is once again our biggest release yet with over 2200 single commits from 25 individual contributors!
+We strongly encourage all users to update to the new version as it will effectively end support for the 0.9.x line.
+Major new features are Python 3 support, a new TauP implementation, Anaconda packages, ...
+* [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/0.10.0)
+* [[What's New in ObsPy 0.10.0|What's New in ObsPy 0.10.0]]
+
+
 ##### [May 4 2014] Release of ObsPy 0.9.2
 ObsPy 0.9.2 is a maintenance release and contains the collective bug fixes and minor feature improvements of around 150 commits so we advise all users to upgrade.
-* [Release including full changelog](../releases/tag/0.9.2)
+* [Release including full changelog](https://github.com/obspy/obspy/releases/tag/0.9.2)
 
 ##### [January 9 2014] Release of ObsPy 0.9.0
 ObsPy 0.9.0 offers (amongst many other things) two major new features: support for the FDSN webservices and the FDSN StationXML format.
-* [Release including full changelog](../releases/tag/0.9.0)
-* [Migration guide to ObsPy 0.9.0](wiki/Migration-to-ObsPy-0.9.0)
+* [Release including full changelog](https://github.com/obspy/obspy/releases/tag/0.9.0)
+* [[Migration to ObsPy 0.9.0]]
 
 
 ## Getting Started
