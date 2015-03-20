@@ -4,7 +4,7 @@ To install Homebrew follow the installation instructions on their homepage (make
 
 ### Installing Python, the Scientific Python Stack and other required packages
 
-The `gcc` formula provides the `gfortran` compiler required by NumPy, SciPy, and ObsPy. Also install a non-system, up-to-date, version of Python. `zmq` and `pyqt` are required for IPython notebook and Qt console, respectively.
+The `gcc` formula provides the `gfortran` compiler required by NumPy and SciPy. Also install a non-system, up-to-date, version of Python. `zmq` and `pyqt` are required for IPython notebook and Qt console, respectively.
 
 ```bash
 $ brew tap Homebrew/python
@@ -47,13 +47,7 @@ to update to the latest stable version.
 
 #### Installing the latest master
 
-If you a have a good reason (make sure to have one, otherwise install the latest stable version as described above) to use the latest master from GitHub, you can either use
-
-```bash
-$ pip install obspy==dev
-```
-
-or checkout out the git repository.
+If you a have a good reason (make sure to have one, otherwise install the latest stable version as described above) to use the latest master from GitHub, checkout out the git repository:
 
 ```bash
 $ git clone https://github.com/obspy/obspy.git
