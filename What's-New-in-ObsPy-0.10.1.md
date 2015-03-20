@@ -54,7 +54,7 @@ This is the first release where all code is officially under the LGPLv3 license.
 
 ### Supported Platforms
 
-ObsPy 0.10.0 is compatible with Python `2.6`, `2.7`, `3.3`, and `3.4` and `numpy >= 1.4.0` and `scipy >= 0.7.2`.
+ObsPy 0.10.1 is compatible with Python `2.6`, `2.7`, `3.3`, and `3.4` and `numpy >= 1.4.0` and `scipy >= 0.7.2`.
 
 We officially support (meaning we test on these platforms; it will likely work on others as well):
 
@@ -78,7 +78,7 @@ so make sure to update your system in due time if you run one of these old versi
 
 ## Migration Guide
 
-Code that runs without any warnings on ObsPy 0.9.2 should continue to work just fine under ObsPy 0.10.0. If you update from an even older version you might have to adjust the `Stream/Trace.taper()` calls to the new syntax:
+Code that runs without any warnings on ObsPy 0.9.2 should continue to work just fine under ObsPy 0.10.1. If you update from an even older version you might have to adjust the `Stream/Trace.taper()` calls to the new syntax:
 
 ```python
 st.taper(max_percentage=0.05, type="hann")
@@ -86,7 +86,7 @@ st.taper(max_percentage=0.05, type="hann")
 
 ## Contributors
 
-Thanks a bunch to everyone who made this possible! Contributors responsible for the changes in 0.10.0 in alphabetical order:
+Thanks a bunch to everyone who made this possible! Contributors responsible for the changes in 0.10.1 in alphabetical order:
 
 * Benjamin Sullivan
 * [Bernhard Morgenstern](https://github.com/bmorg)
