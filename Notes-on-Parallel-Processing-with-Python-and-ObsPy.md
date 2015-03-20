@@ -72,8 +72,8 @@ There should be no problems with either of those. Most Linux distributions ship 
 #### Install other BLAS/LAPACK implementation
 Of course not always suitable. Otherwise there are a lot of installation instructions in the web.
 
-#### Wait for Python 3.4
-Python 3.4 will have `forkserver` and `spawn` methods to start new processes. Both should avoid the problem at a slight cost of performance and convenience.
+#### Use Python 3.4
+Python 3.4 has `forkserver` and `spawn` methods to start new processes. Both avoid the problem.
 
 #### Wait until some other software is fixed/adopted
 
