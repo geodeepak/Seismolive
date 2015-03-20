@@ -31,14 +31,6 @@ Otherwise download the latest tarball from [PyPi](https://pypi.python.org/pypi/o
 $ pip install obspy-0.x.x.zip
 ```
 
-##### Fortran Compiler Issues
-
-Sometimes the installation routine attempts to use an incompatible Fortran compiler. f77 is for example not working on RHEL. We recommend to use gfortran as it has proven itsself to work almost everywhere. If you have multiple installed compilers you can force pip (or easy_install, ...) to use a certain compiler:
-
-```bash
-$ F77=gfortran pip install obspy
-```
-
 #### Development Version
 
 This version is intended for developers or testers of the latest cutting-edge features of ObsPy. Normal users should always install a stable version.
@@ -75,8 +67,6 @@ $ pip install -e .
       sudo apt-get install python-lxml
       sudo apt-get install python-sqlalchemy
       sudo apt-get install python-suds
-      sudo apt-get install gfortran
-      sudo apt-get install libgfortran3
       sudo apt-get install ipython
 ```
  * openSUSE
@@ -104,5 +94,4 @@ $ pip install -e .
       yum install -y python-lxml
       yum install -y python-suds
       yum install -y python-sqlalchemy
-      yum install -y gcc-gfortran
 ```
