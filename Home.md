@@ -22,12 +22,12 @@ Alternatively you can also directly cite the used ObsPy version:<br>
 
 ## News
 
-##### [March 19 2015] Release of ObsPy 0.10.0
-ObsPy 0.10.0 is once again our biggest release yet with over 2200 single commits from 25 individual contributors!
+##### [March 20 2015] Release of ObsPy 0.10.1
+ObsPy 0.10.1 is once again our biggest release yet with over 2200 single commits from 25 individual contributors!
 We strongly encourage all users to update to the new version as it will effectively end support for the 0.9.x line.
 Major new features are Python 3 support, a new TauP implementation, Anaconda packages, ...
-* [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/0.10.0)
-* [[What's New in ObsPy 0.10.0|What's New in ObsPy 0.10.0]]
+* [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/0.10.1)
+* [[What's New in ObsPy 0.10.1|What's New in ObsPy 0.10.1]]
 
 
 ##### [May 4 2014] Release of ObsPy 0.9.2
