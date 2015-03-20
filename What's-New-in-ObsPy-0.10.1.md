@@ -1,6 +1,6 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
-ObsPy 0.10.0 is once again our biggest release yet with over 2200 single commits from 25 individual contributors. Great work everyone!
+ObsPy 0.10.1 is once again our biggest release yet with over 2200 single commits from 25 individual contributors. Great work everyone!
 
 We strongly encourage all users to update to the new version as it will effectively end support for the 0.9.x line.
 
