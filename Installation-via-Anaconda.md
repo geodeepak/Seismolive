@@ -2,7 +2,7 @@
 
 **Anaconda works on most systems without root access!**
 
-Just install ObsPy with.
+Just install ObsPy with:
 
 ```bash
 $ conda install -c obspy obspy
