@@ -13,7 +13,7 @@ ObsPy has a number of dependencies that need to be available when installing fro
 * matplotlib
 * lxml
 * sqlalchemy
-* suds-jurko (for obspy.neries)
+* suds-jurko (solely if you want to use obspy.neries)
 * argparse (for Python < 2.7)
 
 ##### Optional, but recommended dependencies
