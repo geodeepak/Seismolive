@@ -2,7 +2,7 @@ ObsPy has a number of dependencies that need to be available when installing fro
 
 ##### Dependencies required before installation
 
-* C and Fortran compilers
+* C
 * A supported version of Python
 * NumPy
 
@@ -14,7 +14,7 @@ ObsPy has a number of dependencies that need to be available when installing fro
 * lxml
 * sqlalchemy
 * suds (for ObsPy < 0.10)
-* suds-jurko (for ObsPy >= 0.10)
+* suds-jurko (for ObsPy >= 0.10 and obspy.neries)
 * argparse (for ObsPy >= 0.10 and Python 2.6)
 
 ##### Optional, but recommended dependencies
