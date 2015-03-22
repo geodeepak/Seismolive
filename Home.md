@@ -53,7 +53,6 @@ ObsPy runs on Python 2.6, 2.7, 3.3, and 3.4.
 Detailed information on installing the latest stable version of ObsPy on various operating systems:
 
 * via [[Anaconda|Installation via Anaconda]], a scientific Python distribution (all systems) **(works without root access)**
-  * Installation information for [MESS 2015](https://www.geophysik.uni-muenchen.de/MESS): see [[here|Installation via Anaconda for MESS]]
 * [[Debian/Ubuntu|Installation on Linux via Apt Repository]] via the package manager
 * [[Fedora/CentOS|Installation on Linux via RPM Repository]] via the package manager
 * Mac OS X via [[Homebrew|Installation on OS X using Homebrew]] or [[MacPorts|Installation on Mac OS X using Macports]]
