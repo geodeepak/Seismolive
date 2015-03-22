@@ -2,20 +2,19 @@ ObsPy has a number of dependencies that need to be available when installing fro
 
 ##### Dependencies required before installation
 
-* C
+* C compiler
 * A supported version of Python
 * NumPy
 
 ##### Dependencies that will be installed during the setup if not available
 
-* future (for ObsPy >= 0.10)
+* future
 * scipy
 * matplotlib
 * lxml
 * sqlalchemy
-* suds (for ObsPy < 0.10)
-* suds-jurko (for ObsPy >= 0.10 and obspy.neries)
-* argparse (for ObsPy >= 0.10 and Python 2.6)
+* suds-jurko (for obspy.neries)
+* argparse (for Python < 2.7)
 
 ##### Optional, but recommended dependencies
 
@@ -23,6 +22,6 @@ ObsPy has a number of dependencies that need to be available when installing fro
 
 ##### Additional dependencies required/optional for running the test suite
 * flake8
-* mock (for ObsPy >= 0.10 and Python < 3.3)
+* mock (for Python < 3.3)
 * nose
-* pyimgur (for ObsPy >= 0.10)
+* pyimgur
