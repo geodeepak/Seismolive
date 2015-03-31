@@ -53,7 +53,7 @@ If you a have a good reason (make sure to have one, otherwise install the latest
 $ git clone https://github.com/obspy/obspy.git
 $ cd obspy
 $ pip install .         # for a normal installation
-$ pip install -e -v .   # for an editable installation
+$ pip install -v -e .   # for an editable installation
 ```
 
 ### Testing the installation
