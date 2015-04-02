@@ -56,7 +56,7 @@ This is the first release where all code is officially under the LGPLv3 license.
 
 ObsPy 0.10.1 is compatible with Python `2.6`, `2.7`, `3.3`, and `3.4` and `numpy >= 1.4.0` and `scipy >= 0.7.2`.
 
-We officially support (meaning we test on these platforms; it will likely work on others as well):
+We officially support (meaning we test on the standard Python distributions of these platforms; it will likely work on others as well):
 
 * Anaconda on all platforms (Linux 32bit/64bit, OSX, and Windows 32bit/64bit)
 * Official Python for Windows from python.org
