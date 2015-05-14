@@ -32,6 +32,11 @@ If you have an older distribution or are not using `dnf`:
 
 and you need to have `yum-plugin-copr` installed.
 
+On CentOS, you will need to install the `epel-release` package to obtain
+some dependencies from the EPEL repositories.
+
+    $ sudo yum install epel-release
+
 ## Manual
 
 Alternatively, you can manually download a `.repo` file and place it in
