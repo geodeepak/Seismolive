@@ -5,6 +5,6 @@
 [![Code Health](https://landscape.io/github/obspy/obspy/master/landscape.png)](https://landscape.io/github/obspy/obspy/master)<br />
 [![PyPI Version](https://pypip.in/v/obspy/badge.svg?style=flat)](https://crate.io/packages/obspy/)<br/>
 [![Downloads](https://pypip.in/d/obspy/badge.svg?style=flat)](https://crate.io/packages/obspy/)<br/>
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16248.svg)](http://dx.doi.org/10.5281/zenodo.16248)<br/>
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.17641.svg)](http://dx.doi.org/10.5281/zenodo.17641)<br/>
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/obspy/obspy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![LGPLv3](https://www.gnu.org/graphics/lgplv3-88x31.png)](https://www.gnu.org/licenses/lgpl.html)
