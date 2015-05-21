@@ -127,6 +127,11 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [HASHpy: Python wrapped fork of HASH first motion focal mechanism code](https://github.com/markcwill/hashpy)
    * [waveloc](http://amaggi.github.io/waveloc/index.html) [(on GitHub)](https://github.com/amaggi/rt-waveloc)
    * [scisola](http://students.ceid.upatras.gr/~triantafyl/scisola/) [(on GitHub)](https://github.com/nikosT/scisola)
+   * [instaseis](http://www.instaseis.net) - Instant Global High Frequency Seismograms
+   * [LASIF](http://www.lasif.net) - Large-Scale Seismic Inversion Framework
+   * [pyflex](http://krischer.github.io/pyflex) - Enhanced port of FLEXWIN
+   * [hypoDDpy](https://github.com/krischer/hypoDDpy) - Run hypoDD in a data driven manner.
+   * [wfs_input_generator](http://krischer.github.io/wfs_input_generator/) - Generate input files for many waveform solvers directly from data.
 
 ## Developer Corner
 
