@@ -66,8 +66,8 @@ Detailed information on installing the latest stable version of ObsPy on various
 * [[Fedora/CentOS|Installation on Linux via RPM Repository]] via the package manager
 * Mac OS X via [[Homebrew|Installation on OS X using Homebrew]] or [[MacPorts|Installation on Mac OS X using Macports]]
 * Windows from a [[pre-build package (PyPI)|Installation on Windows using a pre-build package (PyPI)]] or from [[source|Installation on Windows From Source]]
-* [[FreeBSD|Installation on FreeBSD]] via the package maintainer
-* [[NetBSD|Installation on NetBSD]] via the package maintainer
+* [[FreeBSD|Installation on FreeBSD]] via the package manager
+* [[NetBSD|Installation on NetBSD]] via the package manager
 * via [[PyPi or from source|Installation via PyPi/from source]], applicable to Linux and OSX
 * for a reproducible installation mostly aimed at servers and clusters, have a look at the [Salt formula for ObsPy](https://github.com/obspy/obspy/tree/master/misc/installer/salt-formula)
 
