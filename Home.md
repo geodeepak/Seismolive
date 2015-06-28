@@ -131,6 +131,8 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [pyflex](http://krischer.github.io/pyflex) - Enhanced port of FLEXWIN
    * [hypoDDpy](https://github.com/krischer/hypoDDpy) - Run hypoDD in a data driven manner.
    * [wfs_input_generator](http://krischer.github.io/wfs_input_generator/) - Generate input files for many waveform solvers directly from data.
+   * [rf](https://github.com/trichter/rf) - Calculate receiver functions.
+   * [Qopen](https://github.com/trichter/qopen) - Separation of intrinsic and scattering Q by envelope inversion.
 
 ## Developer Corner
 
