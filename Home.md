@@ -103,6 +103,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
     - [start page](http://docs.obspy.org)
     - [overview of submodules](http://docs.obspy.org/packages/index.html)
  - [for the current developer version](http://docs.obspy.org/master)
+ - [archive for other versions](http://docs.obspy.org/archive)
 
 ## Use Cases / Applications Using ObsPy
 
