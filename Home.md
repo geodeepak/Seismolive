@@ -69,6 +69,7 @@ Detailed information on installing the latest stable version of ObsPy on various
 * [[FreeBSD|Installation on FreeBSD]] via the package manager
 * [[NetBSD|Installation on NetBSD]] via the package manager
 * via [[PyPi or from source|Installation via PyPi/from source]], applicable to Linux and OSX
+* into an existing [Antelope 5.4 on RHEL/CentOS 6](http://geoffdavis.github.io/blog/2014/08/11/installing-obspy-for-antelope-5-dot-4-on-rhel-slash-centos-6/)
 * for a reproducible installation mostly aimed at servers and clusters, have a look at the [Salt formula for ObsPy](https://github.com/obspy/obspy/tree/master/misc/installer/salt-formula)
 
 If you intend on performing parallel processing with Python and Obspy, please read the following:
