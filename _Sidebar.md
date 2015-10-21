@@ -3,8 +3,9 @@
 [![PEP8 Status](http://docs.obspy.org/master/_images/pep8.svg)](http://pep8.obspy.org)<br/>
 [![Coverage Status](https://img.shields.io/coveralls/obspy/obspy.svg)](https://coveralls.io/r/obspy/obspy?branch=master)<br/>
 [![Code Health](https://landscape.io/github/obspy/obspy/master/landscape.png)](https://landscape.io/github/obspy/obspy/master)<br />
-[![PyPI Version](https://pypip.in/v/obspy/badge.svg?style=flat)](https://crate.io/packages/obspy/)<br/>
-[![Downloads](https://pypip.in/d/obspy/badge.svg?style=flat)](https://crate.io/packages/obspy/)<br/>
+[![PyPI Version](https://img.shields.io/pypi/v/obspy.svg)](https://pypi.python.org/pypi/obspy)<br />
+[![Downloads](https://img.shields.io/pypi/dm/obspy.svg)](https://pypi.python.org/pypi/obspy)<br />
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/obspy.svg)](https://pypi.python.org/pypi/obspy/)<br />
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.17641.svg)](http://dx.doi.org/10.5281/zenodo.17641)<br/>
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/obspy/obspy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![LGPLv3](https://www.gnu.org/graphics/lgplv3-88x31.png)](https://www.gnu.org/licenses/lgpl.html)
