@@ -116,7 +116,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [wavePicker](https://github.com/miili/wavePicker)
    * [Antelope Python moment tensor code](http://eqinfo.ucsd.edu/~rnewman/howtos/antelope/moment_tensor/)
    * [Using ObsPy with py2exe](http://www.geophysique.be/en/2011/08/09/using-obspy-modules-with-py2exe/)
-   * [Whisper](http://code-whisper.isterre.fr/html)
+   * [Whisper](https://code-whisper.isterre.fr/)
    * [Wavesdownloader](http://webservices.rm.ingv.it/wavesdownloader/) [(on GitHub)](https://github.com/fabriziobernardi/wavesdownloader)
    * [ADMIRE project](http://www.admire-project.eu/)
    * [pSysmon](http://psysmon.mertl-research.at/doku.php)
