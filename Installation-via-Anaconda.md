@@ -2,7 +2,7 @@
 
 **Anaconda works on most systems without root access!**
 
-Just install [ObsPy conda package from binstar](https://binstar.org/obspy) with:
+Install Anaconda following the instructions on their site, and then just install [ObsPy conda package from binstar](https://binstar.org/obspy) with:
 
 ```bash
 $ conda install -c obspy obspy
