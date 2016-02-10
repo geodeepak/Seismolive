@@ -1,7 +1,7 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
 
-### Rewritten SAC module
+### Rewritten SAC module, `SACTrace` replaces `SacIO`
 
 The old `obspy.sac.sacio` has be rewritten and recycled into a new `obspy.io.sac` module, and the old `SacIO` class is replaced by the `SACTrace` class, which provides a simplified I/O interface, more flexible reference time and relative-time header handling, and better support for round-trip SAC file processing.
 
@@ -49,4 +49,4 @@ Additionally, manually changing the `iztype` header will similarly preserve the 
 
 **Better support for round-trip SAC file processing using ObsPy's `Stream/Trace`**
 
-When using `obspy.read` and `Stream/Trace.write` with SAC files, the new SAC module will preserve the original `iztype` and reference time (if found in `Trace.stats.sac`), thus also preserve any existing relative time headers (e.g. travel-time picks).  The previous SAC module generally produced `iztype = ib` SAC files without checking the previous header `iztype`, which had the possibility of producing invalid relative time headers.
+When using `obspy.read` and `Stream/Trace.write` with SAC files, the new SAC module will preserve the original `iztype` and reference time (if found in `Trace.stats.sac`), thus also preserving any existing relative time headers (e.g. travel-time picks).  The previous SAC module generally produced `iztype = ib` SAC files without checking the previous header `iztype`, which had the possibility of producing invalid relative time headers.
