@@ -26,7 +26,7 @@ sac.write(filename, byteorder='big')
 
 **Flexible reference time and relative time header handling**
 
-The reference time in a SAC file is stored in the headers `nzyear`, `nzjday`, `nzhour`, `nzmin`, `nzsec`, and `nzmsec`.  In `SACTrace`, these times are accessible directly as attributes or through the `SACTrace.reftime` attribute (property), which is a `UTCDateTime` instance.  The reference time can be changed by adding/subtracting seconds from `SACTrace.reftime`, or by setting it to a new `UTCDateTime` instance entirely.  Additionally, any changes to `reftime` will trigger corresponding changes in the relative time headers `a, e, f, t0-t9` such that they stay correctly referenced in absolute time.
+The reference time in a SAC file is stored in the headers `nzyear`, `nzjday`, `nzhour`, `nzmin`, `nzsec`, and `nzmsec`.  In `SACTrace`, these times are accessible directly as attributes or through the `SACTrace.reftime` attribute (property), which is a `UTCDateTime` instance.  The reference time (any any of the relative time headers) can be changed by adding/subtracting seconds, or by setting it to a new `UTCDateTime` instance entirely.  Additionally, any changes to `reftime` will trigger corresponding changes in the relative time headers `a, e, f, t0-t9` such that they stay correctly referenced in absolute time.
 
 ```python
 sac = SACTrace(nzyear=2000, nzjday=1, nzhour=0, nzmin=0, nzsec=0, nzmsec=0,
