@@ -1,11 +1,18 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
 
-### Rewritten SAC module, `SACTrace` replaces `SacIO`
+### Rewritten SAC module
 
-The old `obspy.sac.sacio` has be rewritten and recycled into a new `obspy.io.sac` module, and the old `SacIO` class is replaced by the `SACTrace` class, which provides a simplified I/O interface, more flexible reference time and relative-time header handling, and better support for round-trip SAC file processing.
+The ObsPy SAC plugin has been rewritten, resulting in two changes in `obspy.read` and `Stream/Trace.write` using SAC files, and significant changes in the lower-level handling.  
 
-**Simplified I/O interface**
+**Changes in `obspy.read`**
+
+1. The new SAC module will preserve the original `iztype` and reference time (if found in `Trace.stats.sac`), thus also preserving any existing relative time headers (e.g. travel-time picks).  This better supports round-trip SAC file processing.  The previous SAC module generally produced `iztype = ib` SAC files without checking the previous header `iztype`, which had the possibility of producing invalid relative time headers.  
+2. `obspy.read` does not put unset SAC headers into `trace.stats.sac` unless `debug_headers=True` is set.  This is a change in default behavior.
+
+**`SACTrace` replaces `SacIO`**
+
+The recommended way of reading and writing SAC files is still using `obspy.read`, but users of `obspy.sac.SacIO` will need to be aware of changes.  The old `obspy.sac.sacio` has be rewritten and recycled into a new `obspy.io.sac` subpackage, and the old `SacIO` class is replaced by the `SACTrace` class, which provides a simplified I/O interface and more flexible reference time and relative-time header handling.
 
 The previous `SacIO` I/O methods, `ReadSacFile`, `ReadSacHeader`, `ReadSacXY`, `ReadSacXYHeader`, `WriteSacBinary`, `WriteSacHeader`, and `WriteSacXY` are replaced by just two methods: `SACTrace.read` and `SACTrace.write`.  Reading and writing of header-only vs. full-file, ASCII vs. binary, and big vs little-endian byte order are controlled by keywords in these two methods.  Additionally, producing a `SACTrace` instance from a file does not require initializing an empty class instance first, as was required by `SacIO`.
 
@@ -24,9 +31,7 @@ sac = SACTrace.read(filename, ascii=True)
 sac.write(filename, byteorder='big')
 ```
 
-**Flexible reference time and relative time header handling**
-
-The reference time in a SAC file is stored in the headers `nzyear`, `nzjday`, `nzhour`, `nzmin`, `nzsec`, and `nzmsec`.  In `SACTrace`, these times are accessible directly as attributes or through the `SACTrace.reftime` attribute (property), which is a `UTCDateTime` instance.  The reference time (or any of the relative time headers) can be modified by adding/subtracting seconds, or by setting it to a new `UTCDateTime` instance entirely.  Additionally, any changes to `reftime` will trigger corresponding changes in the relative time headers `a, e, f, t0-t9` such that they stay correctly referenced in absolute time.
+The new `SACTrace` class also has more flexible reference time and relative time header handling.  In `SACTrace`, the SAC reference time (a combination of `nzyear`, `nzjday`, `nzhour`, `nzmin`, `nzsec`, and `nzmsec`) can be accessed and manipulated through the `SACTrace.reftime` attribute (property), which is a `UTCDateTime` instance.  The reference time (or any of the relative time headers) can be modified by adding/subtracting seconds, or by setting it to a new `UTCDateTime` instance entirely.  Any changes to `reftime` will be reflected in the "nz" time headers, and will trigger corresponding changes in the relative time headers `a, e, f, t0-t9` such that they stay correctly referenced in absolute time.
 
 ```python
 sac = SACTrace(nzyear=2000, nzjday=1, nzhour=0, nzmin=0, nzsec=0, nzmsec=0,
@@ -46,7 +51,3 @@ sac.reftime, sac.b, sac.e, sac.t1
 ```
 
 Additionally, manually changing the `iztype` header will similarly preserve the absolute referencing of relative time headers.
-
-**Better support for round-trip SAC file processing using ObsPy's `Stream/Trace`**
-
-When using `obspy.read` and `Stream/Trace.write` with SAC files, the new SAC module will preserve the original `iztype` and reference time (if found in `Trace.stats.sac`), thus also preserving any existing relative time headers (e.g. travel-time picks).  The previous SAC module generally produced `iztype = ib` SAC files without checking the previous header `iztype`, which had the possibility of producing invalid relative time headers.
