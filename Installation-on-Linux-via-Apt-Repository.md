@@ -16,7 +16,8 @@ Currently supported releases are (see http://deb.obspy.org/pool/main/p/python-ob
     - precise *(i386, amd64)*
     - trusty *(i386, amd64)*
     - utopic *(i386, amd64)*
- * [Raspbian Wheezy (hard-float, armv6l)](http://www.raspbian.org/)
+ * [Raspbian wheezy (hard-float, armv6l)](http://www.raspbian.org/)
+ * [Raspbian jessie (hard-float, armv6l)](http://www.raspbian.org/)
 
 If you are unsure about the codename of your installation you can use the following command to display it:
 
