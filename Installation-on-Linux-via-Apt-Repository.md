@@ -9,15 +9,12 @@ deb http://deb.obspy.org CODENAME main
 Currently supported releases are (see http://deb.obspy.org/pool/main/p/python-obspy/ for the most up-to-date list of current packages):
 
  * Debian:
-    - squeeze *(i386, amd64)*
     - wheezy *(i386, amd64, [armv6l](http://www.raspbian.org/))*
-    - jessie *(i386, amd64)*
+    - jessie *(i386, amd64, [armv6l](http://www.raspbian.org/))*
  * Ubuntu:
     - precise *(i386, amd64)*
     - trusty *(i386, amd64)*
-    - utopic *(i386, amd64)*
- * [Raspbian wheezy (hard-float, armv6l)](http://www.raspbian.org/)
- * [Raspbian jessie (hard-float, armv6l)](http://www.raspbian.org/)
+ * [Raspbian wheezy and jessie (hard-float, armv6l)](http://www.raspbian.org/)
 
 If you are unsure about the codename of your installation you can use the following command to display it:
 
