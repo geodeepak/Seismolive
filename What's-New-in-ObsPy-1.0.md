@@ -11,9 +11,11 @@ We strongly encourage all users to update to the new version as it will effectiv
 ---
 
 
-### Supported version
+### Supported Systems
 
-We officially support (meaning we test that they work with ObsPy; other versions - especially newer ones, might work, but we cannot guarantee that):
+We officially support (meaning we test that they work with ObsPy; other versions - especially newer ones, might work, but we cannot guarantee that) the following systems.
+
+Python modules: 
 
 * `Python`: 2.7, 3.3, 3.4, 3.5
 * `numpy`: 1.6 - 1.10
@@ -25,7 +27,8 @@ Supported Operating Systems (mostly 32bit and 64bit):
 
 * `Windows` 
 * `OSX`
-* `Linux` (tested are CentOS/RedHat 7, Debian 7 + 8, Fedora 22 + 23, openSUSE 13.2 + Leap 42.1, Ubuntu 12.04 + 14.04 + 15.10)
+* `Linux` (tested with default packages on CentOS/RedHat 7, Debian 7 + 8, Fedora 22 + 23, openSUSE 13.2 + Leap 42.1, Ubuntu 12.04 + 14.04 + 15.10)
+* `Raspberry Pi`
 
 ### New Internal Structure
 
