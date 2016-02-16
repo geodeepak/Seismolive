@@ -1,7 +1,42 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
+ObsPy has been in developed since 2008 and we now declare it stable enough to be called 1.0. It comes with a large slew of new features, improved stability, and a much better internal structure that enables us to further grow and develop ObsPy.
 
-### Rewritten SAC module
+We strongly encourage all users to update to the new version as it will effectively end support for the 0.10.x line.
+
+---
+
+> Aside from the occasional change and new feature, there never was any formal funding for ObsPy and it has been developed by enthusiastic volunteers. If you use ObsPy, please make sure to properly [acknowledge](https://github.com/obspy/obspy/wiki#acknowledging) us so we can justify investing time into it.
+
+---
+
+### New Internal Structure
+
+Over the years ObsPy has accumulated some cruft and technical debt. In this release we massively restructured ObsPy to ease maintenance to be able to tackle future challenges. **Everything that worked with ObsPy 0.10.2 should still work but you might get a lot of warnings. Please adjust your code so no more warnings are raised. The deprecation reroutes will be removed with ObsPy 1.1**. These warnings should guide you to make your ObsPy codes future proof.
+
+ObsPy is now structured as follows:
+
+* `obspy.clients`: All modules retrieving data from the web or other resources.
+* `obspy.core`: Core classes which are also restructured to yield smaller and more maintainable files.
+* `obspy.io`: All modules reading and writing files in various formats.
+* `obspy.geodetics`: Geographic utilities.
+* `obspy.realtime`: Features for realtime seismogram analysis.
+* `obspy.signal`: All signal processing functions and classes.
+* `obspy.taup`: Theoretical arrival times using the tau-p method.
+
+```bash
+$ python some_obspy_script.py
+
+/Users/lion/workspace/code/obspy/obspy/core/util/deprecation_helpers.py:57: ObsPyDeprecationWarning:
+Function 'obspy.readEvents' is deprecated and will stop working with the next ObsPy version.
+Please use 'obspy.read_events' instead.
+
+/Users/lion/workspace/code/obspy/obspy/core/util/deprecation_helpers.py:68: ObsPyDeprecationWarning:
+Module 'obspy.mseed' is deprecated and will stop working with the next ObsPy version.
+Please import module 'obspy.io.mseed'instead.
+```
+
+### Rewritten SAC Module
 
 The ObsPy SAC plugin has been rewritten, resulting in two changes in `obspy.read` and `Stream/Trace.write` using SAC files, and significant changes in the lower-level handling.  
 
