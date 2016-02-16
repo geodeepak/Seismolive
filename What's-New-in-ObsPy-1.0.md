@@ -10,6 +10,23 @@ We strongly encourage all users to update to the new version as it will effectiv
 
 ---
 
+
+### Supported version
+
+We officially support (meaning we test that they work with ObsPy; other versions - especially newer ones, might work, but we cannot guarantee that):
+
+* `Python`: 2.7, 3.3, 3.4, 3.5
+* `numpy`: 1.6 - 1.10
+* `scipy`: 0.9 - 0.17
+* `matplotlib`: 1.1 - 1.5
+* `basemap`: 1.0.2 - 1.0.7
+
+Supported Operating Systems (mostly 32bit and 64bit):
+
+* `Windows` 
+* `OSX`
+* `Linux` (tested are CentOS/RedHat 7, Debian 7 + 8, Fedora 22 + 23, openSUSE 13.2 + Leap 42.1, Ubuntu 12.04 + 14.04 + 15.10)
+
 ### New Internal Structure
 
 Over the years ObsPy has accumulated some cruft and technical debt. In this release we massively restructured ObsPy to ease maintenance to be able to tackle future challenges. **Everything that worked with ObsPy 0.10.2 should still work but you might get a lot of warnings. Please adjust your code so no more warnings are raised. The deprecation reroutes will be removed with ObsPy 1.1**. These warnings should guide you to make your ObsPy codes future proof.
