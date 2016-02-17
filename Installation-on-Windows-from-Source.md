@@ -35,10 +35,12 @@ Please make sure that the directory to the Git client is also included in the PA
 python.exe get-pip.py
       ```
   3.  The following depended Python module are needed. Run from windows command line: 
+            
       ```cmd
 pip install lxml sqlalchemy
       ```
   4.  We strongly recommend the enhanced Python shell  IPython which can be obtained via:
+            
       ```cmd
 pip install pyreadline ipython
       ```
