@@ -9,7 +9,7 @@ This means that the tip of the current maintenance branch (e.g. "maintenance\_1.
 
 
 ### Roadmap for a bugfix:
- - make new branch "fix\_..." starting at the current maintenance branch, e.g. **"maintenance_1.0.x"**, e.g.
+ - make new branch "fix\_..." starting at the current maintenance branch (e.g. **"maintenance_1.0.x"**), e.g.
 ```bash
 $ git checkout -b fix_some_issue upstream/maintenance_1.0.x
 ```
