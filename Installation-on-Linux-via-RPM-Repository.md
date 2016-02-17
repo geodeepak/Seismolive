@@ -1,9 +1,9 @@
 A [copr repository](https://copr.fedoraproject.org/coprs/qulogic/obspy/) is
 available that provides packages for ObsPy and its dependencies for the
 following distributions:
- * The previous Fedora release (currently 20)
- * The latest Fedora release (currently 21)
- * The next Fedora release (currently 22)
+ * The previous Fedora release (currently 22)
+ * The latest Fedora release (currently 23)
+ * The next Fedora release (currently 24 (when available))
  * Fedora rawhide
  * CentOS/EL 6
  * CentOS/EL 7
@@ -16,7 +16,7 @@ and then [install the desired package(s)](#install-obspy).
 
 # Enable repository
 
-## Fedora 21+ or 20 with `dnf`
+## Fedora 22+
 
 If you're using a version of Linux with `dnf`:
 
@@ -24,9 +24,9 @@ If you're using a version of Linux with `dnf`:
 
 and you need to have `dnf-plugins-core` installed (it is by default.)
 
-## Fedora 20 with `yum` or CentOS
+## CentOS
 
-If you have an older distribution or are not using `dnf`:
+If you are not using `dnf`:
 
     $ sudo yum copr enable qulogic/obspy
 
@@ -56,8 +56,3 @@ or
 If you wish to install Python 2 packages instead, then simply use `python-obspy`
 in the command above. There is also a `python-obspy-docs` package for offline
 browsing of the documentation (not available for all distributions).
-
-NOTE: Because the `obspy.neries` module is deprecated, it is not available by default.
-If you require this module, then install `python3-suds-jurko` or `python-suds-jurko`
-(also available in this repository). Please note that `obspy.neries` will be removed
-in ObsPy 0.11.0.
