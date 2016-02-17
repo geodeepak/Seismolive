@@ -30,15 +30,15 @@ Please make sure that the directory to the Git client is also included in the PA
       *   http://sourceforge.net/projects/matplotlib/files/matplotlib/
     * or fetch the unofficial Windows 64 bit releases from  http://www.lfd.uci.edu/~gohlke/pythonlibs/ (get the MKL builds for NumPy?).
   2.  ObsPy and further dependencies can be downloaded via pip. pip is already installed if you're using Python 2 >=2.7.9 or Python 3 >=3.4, but you'll need to upgrade pip. Download and run from the windows command line the Python script https://bootstrap.pypa.io/get-pip.py.
-      ```bash
+      ```
 python.exe get-pip.py
       ```
   3.  The following depended Python module are needed. Run from windows command line: 
-      ```bash
+      ```
 pip install lxml sqlalchemy
       ```
   4.  We strongly recommend the enhanced Python shell  IPython which can be obtained via:
-      ```bash
+      ```
 pip install pyreadline ipython
       ```
 
