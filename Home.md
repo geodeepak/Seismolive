@@ -21,7 +21,7 @@ Please support the project by acknowledging the use of it. This helps us keep it
   _Computational Science & Discovery_, 8(1), 014003<br>
   DOI: [10.1088/1749-4699/8/1/014003](http://dx.doi.org/10.1088/1749-4699/8/1/014003)
 
-Alternatively you can also directly cite the used ObsPy version:<br>
+You can also cite the used ObsPy version:<br>
 [DOIs for released ObsPy versions](https://zenodo.org/search?ln=en&p=obspy&action_search=) (e.g. for ObsPy 0.10.2: [10.5281/zenodo.17641](http://dx.doi.org/10.5281/zenodo.17641))
 
 ## News
