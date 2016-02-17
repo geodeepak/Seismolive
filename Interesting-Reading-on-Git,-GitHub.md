@@ -2,7 +2,7 @@
    - http://scottchacon.com/2011/08/31/github-flow.html
    - http://nvie.com/posts/a-successful-git-branching-model/
  - convert existing issue into a pull request
-   - can be done using [defunkt/hub](https://github.com/defunkt/hub)
+   - can be done using [github/hub](https://github.com/github/hub)
    - or via a simple POST command, e.g. using `curl`:
 ```bash
 curl --user megies --request POST --data '{"issue": "2", "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/obspy/obspy/pulls
