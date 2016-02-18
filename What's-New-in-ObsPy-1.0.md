@@ -254,7 +254,7 @@ Additionally, manually changing the `iztype` header will similarly preserve the 
 
 ### Full Changelog
 
-`1.0.0` also contains all fixes from `0.10.3` which we so far did not release.
+`1.0.0` also contains all fixes from `0.10.3` which will be released right afterwards as a source distribution only (for special purposes; no binary packages provided).
 
 ```
 1.0.0: 
