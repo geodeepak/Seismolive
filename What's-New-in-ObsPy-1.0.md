@@ -63,7 +63,7 @@ $ conda update -c obspy obspy
 $ pip install -U obspy
 ```
 
-```
+```bash
 # Debian/Ubuntu
 $ apt-get update
 $ apt-get upgrade python-obspy
