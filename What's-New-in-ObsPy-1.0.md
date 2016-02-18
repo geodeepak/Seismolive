@@ -51,7 +51,7 @@ Supported Operating Systems (mostly 32bit and 64bit):
 
 ### Updating ObsPy
 
-Updating should be straight-forwards. So depending on your installation do
+Updating should be straight-forward. So depending on your installation do
 
 ```bash
 # Conda
