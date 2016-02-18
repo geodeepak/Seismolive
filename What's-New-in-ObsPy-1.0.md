@@ -6,6 +6,10 @@ This release contain contributions from 21 separate people. Thanks a bunch every
 
 We strongly encourage all users to update to the new version as it will effectively end support for the `0.10.x` line. Please read at least the [New Internal Structure](#new-internal-structure) section as it might necessitate changes on your side.
 
+This document details significant new features and changes in ObsPy `1.0.0`. It does not list all bug fix and small improvements. The [Full Changelog](#full-changelog) at the end is more comprehensive.
+
+Documentation and resources for this version can (as always) be found at: http://docs.obspy.org
+
 ---
 
 > Aside from the occasional change and new feature, there never was any formal funding for ObsPy and it has been developed by enthusiastic volunteers. If you use ObsPy, please make sure to properly [acknowledge](https://github.com/obspy/obspy/wiki#acknowledging) us so we can justify investing time into it.
