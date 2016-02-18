@@ -1,8 +1,10 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
-ObsPy has been in developed since 2008 and we now declare it stable enough to be called `1.0`. It is a big release with significant internal changes, new features, stability improvements, and much more to prepare ObsPy for future challenges and get rid of accumulated technical debt.
+ObsPy has been in developed since 2008 and we now declare it stable enough to be called `1.0`. It is a big release with significant internal changes, new features, stability enhancements, and much more to prepare ObsPy for future challenges and get rid of accumulated technical debt. This substantially increases the maturity and overall quality of ObsPy and also enhances it with quite a lot of new features.
 
-We strongly encourage all users to update to the new version as it will effectively end support for the `0.10.x` line.
+This release contain contributions from 21 separate people. Thanks a bunch everyone! This would not have been possible without you!
+
+We strongly encourage all users to update to the new version as it will effectively end support for the `0.10.x` line. Please read at least the [New Internal Structure](#new-internal-structure) section as it might necessitate changes on your side.
 
 ---
 
