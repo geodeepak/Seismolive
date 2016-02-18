@@ -1,6 +1,6 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
-ObsPy has been in developed since 2008 and we now declare it stable enough to be called 1.0. It comes with a large slew of new features, improved stability, and a much better internal structure that enables us to further grow and develop ObsPy.
+ObsPy has been in developed since 2008 and we now declare it stable enough to be called 1.0. It is a big release with significant internal changes, new features, stability improvements, and much more to prepare ObsPy for future challenges and get rid of accumulated technical debt.
 
 We strongly encourage all users to update to the new version as it will effectively end support for the 0.10.x line.
 
@@ -17,9 +17,9 @@ We officially support (meaning we test that they work with ObsPy; other versions
 
 Python modules: 
 
-* `Python`: 2.7, 3.3, 3.4, 3.5
-* `numpy`: 1.6 - 1.10
-* `scipy`: 0.9 - 0.17
+* `Python`: 2.7, 3.3, 3.4, 3.5 (we dropped support for 2.6 but added support for 3.5)
+* `numpy`: 1.6 - 1.10 (minimum numpy is now 1.6)
+* `scipy`: 0.9 - 0.17 (minimum scipy is now 0.9)
 * `matplotlib`: 1.1 - 1.5
 * `basemap`: 1.0.2 - 1.0.7
 
@@ -32,7 +32,7 @@ Supported Operating Systems (mostly 32bit and 64bit):
 
 ### New Internal Structure
 
-Over the years ObsPy has accumulated some cruft and technical debt. In this release we massively restructured ObsPy to ease maintenance to be able to tackle future challenges. **Everything that worked with ObsPy 0.10.2 should still work but you might get a lot of warnings. Please adjust your code so no more warnings are raised. The deprecation reroutes will be removed with ObsPy 1.1**. These warnings should guide you to make your ObsPy codes future proof.
+Over the years ObsPy has accumulated some cruft and technical debt. In this release we massively restructured ObsPy to ease maintenance to be able to tackle future challenges. A side effect of all these changes is that it might affect you - our users. We took great care to minimize these effects: **Everything that worked with ObsPy 0.10.2 should still work with ObsPy 1.0.0 but you might get a lot of warnings. Please adjust your code so no more warnings are raised so it will work with future ObsPy versions.**.
 
 ObsPy is now structured as follows:
 
@@ -43,6 +43,8 @@ ObsPy is now structured as follows:
 * `obspy.realtime`: Features for realtime seismogram analysis.
 * `obspy.signal`: All signal processing functions and classes.
 * `obspy.taup`: Theoretical arrival times using the tau-p method.
+
+For example a script might yield the following output:
 
 ```bash
 $ python some_obspy_script.py
@@ -55,6 +57,13 @@ Please use 'obspy.read_events' instead.
 Module 'obspy.mseed' is deprecated and will stop working with the next ObsPy version.
 Please import module 'obspy.io.mseed'instead.
 ```
+
+Thus you should change
+
+1. `obspy.readEvents()` to `obspy.read_events()`
+2. `obspy.mseed` to `obspy.io.mseed`
+
+and your code will continue to work with future ObsPy versions.
 
 ### Rewritten SAC Module
 
