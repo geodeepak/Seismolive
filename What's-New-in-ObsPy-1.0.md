@@ -10,6 +10,9 @@ We strongly encourage all users to update to the new version as it will effectiv
 
 ---
 
+## Index
+
+* [Supported Systems](#supported-systems)
 
 ### Supported Systems
 
