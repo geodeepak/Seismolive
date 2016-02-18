@@ -1,8 +1,8 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
-ObsPy has been in developed since 2008 and we now declare it stable enough to be called 1.0. It is a big release with significant internal changes, new features, stability improvements, and much more to prepare ObsPy for future challenges and get rid of accumulated technical debt.
+ObsPy has been in developed since 2008 and we now declare it stable enough to be called `1.0`. It is a big release with significant internal changes, new features, stability improvements, and much more to prepare ObsPy for future challenges and get rid of accumulated technical debt.
 
-We strongly encourage all users to update to the new version as it will effectively end support for the 0.10.x line.
+We strongly encourage all users to update to the new version as it will effectively end support for the `0.10.x` line.
 
 ---
 
@@ -67,6 +67,8 @@ and your code will continue to work with future ObsPy versions.
 
 ### Support for New Data Formats
 
+ObsPy gained support for a few new data formats. They can be read by just using the normal `obspy.read()`, `obspy.read_events()`, and `obspy.read_inventory()` functions.
+
 * **Support for additional waveform data formats:**
   - Read support for the ASCII format for waveforms from the K-NET and KiK-net strong-motion seismograph networks. See [documentation](http://docs.obspy.org/packages/obspy.io.nied.html).
 * **Support for additional event data formats:**
@@ -75,6 +77,48 @@ and your code will continue to work with future ObsPy versions.
 * **Support for additional station data format:**
   - The FDSN web service station text format can now be read. See [documentation](http://docs.obspy.org/packages/obspy.io.stationtxt.html).
   - Read support for the NIED's moment tensor TEXT format. See [documentation](http://docs.obspy.org/packages/obspy.io.nied.html).
+
+
+### New Clients
+
+With `1.0.0` ObsPy gained support for a couple of new local and remote data sources.
+
+* **SDS file system structure**: The `obspy.clients.filesystem` module has a client to read data from SDS directory structure. Very useful for observatories. See [documentation](http://docs.obspy.org/packages/obspy.clients.filesystem.html)
+* **Syngine**: The `obspy.clients.syngine` modules grants access to the [IRIS Syngine]() service. See [documentation](http://docs.obspy.org/packages/obspy.clients.syngine.html).
+* Additionally we removed the old `obspy.neries` client. The same data can still be accessed with the `obspy.clients.fdsn` client.
+
+
+### Mass Downloader for FDSN Web Services
+
+ObsPy now contains a module to download and integrate data from any number of FDSN web services at once. Users only have to describe the geographic domain and what they want to download and it does it for them. If you routinely download data - check it out: http://docs.obspy.org/packages/autogen/obspy.clients.fdsn.mass_downloader.html
+
+The following picture shows a possible domain restriction to only download data from within Germany:
+
+<img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/mass_downloader_domain.png" width=50%>
+
+
+### New Fancy Event Plots
+
+If an event has moment tensors it can now be plotted in some fancy ways:
+
+```python
+from obspy import read_events
+cat = read_events("/path/to/CMTSOLUTION")
+ev = cat[0]
+ev.plot()
+```
+
+<img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/fancy_event.png" width=50%>
+
+If you have mayavi installed you can even get interactive three dimensional radiation patterns:
+
+```python
+ev.plot(kind="mayavi")
+```
+
+<img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/mayavi_radiation_pattern.png" width=50%>
+
+
 
 ### Rewritten SAC Module
 
