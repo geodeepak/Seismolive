@@ -15,6 +15,7 @@ We strongly encourage all users to update to the new version as it will effectiv
 ## Index
 
 * [Supported Systems](#supported-systems)
+* [Updating ObsPy](#updating-obspy)
 * [New Internal Structure](#new-internal-structure)
 * [Support for New Data Formats](#support-for-new-data-formats)
 * [New Clients](#new-clients)
@@ -47,6 +48,28 @@ Supported Operating Systems (mostly 32bit and 64bit):
 * `OSX`
 * `Linux` (tested with default packages on CentOS/RedHat 7, Debian 7 + 8, Fedora 22 + 23, openSUSE 13.2 + Leap 42.1, Ubuntu 12.04 + 14.04 + 15.10)
 * `Raspberry Pi`
+
+### Updating ObsPy
+
+Updating should be straight-forwards. So depending on your installation do
+
+```bash
+# Conda
+$ conda update -c obspy obspy
+```
+
+```bash
+# Generic Python
+$ pip install -U obspy
+```
+
+```
+# Debian/Ubuntu
+$ apt-get update
+$ apt-get upgrade python-obspy
+```
+
+or whatever your package manager of choice needs to be told to update a package. 
 
 ### New Internal Structure
 
