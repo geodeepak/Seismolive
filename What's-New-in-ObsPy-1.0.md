@@ -65,6 +65,17 @@ Thus you should change
 
 and your code will continue to work with future ObsPy versions.
 
+### Support for New Data Formats
+
+* **Support for additional waveform data formats:**
+  - Read support for the ASCII format for waveforms from the K-NET and KiK-net strong-motion seismograph networks. See [documentation](http://docs.obspy.org/packages/obspy.io.nied.html).
+* **Support for additional event data formats:**
+  - CMTSOLUTION files used by many waveform solvers. See [documentation](http://docs.obspy.org/packages/obspy.io.cmtsolution.html).
+  - ESRI shapefile write support, useful in GIS applications See [documentation](http://docs.obspy.org/packages/obspy.io.shapefile.html).
+* **Support for additional station data format:**
+  - The FDSN web service station text format can now be read. See [documentation](http://docs.obspy.org/packages/obspy.io.stationtxt.html).
+  - Read support for the NIED's moment tensor TEXT format. See [documentation](http://docs.obspy.org/packages/obspy.io.nied.html).
+
 ### Rewritten SAC Module
 
 The ObsPy SAC plugin has been rewritten, resulting in two changes in `obspy.read` and `Stream/Trace.write` using SAC files, and significant changes in the lower-level handling.  
