@@ -13,6 +13,19 @@ We strongly encourage all users to update to the new version as it will effectiv
 ## Index
 
 * [Supported Systems](#supported-systems)
+* [New Internal Structure](#new-internal-structure)
+* [Support for New Data Formats](#support-for-new-data-formats)
+* [New Clients](#new-clients)
+* [Signal Processing Improvements](#signal-processing-improvements)
+* [Changes in the TauP Implementation](#changes-in-the-taup-implementation)
+* [Other Notable Changes](#other-notable-changes)
+* [New Default Colormap](#new-default-colormap)
+* [Mass Downloader for FDSN Web Services](#mass-downloader-for-fdsn-web-services)
+* [New Fancy Event Plots](#new-fancy-event-plots)
+* [Rewritten SAC Module](#rewritten-sac-module)
+* [Full Changelog](#full-changelog)
+
+---
 
 ### Supported Systems
 
@@ -103,7 +116,7 @@ With `1.0.0` ObsPy gained support for a couple of new local and remote data sour
 * Higher order detrending methods. See documentation [here](http://docs.obspy.org/packages/autogen/obspy.signal.detrend.polynomial.html) and [here](http://docs.obspy.org/packages/autogen/obspy.signal.detrend.spline.html).
 
 
-### Changes in the TauP implementation
+### Changes in the TauP Implementation
 
 * Now supports the `nd` velocity model files as an input.
 * Added geographic methods to calculate ray paths and pierce points on geographic bodies. See the [documentation](http://docs.obspy.org/packages/autogen/obspy.taup.tau.TauPyModel.html) for more details: The `get_travel_time_geo()`, `get_pierce_points_geo()`, and `get_ray_paths_geo()` methods are new.
