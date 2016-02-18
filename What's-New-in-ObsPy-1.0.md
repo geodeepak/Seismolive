@@ -94,7 +94,7 @@ ObsPy now contains a module to download and integrate data from any number of FD
 
 The following picture shows a possible domain restriction to only download data from within Germany:
 
-<img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/mass_downloader_domain.png" width=50%>
+<img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/mass_downloader_domain.png" width=70%>
 
 
 ### New Fancy Event Plots
@@ -108,7 +108,7 @@ ev = cat[0]
 ev.plot()
 ```
 
-<img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/fancy_event.png" width=50%>
+<img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/fancy_event.png" width=70%>
 
 If you have mayavi installed you can even get interactive three dimensional radiation patterns:
 
@@ -116,7 +116,7 @@ If you have mayavi installed you can even get interactive three dimensional radi
 ev.plot(kind="mayavi")
 ```
 
-<img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/mayavi_radiation_pattern.png" width=50%>
+<img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/mayavi_radiation_pattern.png" width=70%>
 
 
 
