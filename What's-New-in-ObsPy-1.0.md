@@ -27,10 +27,10 @@ Documentation and resources for this version can (as always) be found at: https:
 * [Signal Processing Improvements](#signal-processing-improvements)
 * [Changes in the TauP Implementation](#changes-in-the-taup-implementation)
 * [Other Notable Changes](#other-notable-changes)
-    * [New Default Colormap](#new-default-colormap)
-    * [Mass Downloader for FDSN Web Services](#mass-downloader-for-fdsn-web-services)
-    * [New Fancy Event Plots](#new-fancy-event-plots)
-    * [Rewritten SAC Module](#rewritten-sac-module)
+* [New Default Colormap](#new-default-colormap)
+* [Mass Downloader for FDSN Web Services](#mass-downloader-for-fdsn-web-services)
+* [New Fancy Event Plots](#new-fancy-event-plots)
+* [Rewritten SAC Module](#rewritten-sac-module)
 * [Full Changelog](#full-changelog)
 
 ---
