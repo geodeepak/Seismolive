@@ -127,7 +127,7 @@ ObsPy gained support for a few new data formats. They can be read by just using 
   - Read support for the NIED's moment tensor TEXT format. See [documentation](https://docs.obspy.org/packages/obspy.io.nied.html).
   - ESRI shapefile write support, useful in GIS applications. See [documentation](https://docs.obspy.org/packages/obspy.io.shapefile.html).
   - Google Earth KML output. See [documentation](https://docs.obspy.org/packages/obspy.io.kml.html).
-  - Read support for SeisComP3 inventory files. See [documentation](https://docs.obspy.org/packages/obspy.io.seiscomp.sc3ml.html).
+  - Read support for SeisComP3 inventory files. See [documentation](https://docs.obspy.org/packages/obspy.io.seiscomp.html).
 
 ### New Clients
 
