@@ -179,7 +179,7 @@ See full Changelog for all details and links to corresponding GitHub issues with
 
 #### New Default Colormap
 
-Where possible, ObsPy now uses a much superior default colormaps. Long story short, the main features of the new colormaps are being perceptually uniform, both in color and greyscale and being friendly to people with different kinds of color blindness. Fret not - you can always revert to the old colormaps if you want to. See this [very informative and entertaining video](https://www.youtube.com/watch?v=xAoljeRJ3lU) or this [blog post](https://bids.github.io/colormap/) for the reasoning behind the change. Scientists should care about how their data are visualized, so it's well worth a watch/read!
+Where possible, ObsPy now uses a much superior default colormap. Long story short, the main features of the new colormap is being perceptually uniform, both in color and greyscale and being friendly to people with different kinds of color blindness. Fret not - you can always revert to the old colormaps if you want to, but first [watch this very informative and entertaining video](https://www.youtube.com/watch?v=xAoljeRJ3lU) or [read this blog post](https://bids.github.io/colormap/) for the reasoning behind the change. Scientists should care about how their data are visualized, so it's well worth a watch/read!
 
 <img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/ppsd.png" width=70%>
 
