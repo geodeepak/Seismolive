@@ -1,12 +1,12 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
-ObsPy has been in developed since 2008 and we now declare it stable enough to be called `1.0`. It is a big release with significant internal changes, new features, stability enhancements, and much more to prepare ObsPy for future challenges and get rid of accumulated technical debt. This substantially increases the maturity and overall quality of ObsPy and also enhances it with quite a lot of new features.
+ObsPy has been in development since 2008 and we now declare it stable enough to be called `1.0`. It is a big release with significant internal changes, new features, stability enhancements, and much more to prepare ObsPy for future challenges and get rid of accumulated technical debt. This substantially increases the maturity and overall quality of ObsPy and also enhances it with quite a lot of new features.
 
 This release contains contributions from 21 separate people. Thanks a bunch everyone! This would not have been possible without you!
 
-We strongly encourage all users to update to the new version as it will effectively end support for the `0.10.x` line. Please read at least the [New Internal Structure](#new-internal-structure) section as it might necessitate changes on your side.
+We strongly encourage all users to update to the new version as it will effectively end support for the `0.10.x` line (we will post a final source distribution-only `0.10.3` release soon). Please read at least the [New Internal Structure](#new-internal-structure) section as it might necessitate changes on your side.
 
-This document details significant new features and changes in ObsPy `1.0.0`. It does not list all bug fix and small improvements. The [Full Changelog](#full-changelog) at the end is more comprehensive.
+This document details significant new features and changes in ObsPy `1.0.0`. It does not list all bug fixes and small improvements. The [Full Changelog](#full-changelog) at the end is more comprehensive.
 
 Documentation and resources for this version can (as always) be found at: https://docs.obspy.org
 
@@ -23,20 +23,21 @@ Documentation and resources for this version can (as always) be found at: https:
 * [New Internal Structure](#new-internal-structure)
 * [Support for New Data Formats](#support-for-new-data-formats)
 * [New Clients](#new-clients)
+* [Major improvements to PPSD class](#major-improvements-to-ppsd-class)
 * [Signal Processing Improvements](#signal-processing-improvements)
 * [Changes in the TauP Implementation](#changes-in-the-taup-implementation)
 * [Other Notable Changes](#other-notable-changes)
-* [New Default Colormap](#new-default-colormap)
-* [Mass Downloader for FDSN Web Services](#mass-downloader-for-fdsn-web-services)
-* [New Fancy Event Plots](#new-fancy-event-plots)
-* [Rewritten SAC Module](#rewritten-sac-module)
+    * [New Default Colormap](#new-default-colormap)
+    * [Mass Downloader for FDSN Web Services](#mass-downloader-for-fdsn-web-services)
+    * [New Fancy Event Plots](#new-fancy-event-plots)
+    * [Rewritten SAC Module](#rewritten-sac-module)
 * [Full Changelog](#full-changelog)
 
 ---
 
 ### Supported Systems
 
-We officially support (meaning we test that they work with ObsPy; other versions - especially newer ones, might work, but we cannot guarantee that) the following systems.
+We officially support the following systems (meaning we test that they work with ObsPy; other versions - especially newer ones, might work, but we cannot guarantee that).
 
 Python modules: 
 
@@ -51,14 +52,14 @@ Supported Operating Systems (mostly 32bit and 64bit):
 * `Windows` 
 * `OSX`
 * `Linux` (tested with default packages on CentOS/RedHat 7, Debian 7 + 8, Fedora 22 + 23, openSUSE 13.2 + Leap 42.1, Ubuntu 12.04 + 14.04 + 15.10)
-* `Raspberry Pi`
+* `Raspberry Pi` (Raspbian Wheezy + Jessie)
 
 ### Updating ObsPy
 
 Updating should be straight-forward. So depending on your installation do
 
 ```bash
-# Conda
+# Anaconda Python Distribution
 $ conda update -c obspy obspy
 ```
 
@@ -69,8 +70,9 @@ $ pip install -U obspy
 
 ```bash
 # Debian/Ubuntu
+# add debs.obspy.org to your /etc/sources.list first
 $ apt-get update
-$ apt-get upgrade python-obspy
+$ apt-get upgrade python-obspy  # and/or python3-obspy
 ```
 
 or whatever your package manager of choice needs to be told to update a package. 
@@ -123,18 +125,31 @@ ObsPy gained support for a few new data formats. They can be read by just using 
 * **Support for additional station data format:**
   - The FDSN web service station text format can now be read. See [documentation](https://docs.obspy.org/packages/obspy.io.stationtxt.html).
   - Read support for the NIED's moment tensor TEXT format. See [documentation](https://docs.obspy.org/packages/obspy.io.nied.html).
+  - ESRI shapefile write support, useful in GIS applications. See [documentation](https://docs.obspy.org/packages/obspy.io.shapefile.html).
   - Google Earth KML output. See [documentation](https://docs.obspy.org/packages/obspy.io.kml.html).
   - Read support for SeisComP3 inventory files. See [documentation](https://docs.obspy.org/packages/obspy.io.seiscomp.sc3ml.html).
-
 
 ### New Clients
 
 With `1.0.0` ObsPy gained support for a couple of new local and remote data sources.
 
-* **SDS file system structure**: The `obspy.clients.filesystem` module has a client to read data from SDS directory structure. Very useful for observatories. See [documentation](https://docs.obspy.org/packages/obspy.clients.filesystem.html)
+* **SDS file system structure**: The `obspy.clients.filesystem` module has a client to read data from SDS directory structure (or organize your own data in an SDS structure). Very useful for observatories. See [documentation](https://docs.obspy.org/packages/obspy.clients.filesystem.html)
 * **Syngine**: The `obspy.clients.syngine` modules grants access to the [IRIS Syngine](https://ds.iris.edu/ds/products/syngine/) service. See [documentation](https://docs.obspy.org/packages/obspy.clients.syngine.html).
-* Additionally we removed the old `obspy.neries` client. The same data can still be accessed with the `obspy.clients.fdsn` client.
+* The old, deprecated `obspy.neries` client has been removed. The same data can be accessed with the `obspy.clients.fdsn` client.
 
+### Major improvements to PPSD class
+
+The [PPSD](https://docs.obspy.org/packages/autogen/obspy.signal.spectral_estimation.PPSD.html) class has seen some major improvements and changes since the last stable release:
+
+* The Algorithm for power spectral density computation has been improved, affecting data especially at the long-period band (noise was generally overestimated at high periods)
+* `PPSD` now stores the psd for each individual time segment, so after processing all data, arbitrary stacks (e.g. by time span, day of time, day of year, ...) are possible now (see `PPSD.calculate_histogram`)
+* Metadata can now be provided to `PPSD` during initialization in any kind of format supported by ObsPy (StationXML, dataless SEED, RESP, ...)
+* Instrument response calculations now take into account the full response (i.e. not only poles and zeros and overall sensitivity)
+* Storing/loading data processed in a `PPSD` instance is now working without problems across dependency versions by using numpy's `npz` binary format, and saved `PPSD` data from multiple files can be combined (see `PPSD.save_npz()`, `PPSD.load_npz()` and `PPSD.add_npz()`)
+* Default colormap for PPSD is now `viridis`, see `PPSD.plot()` documentation how to use PQLX style colormap, x-Axis can now be switched to frequency in the plot
+* Bin width and smoothing width in the histogram can now be controlled during `PPSD` initialization, also period limits for binning can be explicitly specified, so that computations across data on different sampling rates can share the same histogram layout
+
+See full Changelog for all details and links to corresponding GitHub issues with full discussion.
 
 ### Signal Processing Improvements
 
@@ -162,13 +177,13 @@ With `1.0.0` ObsPy gained support for a couple of new local and remote data sour
 * **obspy.imaging**  
   - Now also supports `cartopy` as an alternative to `basemap`. Will be used if installed and requested.
 
-### New Default Colormap
+#### New Default Colormap
 
-Where possible ObsPy now uses a much superior default colormap. Fret not - you can always revert to the old colormaps if you want to. See this [video](https://www.youtube.com/watch?v=xAoljeRJ3lU) for the reasoning behind the change. Well worth a watch!
+Where possible, ObsPy now uses a much superior default colormaps. Long story short, the main features of the new colormaps are being perceptually uniform, both in color and greyscale and being friendly to people with different kinds of color blindness. Fret not - you can always revert to the old colormaps if you want to. See this [very informative and entertaining video](https://www.youtube.com/watch?v=xAoljeRJ3lU) or this [blog post](https://bids.github.io/colormap/) for the reasoning behind the change. Scientists should care about how their data are visualized, so it's well worth a watch/read!
 
 <img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/ppsd.png" width=70%>
 
-### Mass Downloader for FDSN Web Services
+#### Mass Downloader for FDSN Web Services
 
 ObsPy now contains a module to download and integrate data from any number of FDSN web services at once. Users only have to describe the geographic domain and what they want to download and it does it for them. If you routinely download data - check it out: https://docs.obspy.org/packages/autogen/obspy.clients.fdsn.mass_downloader.html
 
@@ -177,7 +192,7 @@ The following picture shows a possible domain restriction to only download data 
 <img src="https://raw.githubusercontent.com/wiki/obspy/obspy/images/mass_downloader_domain.png" width=70%>
 
 
-### New Fancy Event Plots
+#### New Fancy Event Plots
 
 If an event has moment tensors it can now be plotted in some fancy ways:
 
@@ -200,7 +215,7 @@ ev.plot(kind="mayavi")
 
 
 
-### Rewritten SAC Module
+#### Rewritten SAC Module
 
 The ObsPy SAC plugin has been rewritten, resulting in two changes in `obspy.read` and `Stream/Trace.write` using SAC files, and significant changes in the lower-level handling.  
 
