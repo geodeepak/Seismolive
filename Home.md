@@ -26,6 +26,13 @@ You can also cite the used ObsPy version:<br>
 
 ## News
 
+##### [Feb 19 2016] Release of ObsPy 1.0.0
+This is a big release with significant internal changes, new features, stability improvements, and
+much more to prepare ObsPy for future challenges and get rid of accumulated technical debt. It is now stable enough to officially declare it version 1.0. Changes are broad and numerous - follow these links to learn more:
+
+* [[What's New in ObsPy 1.0|What's New in ObsPy 1.0]]
+* [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/1.0.0)
+
 ##### [May 15 2015] Release of ObsPy 0.10.2
 ObsPy 0.10.2 is a maintenance release and it contains a number of bug fixes and minor feature improvements so we advise all users to upgrade through one of the usual channels.
 
