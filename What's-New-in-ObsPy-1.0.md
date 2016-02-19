@@ -8,7 +8,7 @@ We strongly encourage all users to update to the new version as it will effectiv
 
 This document details significant new features and changes in ObsPy `1.0.0`. It does not list all bug fix and small improvements. The [Full Changelog](#full-changelog) at the end is more comprehensive.
 
-Documentation and resources for this version can (as always) be found at: http://docs.obspy.org
+Documentation and resources for this version can (as always) be found at: https://docs.obspy.org
 
 ---
 
@@ -41,8 +41,8 @@ We officially support (meaning we test that they work with ObsPy; other versions
 Python modules: 
 
 * `Python`: 2.7, 3.3, 3.4, 3.5 (we dropped support for 2.6 but added support for 3.5)
-* `numpy`: 1.6 - 1.10 (minimum numpy is now 1.6)
-* `scipy`: 0.9 - 0.17 (minimum scipy is now 0.9)
+* `NumPy`: 1.6 - 1.10 (minimum NumPy is now 1.6)
+* `SciPy`: 0.9 - 0.17 (minimum SciPy is now 0.9)
 * `matplotlib`: 1.1 - 1.5
 * `basemap`: 1.0.2 - 1.0.7
 
@@ -77,7 +77,7 @@ or whatever your package manager of choice needs to be told to update a package.
 
 ### New Internal Structure
 
-Over the years ObsPy has accumulated some cruft and technical debt. In this release we massively restructured ObsPy to ease maintenance to be able to tackle future challenges. A side effect of all these changes is that it might affect you - our users. We took great care to minimize these effects: **Everything that worked with ObsPy 0.10.2 should still work with ObsPy 1.0.0 but you might get a lot of warnings. Please adjust your code so no more warnings are raised so it will work with future ObsPy versions.**.
+Over the years ObsPy has accumulated some cruft and technical debt. In this release we have massively restructured ObsPy to ease maintenance and to be able to tackle future challenges. A side effect of all these changes is that it might affect you - our users. We took great care to minimize these effects: **Everything that worked with ObsPy 0.10.2 should still work with ObsPy 1.0.0 but you might get a lot of warnings. Please adjust your code until no more warnings are raised so it will work with future ObsPy versions.**.
 
 ObsPy is now structured as follows:
 
@@ -100,7 +100,7 @@ Please use 'obspy.read_events' instead.
 
 /Users/lion/workspace/code/obspy/obspy/core/util/deprecation_helpers.py:68: ObsPyDeprecationWarning:
 Module 'obspy.mseed' is deprecated and will stop working with the next ObsPy version.
-Please import module 'obspy.io.mseed'instead.
+Please import module 'obspy.io.mseed' instead.
 ```
 
 Thus you should change
@@ -115,41 +115,41 @@ and your code will continue to work with future ObsPy versions.
 ObsPy gained support for a few new data formats. They can be read by just using the normal `obspy.read()`, `obspy.read_events()`, and `obspy.read_inventory()` functions.
 
 * **Support for additional waveform data formats:**
-  - Read support for the ASCII format for waveforms from the K-NET and KiK-net strong-motion seismograph networks. See [documentation](http://docs.obspy.org/packages/obspy.io.nied.html).
+  - Read support for the ASCII format for waveforms from the K-NET and KiK-net strong-motion seismograph networks. See [documentation](https://docs.obspy.org/packages/obspy.io.nied.html).
 * **Support for additional event data formats:**
-  - CMTSOLUTION files used by many waveform solvers. See [documentation](http://docs.obspy.org/packages/obspy.io.cmtsolution.html).
-  - ESRI shapefile write support, useful in GIS applications. See [documentation](http://docs.obspy.org/packages/obspy.io.shapefile.html).
-  - Google Earth KML output. See [documentation](http://docs.obspy.org/packages/obspy.io.kml.html).
+  - CMTSOLUTION files used by many waveform solvers. See [documentation](https://docs.obspy.org/packages/obspy.io.cmtsolution.html).
+  - ESRI shapefile write support, useful in GIS applications. See [documentation](https://docs.obspy.org/packages/obspy.io.shapefile.html).
+  - Google Earth KML output. See [documentation](https://docs.obspy.org/packages/obspy.io.kml.html).
 * **Support for additional station data format:**
-  - The FDSN web service station text format can now be read. See [documentation](http://docs.obspy.org/packages/obspy.io.stationtxt.html).
-  - Read support for the NIED's moment tensor TEXT format. See [documentation](http://docs.obspy.org/packages/obspy.io.nied.html).
-  - Google Earth KML output. See [documentation](http://docs.obspy.org/packages/obspy.io.kml.html).
-  - Read support for SeisComP3 inventory files. See [documentation](http://docs.obspy.org/packages/obspy.io.seiscomp.sc3ml.html).
+  - The FDSN web service station text format can now be read. See [documentation](https://docs.obspy.org/packages/obspy.io.stationtxt.html).
+  - Read support for the NIED's moment tensor TEXT format. See [documentation](https://docs.obspy.org/packages/obspy.io.nied.html).
+  - Google Earth KML output. See [documentation](https://docs.obspy.org/packages/obspy.io.kml.html).
+  - Read support for SeisComP3 inventory files. See [documentation](https://docs.obspy.org/packages/obspy.io.seiscomp.sc3ml.html).
 
 
 ### New Clients
 
 With `1.0.0` ObsPy gained support for a couple of new local and remote data sources.
 
-* **SDS file system structure**: The `obspy.clients.filesystem` module has a client to read data from SDS directory structure. Very useful for observatories. See [documentation](http://docs.obspy.org/packages/obspy.clients.filesystem.html)
-* **Syngine**: The `obspy.clients.syngine` modules grants access to the [IRIS Syngine]() service. See [documentation](http://docs.obspy.org/packages/obspy.clients.syngine.html).
+* **SDS file system structure**: The `obspy.clients.filesystem` module has a client to read data from SDS directory structure. Very useful for observatories. See [documentation](https://docs.obspy.org/packages/obspy.clients.filesystem.html)
+* **Syngine**: The `obspy.clients.syngine` modules grants access to the [IRIS Syngine](https://ds.iris.edu/ds/products/syngine/) service. See [documentation](https://docs.obspy.org/packages/obspy.clients.syngine.html).
 * Additionally we removed the old `obspy.neries` client. The same data can still be accessed with the `obspy.clients.fdsn` client.
 
 
 ### Signal Processing Improvements
 
-* New `Trace/Stream.slide()` method to ease the implementation of windows algorithms. See [documentation](http://docs.obspy.org/packages/autogen/obspy.core.trace.Trace.slide.html).
-* New `Trace/Stream.remove_sensitivity()` method to only apply a constant factor but not remove the full response. See [documentation](http://docs.obspy.org/packages/autogen/obspy.core.trace.Trace.remove_sensitivity.html).
-* **Much more stable butterworth filters!** Really worth a try - higher order and narrower filters are now stable. See [here](https://github.com/obspy/obspy/pull/1028) for some more details.
-* Sinc based reconstruction filter. This is essentially an almost optimal resampling filter and in many cases you should use it as it has the best results. See [documentation](http://docs.obspy.org/packages/autogen/obspy.signal.interpolation.lanczos_interpolation.html) and [here](https://github.com/obspy/obspy/pull/1101) for more details.
-* Higher order detrending methods. See documentation [here](http://docs.obspy.org/packages/autogen/obspy.signal.detrend.polynomial.html) and [here](http://docs.obspy.org/packages/autogen/obspy.signal.detrend.spline.html).
+* New `Trace/Stream.slide()` method to ease the implementation of windows algorithms. See [documentation](https://docs.obspy.org/packages/autogen/obspy.core.trace.Trace.slide.html).
+* New `Trace/Stream.remove_sensitivity()` method to only apply a constant factor but not remove the full response. See [documentation](https://docs.obspy.org/packages/autogen/obspy.core.trace.Trace.remove_sensitivity.html).
+* **Much more stable Butterworth filters!** Really worth a try - higher order and narrower filters are now stable. See [here](https://github.com/obspy/obspy/pull/1028) for some more details.
+* Sinc based reconstruction filter. This is essentially an almost optimal resampling filter and in many cases you should use it as it has the best results. See [documentation](https://docs.obspy.org/packages/autogen/obspy.signal.interpolation.lanczos_interpolation.html) and [here](https://github.com/obspy/obspy/pull/1101) for more details.
+* Higher order detrending methods. See documentation [here](https://docs.obspy.org/packages/autogen/obspy.signal.detrend.polynomial.html) and [here](https://docs.obspy.org/packages/autogen/obspy.signal.detrend.spline.html).
 
 
 ### Changes in the TauP Implementation
 
 * Now supports the `nd` velocity model files as an input.
-* Added geographic methods to calculate ray paths and pierce points on geographic bodies. See the [documentation](http://docs.obspy.org/packages/autogen/obspy.taup.tau.TauPyModel.html) for more details: The `get_travel_time_geo()`, `get_pierce_points_geo()`, and `get_ray_paths_geo()` methods are new.
-* Support for burried receivers.
+* Added geographic methods to calculate ray paths and pierce points on geographic bodies. See the [documentation](https://docs.obspy.org/packages/autogen/obspy.taup.tau.TauPyModel.html) for more details: The `get_travel_time_geo()`, `get_pierce_points_geo()`, and `get_ray_paths_geo()` methods are new.
+* Support for buried receivers.
 * In general more accurate and faster calculations.
 * We now ship with a bunch more velocity models: `1066a`, `1066b`, `ak135`, `ak135f`, `ak135f_no_mud`, `herrin`, `iasp91`, `jb`, `prem`, `pwdk`, `sp6`
 
@@ -157,10 +157,10 @@ With `1.0.0` ObsPy gained support for a couple of new local and remote data sour
 ### Other Notable Changes
 
 * **obspy.clients.fdsn**
-  - Can now also download the text representations of stations and events. Much smaller.
+  - Can now also download the text representations of stations and events, which are much smaller, though less flexible.
   - Downloads a gzipped response if possible.
 * **obspy.imaging**  
-  - Now also supports `cartopy` as an alternative to `basemap`. Will be used if installed.
+  - Now also supports `cartopy` as an alternative to `basemap`. Will be used if installed and requested.
 
 ### New Default Colormap
 
@@ -170,7 +170,7 @@ Where possible ObsPy now uses a much superior default colormap. Fret not - you c
 
 ### Mass Downloader for FDSN Web Services
 
-ObsPy now contains a module to download and integrate data from any number of FDSN web services at once. Users only have to describe the geographic domain and what they want to download and it does it for them. If you routinely download data - check it out: http://docs.obspy.org/packages/autogen/obspy.clients.fdsn.mass_downloader.html
+ObsPy now contains a module to download and integrate data from any number of FDSN web services at once. Users only have to describe the geographic domain and what they want to download and it does it for them. If you routinely download data - check it out: https://docs.obspy.org/packages/autogen/obspy.clients.fdsn.mass_downloader.html
 
 The following picture shows a possible domain restriction to only download data from within Germany:
 
@@ -230,7 +230,7 @@ sac = SACTrace.read(filename, ascii=True)
 sac.write(filename, byteorder='big')
 ```
 
-The new `SACTrace` class also has more flexible reference time and relative time header handling.  In `SACTrace`, the SAC reference time (a combination of `nzyear`, `nzjday`, `nzhour`, `nzmin`, `nzsec`, and `nzmsec`) can be accessed and manipulated through the `SACTrace.reftime` attribute (property), which is a `UTCDateTime` instance.  The reference time (or any of the relative time headers) can be modified by adding/subtracting seconds, or by setting it to a new `UTCDateTime` instance entirely.  Any changes to `reftime` will be reflected in the "nz" time headers, and will trigger corresponding changes in the relative time headers `a, e, f, t0-t9` such that they stay correctly referenced in absolute time.
+The new `SACTrace` class also has more flexible reference time and relative time header handling.  In `SACTrace`, the SAC reference time (a combination of `nzyear`, `nzjday`, `nzhour`, `nzmin`, `nzsec`, and `nzmsec`) can be accessed and manipulated through the `SACTrace.reftime` attribute (property), which is a `UTCDateTime` instance.  The reference time (or any of the relative time headers) can be modified by adding/subtracting seconds, or by setting it to a new `UTCDateTime` instance entirely.  Any changes to `reftime` will be reflected in the "nz" time headers, and will trigger corresponding changes in the relative time headers `a`, `e`, `f`, `t0`-`t9` such that they stay correctly referenced in absolute time.
 
 ```python
 sac = SACTrace(nzyear=2000, nzjday=1, nzhour=0, nzmin=0, nzsec=0, nzmsec=0,
