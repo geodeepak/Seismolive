@@ -70,7 +70,7 @@ $ pip install -U obspy
 
 ```bash
 # Debian/Ubuntu
-# add debs.obspy.org to your /etc/sources.list first
+# add debs.obspy.org to your /etc/apt/sources.list first
 $ apt-get update
 $ apt-get upgrade python-obspy  # and/or python3-obspy
 ```
