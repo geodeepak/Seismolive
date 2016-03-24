@@ -77,6 +77,10 @@ ObsPy is currently [running and tested](http://tests.obspy.org) on Linux (32 and
 
 ObsPy runs on Python 2.6, 2.7, 3.3, and 3.4.
 
+**We recommend:**
+ * For individual users: **[[Anaconda|Installation via Anaconda]]**
+ * For system administrators: System Packages (where available, see below)
+
 Detailed information on installing the latest stable version of ObsPy on various operating systems:
 
 * via [[Anaconda|Installation via Anaconda]], a scientific Python distribution (all systems) **(works without root access)**
