@@ -41,7 +41,10 @@ $ conda create -n obspy0.10 python=2.7
 
 ```bash
 $ source activate obspy0.10
-(obspy0.10)$ 
+discarding /path/to/anaconda/bin from PATH
+prepending /path/to/anaconda/envs/obspy0.10/bin to PATH
+(obspy0.10)$ which python  # just to illustrate which python is in use now
+/path/to/anaconda/envs/obspy0.10/bin/python
 ```
 
  * set desired version numbers by pinning in environment (create new text file "pinned" in correct folder, see above)
