@@ -4,6 +4,10 @@ ObsPy is an open-source project dedicated to provide a **Python framework for pr
 
 The goal of the ObsPy project is to facilitate **rapid application development for seismology**.
 
+## Contents
+
+ * [Acknowledging](#Acknowledging)
+
 ## Acknowledging
 
 Please support the project by acknowledging the use of it. This helps us keep it alive. If you use ObsPy (directly or as a dependency of another package) for work resulting in an academic publication, we would be grateful if one of the following papers is cited:
