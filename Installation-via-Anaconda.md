@@ -1,4 +1,4 @@
-[Anaconda](https://store.continuum.io/cshop/anaconda/) (you can also use [Miniconda](http://conda.pydata.org/miniconda.html) for a smaller footprint) is a scientific Python installation shipping with essentially all needed packages. Install it according to the instructions on their homepage. You can use any Anaconda Python version.
+[Anaconda](https://store.continuum.io/cshop/anaconda/) (you can also use [Miniconda](http://conda.pydata.org/miniconda.html) for a smaller footprint) is a scientific Python installation shipping with essentially all needed packages. Install it according to the instructions on their homepage. You can use any Anaconda Python version. An *Anaconda Python installation is completely separate* from any existing system wide or user space Python installation (beware of any paths set in `PYTHONPATH` variable!), so *Anaconda can be tested without the fear of breaking an existing installation*.
 
 **Anaconda works on most systems without root access!**
 
