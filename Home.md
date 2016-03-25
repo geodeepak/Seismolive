@@ -38,7 +38,9 @@ You can also cite the used ObsPy version:<br>
 ## News
 
 ##### [Mar 24 2016] Release of ObsPy 1.0.1
-This is the first bug fix release in the 1.0 release cycle. It does not change functionality/API but fixes several bugs in 1.0.0, most notably fixing decryption of encrypted data from requests on restricted data via ArcLink and some bugs when working with SAC headers in the rewritten SAC module. Please see the full changelog for all details:
+This is the first bug fix release in the 1.0 release cycle. It does not change functionality/API but fixes several bugs in 1.0.0, most notably fixing decryption of encrypted data from requests on restricted data via ArcLink and some bugs when working with SAC headers in the rewritten SAC module.
+
+We recommend all users to upgrade through one of the usual channels. Please see the full changelog for all details:
 
 * [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/1.0.1)
 
