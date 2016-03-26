@@ -16,6 +16,13 @@ conda config --add channels obspy
 $ conda install obspy
 ```
 
+#### Troubleshooting:
+
+ * If you have problems, be sure to check out the [Troubleshooting page of Anaconda](http://conda.pydata.org/docs/troubleshooting.html)
+ * Especially **beware of mixing in Python packages from outside the environment**, not handled/installed by the `conda` package manager. This is usually unwanted and coming from older (and way more sloppy) Python installations and **bound to bring forth very unexpected and hard to debug behavior and errors**. This can happen outside of anaconda's control by..
+   * having [`PYTHONPATH` and `PYTHONHOME` environment variables](http://conda.pydata.org/docs/troubleshooting.html#resolution-for-python-packages-make-sure-you-do-not-have-pythonpath-or-pythonhome-set) set, or (less common) by..
+   * having [Python modules in specific user space locations which Python looks for](http://conda.pydata.org/docs/troubleshooting.html#resolution-for-python-packages-remove-any-site-specific-directories)
+
 #### Tip:
 
 Versions of packages can be fixed by [pinning in Anaconda](http://conda.pydata.org/docs/faq.html#pinning-packages) (e.g. so that certain packages stay on same version even when updating packages that depend on them). It can be a good idea to pin the installed numpy version as many packages are compiled against a certain numpy version and only update numpy deliberately. Also, ObsPy major version can be fixed in the same way to keep an Anaconda environment on the a fixed version, e.g.:
