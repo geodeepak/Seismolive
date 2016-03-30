@@ -7,7 +7,7 @@
  * Add our channel to your Anaconda configuration:
 
 ```bash
-conda config --add channels obspy
+$ conda config --add channels obspy
 ```
 
  * Install pre-compiled [ObsPy conda package from Anaconda cloud](https://anaconda.org/obspy/obspy) with:
