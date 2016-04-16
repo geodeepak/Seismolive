@@ -165,6 +165,21 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [Qopen](https://github.com/trichter/qopen) - Separation of intrinsic and scattering Q by envelope inversion.
    * [EQcorrscan](http://calum-chamberlain.github.io/EQcorrscan/) - Match-filter earthquake detection
 
+#### miscellaneous..
+
+   * https://github.com/ndperezg/taller_obspy
+   * https://github.com/dansand/seismic
+   * https://github.com/kallstadt-usgs/seisk
+   * https://github.com/ovsm-dev/sdp
+   * https://github.com/viictorjs/SEG2Py
+   * https://github.com/xumi1993/seispy
+   * https://github.com/rizac/stream2segment
+   * https://github.com/pysit/pysit
+   * https://github.com/lizstarin/earthquakemap
+   * https://github.com/samhaug/seispy
+   * https://github.com/oceanobservatories/mi-instrument
+
+
 ## Developer Corner
 
  * [Style Guide](http://docs.obspy.org/coding_style.html)
