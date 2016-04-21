@@ -29,6 +29,8 @@ Try to stick to **only using `conda` package manager to install packages wheneve
 
 Versions of packages can be fixed by [pinning in Anaconda](http://conda.pydata.org/docs/faq.html#pinning-packages) (e.g. so that certain packages stay on same version even when updating packages that depend on them). It can be a good idea to pin the installed numpy version as many packages are compiled against a certain numpy version and only update numpy deliberately. Also, ObsPy major version can be fixed in the same way to keep an Anaconda environment on the a fixed version, e.g.:
 
+(Note: Recent `conda` version >=4.0 has significant improvements and properly takes numpy dependent packages into account when trying to update numpy, so pinning numpy is not as important anymore with an updated `conda` package)
+
 ```
 numpy 1.10.*
 matplotlib 1.5.*
