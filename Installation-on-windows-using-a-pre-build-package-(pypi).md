@@ -38,9 +38,9 @@ See  http://docs.python.org/using/windows.html#excursus-setting-environment-vari
 
 Run on command line:
 
-    easy_install obspy
+    pip install obspy
 
 
 ObsPy may be updated at any time using the -U option:
 
-    easy_install -U obspy
+    pip install -U obspy
