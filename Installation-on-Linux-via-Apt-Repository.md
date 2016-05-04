@@ -8,12 +8,13 @@ deb http://deb.obspy.org CODENAME main
 
 Currently supported releases are (see http://deb.obspy.org/pool/main/p/python-obspy/ for the most up-to-date list of current packages):
 
- * Debian:
+ * [Debian](https://www.debian.org/releases/):
     - wheezy *(i386, amd64, [armv6l](http://www.raspbian.org/))*
     - jessie *(i386, amd64, [armv6l](http://www.raspbian.org/))*
- * Ubuntu:
+ * [Ubuntu](https://wiki.ubuntu.com/Releases):
     - precise *(i386, amd64)*
     - trusty *(i386, amd64)*
+    - xenial *(i386, amd64)*
  * [Raspbian wheezy and jessie (hard-float, armv6l)](http://www.raspbian.org/)
 
 If you are unsure about the codename of your installation you can use the following command to display it:
@@ -32,13 +33,14 @@ To install ObsPy including all dependencies:
 
 ```bash
 sudo apt-get update
-sudo apt-get install python-obspy
+# python3 package only available for newer Debian/Ubuntu releases
+sudo apt-get install python-obspy python3-obspy
 ```
 
 If you want to uninstall ObsPy and all unneeded dependencies just do:
 
 ```bash
-sudo apt-get remove python-obspy
+sudo apt-get remove python-obspy python3-obspy
 ```
 
 Starting with ObsPy 0.10.0 support for Python3 was introduced. For newer Debian (starting with "jessie") and Ubuntu (starting with "trusty") releases, `python3-obspy` package will be available. Furthermore data and image files only needed to run ObsPy's test suites will be moved to a separate package `python-obspy-dbg` which can be opted-out when installing with e.g. `aptitude install -R python-obspy`.
