@@ -1,5 +1,5 @@
- - add it in obspy.core.util.base.DEFAULT_MODULES/NETWORK_MODULES
- - add plugin entry points in setup.py (if it is a read/write plugin)
- - add to `KEYWORDS` in setup.py
- - add docs module skeleton: misc/docs/source/packages/obspy.$SUBMODULE.rst
- - add to docs module overview: misc/docs/source/packages/index.rst
+ - add it in `obspy.core.util.base.DEFAULT_MODULES` (if tests can be run without internet access) or `obspy.core.util.base.NETWORK_MODULES`, so that `obspy-runtests` properly picks up the module's test suite
+ - add plugin entry points in setup.py (if it is a read/write plugin), so that `read`/`read_events`/`read_inventory` can look up the reading routine
+ - add docs module skeleton: `misc/docs/source/packages/obspy.$SUBMODULE.rst`, otherwise the submodule's documentation will not be built
+ - add to docs module overview: `misc/docs/source/packages/index.rst`, to get links to the submodule's documentation from the API front page
+ - add to `KEYWORDS` in `setup.py`
