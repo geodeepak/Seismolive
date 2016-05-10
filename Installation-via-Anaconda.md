@@ -20,6 +20,7 @@ Try to stick to **only using `conda` package manager to install packages wheneve
 
 #### Troubleshooting:
 
+ * Windows users might have to add `conda-forge` channel to have `basemap` packages available (see [ContinuumIO/anaconda-issues#757](https://github.com/ContinuumIO/anaconda-issues/issues/757))
  * If you have problems, be sure to check out the [Troubleshooting page of Anaconda](http://conda.pydata.org/docs/troubleshooting.html)
  * Especially **beware of mixing in Python packages from outside the environment**, not handled/installed by the `conda` package manager. This is usually unwanted and coming from older (and way more sloppy) Python installations and **bound to bring forth very unexpected and hard to debug behavior and errors**. This can happen outside of anaconda's control by..
    * having [`PYTHONPATH` and `PYTHONHOME` environment variables](http://conda.pydata.org/docs/troubleshooting.html#resolution-for-python-packages-make-sure-you-do-not-have-pythonpath-or-pythonhome-set) set, or (less common) by..
