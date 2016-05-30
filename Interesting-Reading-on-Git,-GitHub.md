@@ -14,3 +14,10 @@ curl --header "X-GitHub-OTP: 123456" --user megies --request POST --data '{"issu
       - **base**: branch that the pull request should be merged into (target repository specified in the url), usually either `master` (for feature branches) or `releases` (for bug fixes)
  - interaction with svn
    - https://github.com/blog/1178-collaborating-on-github-with-subversion
+ - Squash commits [using `git rebase`](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)
+```
+# squash the last 4 commits interactively
+# Only do this on a branch no one else is using
+git rebase -i HEAD~4
+git push --force upstream my_feature_branch
+```
