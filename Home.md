@@ -87,7 +87,7 @@ The [ObsPy Gallery](http://gallery.obspy.org) and its related [ObsPy Tutorial](h
 
 ## Installation
 
-ObsPy is currently [running and tested](http://tests.obspy.org) on Linux (32 and 64 bit), Windows XP/Vista/7/8 (32 bit and/or 64 bit) and Mac OS X.
+ObsPy is currently [running and tested](http://tests.obspy.org) on Linux (32 and 64 bit), Windows 7/8/10 (32 bit and/or 64 bit) and Mac OS X.
 
 ObsPy runs on Python 2.7, 3.3, 3.4, and 3.5.
 
