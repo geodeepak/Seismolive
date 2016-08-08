@@ -15,7 +15,7 @@ See  http://docs.python.org/using/windows.html#excursus-setting-environment-vari
       *   http://sourceforge.net/projects/numpy/files/
       *   http://sourceforge.net/projects/scipy/files/
       *   http://sourceforge.net/projects/matplotlib/files/matplotlib/
-    * or fetch the unofficial Windows 64 bit releases from  http://www.lfd.uci.edu/~gohlke/pythonlibs/ (get the MKL builds for NumPy?).
+    * or fetch the unofficial but recommended Windows releases from  http://www.lfd.uci.edu/~gohlke/pythonlibs/ (get the MKL builds for NumPy).
   2.  ObsPy and further dependencies can be downloaded via pip. pip is already installed if you're using Python 2 >=2.7.9 or Python 3 >=3.4, but you'll need to upgrade pip. Download and run from the windows command line the Python script https://bootstrap.pypa.io/get-pip.py.
 
         python.exe get-pip.py
