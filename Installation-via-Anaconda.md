@@ -16,6 +16,18 @@ $ conda config --add channels conda-forge
 $ conda install obspy
 ```
 
+#### Updating
+
+```bash
+$ conda update obspy
+```
+
+or (if you did not add the `conda-forge` channel to your default channels):
+
+```bash
+$ conda update -c conda-forge obspy
+```
+
 Try to stick to **only using `conda` package manager to install packages whenever possible!** Other tools like `pip` (or even its outdated `easy_install` predecessor) should really only be used for Python packages that are not packaged by Anaconda (search for available pre-packaged versions first doing `conda search <package_name>` -- or if it's not available in the default channel doing `anaconda search -t conda <package_name>`). And even when needing to install a package from source using `pip` it is a good idea to at least install the package's dependencies via `conda` beforehand.
 
 #### Troubleshooting:
