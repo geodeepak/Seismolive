@@ -171,6 +171,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [rf](https://github.com/trichter/rf) - Calculate receiver functions.
    * [Qopen](https://github.com/trichter/qopen) - Separation of intrinsic and scattering Q by envelope inversion.
    * [EQcorrscan](http://calum-chamberlain.github.io/EQcorrscan/) - Match-filter earthquake detection
+   * [PhasePApy](https://github.com/austinholland/PhasePApy) - a Seismic Phase Picker and Associator program package
 
 #### miscellaneous..
 
