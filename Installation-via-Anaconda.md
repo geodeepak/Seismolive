@@ -4,10 +4,11 @@
 
  * [Install Anaconda following the instructions on their site](https://www.continuum.io/downloads)
 
- * Add the `conda-forge` channel to your Anaconda configuration:
+ * Add the `conda-forge` channel (and `obspy` channel for e.g. 32bit Linux) to your Anaconda configuration:
 
 ```bash
 $ conda config --add channels conda-forge
+$ conda config --add channels obspy
 ```
 
  * Install pre-compiled [ObsPy conda package from Anaconda cloud](https://anaconda.org/obspy/obspy) with:
