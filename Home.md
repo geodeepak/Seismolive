@@ -173,6 +173,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [EQcorrscan](http://calum-chamberlain.github.io/EQcorrscan/) - Match-filter earthquake detection
    * [PhasePApy](https://github.com/austinholland/PhasePApy) - a Seismic Phase Picker and Associator program package
    * [Jane](https://github.com/krischer/jane) - Document database for Seismology
+   * [MouseTrap](http://geo.mff.cuni.cz/~vackar/mouse/) - A module for detecting a special type of disturbance (so called mouse, ping, or fling step) in seismic records.
 
 #### miscellaneous..
 
