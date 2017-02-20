@@ -174,6 +174,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [PhasePApy](https://github.com/austinholland/PhasePApy) - a Seismic Phase Picker and Associator program package
    * [Jane](https://github.com/krischer/jane) - Document database for Seismology
    * [MouseTrap](http://geo.mff.cuni.cz/~vackar/mouse/) - A module for detecting a special type of disturbance (so called mouse, ping, or fling step) in seismic records.
+   * [Lazylyst](https://github.com/AndrewReynen/Lazylyst) - A GUI created for time series review, using a flexible framework for new workflows
 
 #### miscellaneous..
 
