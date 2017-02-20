@@ -189,6 +189,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * https://github.com/lizstarin/earthquakemap
    * https://github.com/samhaug/seispy
    * https://github.com/oceanobservatories/mi-instrument
+   * https://github.com/echavess/Focal-mechanisms-Pressure-and-Tension-Axis
 
 
 ## Developer Corner
