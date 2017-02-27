@@ -4,29 +4,36 @@
 
  * [Install Anaconda following the instructions on their site](https://www.continuum.io/downloads)
 
- * Add the `conda-forge` channel (and `obspy` channel for e.g. 32bit Linux) to your Anaconda configuration:
+ * Add the `conda-forge` channel (for 32bit Linux packages also add `obspy` channel) to your Anaconda configuration (see [conda docs reagarding channels](https://conda.io/docs/channels.html)):
 
 ```bash
 $ conda config --add channels conda-forge
-$ conda config --add channels obspy
+```
+
+ * We strongly recommend to work with separate Anaconda environments, and especially use the special root environment (that is used for all `conda` commands and environment manipulations, package installations etc.) for nothing else then updating the `conda` package itself (if necessary):
+
+```bash
+$ conda create -n obspy python=2.7   # or e.g. python=3.5
+$ source activate obspy
+(obspy) $ 
 ```
 
  * Install pre-compiled [ObsPy conda package from Anaconda cloud](https://anaconda.org/obspy/obspy) with:
 
 ```bash
-$ conda install obspy
+(obspy) $ conda install obspy
 ```
 
 #### Updating
 
 ```bash
-$ conda update obspy
+(obspy) $ conda update obspy
 ```
 
 or (if you did not add the `conda-forge` channel to your default channels):
 
 ```bash
-$ conda update -c conda-forge obspy
+(obspy) $ conda update -c conda-forge obspy
 ```
 
 Try to stick to **only using `conda` package manager to install packages whenever possible!** Other tools like `pip` (or even its outdated `easy_install` predecessor) should really only be used for Python packages that are not packaged by Anaconda (search for available pre-packaged versions first doing `conda search <package_name>` -- or if it's not available in the default channel doing `anaconda search -t conda <package_name>`). And even when needing to install a package from source using `pip` it is a good idea to at least install the package's dependencies via `conda` beforehand.
@@ -203,3 +210,7 @@ Run the test suite to assure everything works correctly.
 ```bash
 $ obspy-runtests
 ```
+
+### Offline installation
+
+For installation of Anaconda including ObsPy in an offline environment, see http://lists.swapbytes.de/archives/obspy-users/2017-February/002298.html
