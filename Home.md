@@ -37,6 +37,13 @@ You can also cite the used ObsPy version:<br>
 
 ## News
 
+##### [Feb 27 2017] Release of ObsPy 1.0.3
+This is the third bug fix release in the 1.0.x release cycle. It does not change functionality/API but fixes quite a number of bugs resulting in an overall more stable ObsPy package. It is planned to be the last bug fix release for 1.0.x as well as we plan to do the release of 1.1.0 as soon as possible (maybe within a few weeks). 
+
+We recommend all users to upgrade through one of the usual channels. Please see the full changelog for all details:
+
+* [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/1.0.3)
+
 ##### [Aug 03 2016] Release of ObsPy 1.0.2
 This is the second bug fix release in the 1.0 release cycle. It does not change functionality/API but fixes quite a number of bugs resulting in an overall more stable ObsPy package.
 
