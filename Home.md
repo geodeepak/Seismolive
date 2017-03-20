@@ -183,6 +183,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [MouseTrap](http://geo.mff.cuni.cz/~vackar/mouse/) - A module for detecting a special type of disturbance (so called mouse, ping, or fling step) in seismic records.
    * [Lazylyst](https://github.com/AndrewReynen/Lazylyst) - A GUI created for time series review, using a flexible framework for new workflows.
    * [REDPy](https://github.com/ahotovec/REDPy) - A tool for automated detection and analysis of repeating earthquakes in continuous data.
+   * [CodaNorm](https://github.com/cormorant/CodaNorm/) - A software package for the body-wave attenuation calculation by the coda-normalization method
 
 #### miscellaneous..
 
