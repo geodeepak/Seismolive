@@ -96,7 +96,7 @@ The [ObsPy Gallery](http://gallery.obspy.org) and its related [ObsPy Tutorial](h
 
 ObsPy is currently [running and tested](http://tests.obspy.org) on Linux (32 and 64 bit), Windows (32 bit and/or 64 bit) and Mac OS X.
 
-ObsPy runs on Python 2.7, 3.4, and 3.5. We highly recommend and only officially support the latest release of each series.
+ObsPy runs on Python 2.7, 3.4, 3.5, and 3.6. We highly recommend and only officially support the latest release of each series.
 
 **For individual users we strongly recommend [[Installation via Anaconda|Installation via Anaconda]].**
 
@@ -113,6 +113,9 @@ Detailed information on installing the latest stable version of ObsPy on various
 * via [[PyPi or from source|Installation via PyPi/from source]], applicable to Linux and OSX
 * into an existing [Antelope 5.4 on RHEL/CentOS 6](http://geoffdavis.github.io/blog/2014/08/11/installing-obspy-for-antelope-5-dot-4-on-rhel-slash-centos-6/)
 * for a reproducible installation mostly aimed at servers and clusters, have a look at the [Salt formula for ObsPy](https://github.com/obspy/obspy/tree/master/misc/installer/salt-formula)
+
+If you intend on making changes to ObsPy or develop for it, read this:
+* [[Developer Installation|Developer Installation]]
 
 If you intend on performing parallel processing with Python and Obspy, please read the following:
 * [[Notes on Parallel Processing with Python and ObsPy|Notes on Parallel Processing with Python and ObsPy]]
