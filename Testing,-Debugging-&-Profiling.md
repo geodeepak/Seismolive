@@ -2,9 +2,7 @@ Several buildbots are running to ensure the functionality of ObsPy. For current 
 
 ## Testing
 
-All tests in ObsPy are located in the tests directory of the certain module. The ```__init__.py``` of the tests directory itself as well as every test has a function called suite. During installation with ```setup.py``` (```easy_install```, ```python setup.py ...```) the ```obspy-runtests``` script will be registered automatically.
-
-To run all tests or a single test from the shell/cmd do one of the following:
+Tests in ObsPy are located in the tests directory of each sub module. To run all tests or a single test from the shell/cmd do one of the following:
 ```sh
 obspy-runtests    # Run all tests
 obspy-runtests -r -v # Run all tests in verbose mode and post output to tests.obspy.org
