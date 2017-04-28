@@ -7,7 +7,7 @@ All tests in ObsPy are located in the tests directory of the certain module. The
 To run all tests or a single test from the shell/cmd do one of the following:
 ```sh
 obspy-runtests    # Run all tests
-obspy-runtests -r -v # Run all tests in verbose mode an post output to tests.obspy.org
+obspy-runtests -r -v # Run all tests in verbose mode and post output to tests.obspy.org
 
 python -m 'obspy.core.scripts.runtests.__init__'             # Run all tests
 obspy-runtests -v obspy.core.tests.test_stream.StreamTestCase.test_adding
