@@ -10,7 +10,7 @@
 $ conda config --add channels conda-forge
 ```
 
- * We strongly recommend to work with separate Anaconda environments, and especially use the special root environment (that is used for all `conda` commands and environment manipulations, package installations etc.) for nothing else then updating the `conda` package itself (if necessary):
+ * **We strongly recommend to work with separate Anaconda environments, and especially not use the special ``root`` environment** (that is used for all `conda` commands and environment manipulations, package installations etc.) for anything besides updating the `conda` package itself (if necessary):
 
 ```bash
 $ conda create -n obspy python=2.7   # or e.g. python=3.5
