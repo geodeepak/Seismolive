@@ -15,6 +15,12 @@ python obspy/core/tests/test_stats.py -v StatsTestCase.test_pickleStats
 python __init__.py -v test_mseed_util.MSEEDUtilTestCase.test_unpackSteim2
 ```
 
+When encountering relative import problem, use `pytest` instead
+
+```
+pytest obspy/core/tests/test_stats.py -v
+```
+
 To run all tests or a single test inside python do one of the following:
 ```python
 import obspy.core
