@@ -7,7 +7,7 @@ following distributions:
  * Fedora rawhide
  * CentOS/EL 7
 
-A [separate copr repository](https://copr.fedoraproject.org/coprs/qulogic/obspy/)
+A [separate copr repository](https://copr.fedoraproject.org/coprs/qulogic/obspy-el6/)
 is available for older repositories:
  * CentOS/EL 6
 
