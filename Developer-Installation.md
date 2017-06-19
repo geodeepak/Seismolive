@@ -15,6 +15,7 @@ You then need to checkout ObsPy with git. Make sure you have git installed - you
 $ cd /directory/where/code/lives
 # Clone your own ObsPy fork!
 $ git clone git@github.com:YOUR_USERNAME/obspy.git
+$ cd obspy
 # Make sure you branch from the correct base branch! See the
 # contributor guidelines for rules on how to choose the correct
 # base branch.
