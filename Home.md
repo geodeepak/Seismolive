@@ -103,7 +103,9 @@ ObsPy runs on Python 2.7, 3.4, 3.5, and 3.6. We highly recommend and only offici
 System administrators can also install system packages (where available, see below).
 Detailed information on installing the latest stable version of ObsPy on various operating systems:
 
-* via [[Anaconda|Installation via Anaconda]], a scientific Python distribution (all systems) **(works without root access)**
+* via [Anaconda, a scientific Python distribution](https://docs.continuum.io/anaconda/) (all systems) **(works without root access)**
+  * [[normal installation via Anaconda installer|Installation via Anaconda]]
+  * [[installation using bundled Anaconda installer|Installation via ObsPy-bundled Anaconda installer]]
 * [[Debian/Ubuntu|Installation on Linux via Apt Repository]] via the package manager
 * [[Fedora/CentOS|Installation on Linux via RPM Repository]] via the package manager
 * Mac OS X via [[Homebrew|Installation on OS X using Homebrew]] or [[MacPorts|Installation on Mac OS X using Macports]]
