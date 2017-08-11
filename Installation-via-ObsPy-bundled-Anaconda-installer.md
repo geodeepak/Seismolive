@@ -1,0 +1,7 @@
+[Anaconda](https://store.continuum.io/cshop/anaconda/) is a scientific Python installation shipping many third party packages in pre-compiled form for easy installation through a package management tool (conda). An **Anaconda Python installation is completely separate** from any existing system wide or user space Python installation, so **Anaconda can be tested without the fear of breaking an existing installation**.
+
+**Anaconda works on most systems without root access!**
+
+In addition to the "normal" Anaconda installation, in which case ObsPy packages are installed after the usual Anaconda installation, we are also providing Anaconda installers that come fully bundled with ObsPy and all of its dependencies, as well as some often used packages like IPython and Jupyter. These installers need no access to the internet during the installation, so they can be a good solution when having to install Python+ObsPy on field trips or during workshops with uncertain internet access. The installers can be found attached to the corresponding Github release, e.g. [here for ObsPy 1.0.3](https://github.com/obspy/obspy/releases/tag/1.0.3).
+
+For installation, simply download the installer fitting your operating system (Linux / Mac / Windows), CPU architecture (`x86` for 32 bit systems / `x86_64` for 64 bit systems) and Python version (Python 2 or Python 3), run it and follow the 2-3 steps during installation.
