@@ -190,6 +190,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [REDPy](https://github.com/ahotovec/REDPy) - A tool for automated detection and analysis of repeating earthquakes in continuous data.
    * [CodaNorm](https://github.com/cormorant/CodaNorm/) - A software package for the body-wave attenuation calculation by the coda-normalization method
    * [ISOLA-ObsPy](http://geo.mff.cuni.cz/~vackar/isola-obspy/) - A seismic source inversion module. Events are described as point sources with centroid moment tensors.
+   * [pySW4](https://github.com/shaharkadmiel/pySW4) - Setup, run, post process, and visualize numerical simulations, primarily for SW4.
 
 #### miscellaneous..
 
