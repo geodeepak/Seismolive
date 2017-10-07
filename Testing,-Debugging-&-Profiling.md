@@ -56,6 +56,7 @@ From IPython 0.11 (http://ipython.org) you can alternatively use the more intera
 ```python
 from IPython.core.debugger import Tracer; Tracer()()
 ```
+Some other interactive debuggers worth checking out are [pdb++](https://pypi.python.org/pypi/pdbpp), [pudb](https://pypi.python.org/pypi/pudb), and [Winpdb](http://winpdb.org).
 
 ### Debugging C Extensions with ddd
 
@@ -103,6 +104,13 @@ Memory leaks do only show up in the ''definitely lost'' section if there is no r
 
 ## Profiling
 
+### Profiling Python Code
+Python ships with the [cProfile and Profile](https://docs.python.org/3/library/profile.html) modules which display the time spent in each function. If you want the time spent on each line checkout [line_profile](https://github.com/rkern/line_profiler).
+
+[Snakeviz](https://jiffyclub.github.io/snakeviz/) provides an easy way to profile python code and generate interactive visualizations of the program execution. It also integrates nicely with Jupyter notebooks.
+
+[Here](https://gist.github.com/d-chambers/1eabd9c2147b11db0e68cf57ac3a8ad1) is a jupyter notebook that demonstrates using snakeviz and ipython magics to profile and optimize reading miniseed waveform files. 
+
 ### Profiling C-Extensions
 For profiling C-Extensions, valgrind in combination with kcachgrind can be used. For running it, do e.g.:
 
@@ -110,3 +118,4 @@ For profiling C-Extensions, valgrind in combination with kcachgrind can be used.
 valgrind --tool=callgrind python tests/test_invsim.py InvSimTestCase.test_evalrespVsObsPy
 kcachegrind 
 ```
+
