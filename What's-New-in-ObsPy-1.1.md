@@ -40,7 +40,7 @@ Python modules:
 * `Python`: 2.7, 3.4, 3.5, 3.6 (dropped support for Python 3.3)
 * `NumPy`: 1.6.2 - 1.13
 * `SciPy`: 0.11.0 - 1.0 (minimum SciPy is now 0.11.0)
-* `matplotlib`: 1.1.1 - 2.1
+* `matplotlib`: 1.1.1 - 2.1 (added support for matplotlib 2.x)
 * `basemap`: 1.0.2 - 1.1.0
 
 Supported Operating Systems (mostly 32bit and 64bit):
