@@ -26,6 +26,7 @@ Documentation and resources for this version can (as always) be found at: https:
 * [Quality Control Module](#quality-control-module)
 * [New Signal Processing Things](#new-signal-processing-things)
 * [Changes in `obspy.taup`](#changes-in-obspytaup)
+* [Miscellaneous Notable Bug Fixes and Improvements](#miscellaneous-notable-bug-fixes-and-improvements)
 * [Full Changelog](#full-changelog)
 
 ---
@@ -277,6 +278,20 @@ MiniSEED files (see [#1141](https://github.com/obspy/obspy/pull/1141)). The calc
 * Fixing calculations through very small regional models. (see [#1761](https://github.com/obspy/obspy/pull/1761))
 * Updated ray path plot method, added travel time plot method, and wrapper
   functions for both ray path and travel time plotting. (see [#1501](https://github.com/obspy/obspy/pull/1501), [#1877](https://github.com/obspy/obspy/pull/1877))
+
+---
+
+###  Miscellaneous Notable Bug Fixes and Improvements 
+
+* Ensure that Trace.data is always C-contiguous in memory (see [#1732](https://github.com/obspy/obspy/pull/1732))
+* Instrument correction for response list stages originating from inventory objects (see [#1514](https://github.com/obspy/obspy/pull/1514)).
+* `Stream.select()` now also works on the component level if channels only have one letter (see [#1847](https://github.com/obspy/obspy/pull/1847)).
+* `obspy.clients.earthworm`: Much faster trace unpacking (see [#1762](https://github.com/obspy/obspy/pull/1762)).
+* Several bug-fixes dealing with mini-SEED edge cases:
+    * Always hook up the libmseed logging to its Python counterpart to avoid some rare segfaults. (see [#1658](https://github.com/obspy/obspy/pull/1658))
+    * Correctly read MiniSEED files with a data offset of 48 bytes (see [#1540](https://github.com/obspy/obspy/pull/1540)).
+    * Should no-longer segfault with arbitrarily truncated files (see [#1728](https://github.com/obspy/obspy/pull/1728)).
+* Fixed bug in `rotate2zne()` for non-orthogonal configurations (see [#1913](https://github.com/obspy/obspy/pull/1913), [#1927](https://github.com/obspy/obspy/pull/1927)).
 
 ---
 
