@@ -47,7 +47,7 @@ Supported Operating Systems (mostly 32bit and 64bit):
 
 * `Windows`
 * `OSX`
-* `Linux` (tested with default packages on CentOS/RedHat 7, Debian 7 + 8 + 9, Fedora 25 + 26, openSUSE Leap 42.1 + 42.2, Ubuntu 14.04 + 16.04 + 17.10)
+* `Linux` (tested with default packages on CentOS/RedHat 7, Debian 7 + 8 + 9, Fedora 25 + 26, openSUSE Leap 42.1 + 42.2, Ubuntu 14.04 + 16.04 + 17.04)
 * `Raspberry Pi` (Raspbian Wheezy + Jessie + Stretch)
 
 ---
