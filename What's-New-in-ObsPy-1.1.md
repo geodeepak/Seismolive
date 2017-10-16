@@ -36,7 +36,7 @@ We officially support the following systems (meaning we test that they work with
 
 Python modules:
 
-* `Python`: 2.7, 3.3, 3.4, 3.5, 3.6
+* `Python`: 2.7, 3.4, 3.5, 3.6 (dropped support for Python 3.3)
 * `NumPy`: 1.6.2 - 1.13
 * `SciPy`: 0.11.0 - 1.0 (minimum SciPy is now 0.11.0)
 * `matplotlib`: 1.1.1 - 2.1
