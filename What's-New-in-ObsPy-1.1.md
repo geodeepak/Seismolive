@@ -20,6 +20,7 @@ Documentation and resources for this version can (as always) be found at: https:
 * [New Deprecations](#new-deprecations)
 * [Deprecations are locked and loaded](#deprecations-are-locked-and-loaded)
 * [Notable Changes in `obspy.core`](#notable-changes-in-obspycore)
+* [Support for New Data Formats](#support-for-new-data-formats)
 * [NRL (Nominal Response Library) Client](#nrl-nominal-response-library-client)
 * [`read_inventory()` support for (X)SEED and RESP files](#read_inventory-support-for-xseed-and-resp-files)
 * [New Things Regarding Data Downloading](#new-things-regarding-data-downloading)
@@ -104,7 +105,7 @@ Well - with this release all these deprecations are active, meaning that code th
 
 ---
 
-## Support for New Data Formats
+### Support for New Data Formats
 
 To further our quest for world domination and the ability to gobble up every seismological data format in existence, this release adds support for or new features to the following file formats:
 
