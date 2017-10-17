@@ -220,7 +220,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
     * [NumPy and ctypes](http://www.scipy.org/Cookbook/Ctypes)
     * [SciPy](http://wiki.scipy.org/PerformancePython)
     * [NumPy Book](http://csc.ucdavis.edu/~chaos/courses/nlp/Software/NumPyBook.pdf)
- * [[Testing, Debugging & Profiling]]
+ * [Testing, Debugging & Profiling](wiki/Testing,-Debugging-&-Profiling)
  * [[Sphinx Documentation]]
  * [Notes on the performed svn to git migration](wiki/Svn-to-git-migration)
  * [[Interesting reading on git, github]]
