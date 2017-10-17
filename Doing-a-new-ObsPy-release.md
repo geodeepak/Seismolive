@@ -133,6 +133,11 @@ $ git clean -fdx  # don't do this at $HOME, kids! ;-)
 ### Make Sure Tests Pass for the Release Candidate Zipball
 
 Any testing of the Release Candidate should be done installing the sdist zipball.
+Test results for one specific version can be summarized here: http://tests.obspy.org/?version=1.1.0rc6
+
+After going through all the testing outlined below:
+ - If some tests still fail, add commits and make a new release candidate and start testing again.
+ - If all tests pass, congratulations! You made it through the release cycle alive!
 
 ##### Check that tests work locally, also running all network tests
 
