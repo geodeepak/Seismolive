@@ -214,6 +214,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
  * [Style Guide](http://docs.obspy.org/coding_style.html)
  * [Docs or it doesn't exist!](http://lukeplant.me.uk/blog/posts/docs-or-it-doesnt-exist/)
  * [[ObsPy Git Branching Model]]
+ * [[Doing a new ObsPy release]]
  * [[Known Python issues]]
  * Performance Tips:
     * [Python](http://wiki.python.org/moin/PythonSpeed/PerformanceTips)
