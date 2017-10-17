@@ -170,3 +170,5 @@ $ ./package_debs.sh -tmegies:deb_1.1.0 debian_8_jessie_armhf
 When everybody is happy about the release candidate, do an sdist zipball with the final release version (e.g. `1.1.0`) and distribute all packaged binaries across all channels (pypi, Anaconda cloud, Debian/Ubuntu apt repo, ...).
 
 **TODO: Add more detailed info on all the package distribution channels..**
+
+**TODO: Add info on how to create the MaxiConda Anaconda+Obspy+Jupyter+... installers via https://github.com/obspy/anaconda-installers**
