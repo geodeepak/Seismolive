@@ -1,6 +1,24 @@
  - github development workflow
    - http://scottchacon.com/2011/08/31/github-flow.html
    - http://nvie.com/posts/a-successful-git-branching-model/
+ - working on pull request branches opened from forks, without adding the fork as a remote (copied from[this post](https://github.com/obspy/obspy/pull/1756#issuecomment-337398126)):
+
+```
+Strictly speaking, you do not need another remote. To just download the code
+use `git fetch upstream pull/1756/head:fix_arclink`. To push, you can specify
+the remote url without adding it `git push git@github.com:petrr/obspy fix_arclink`.
+
+I also like to set an `insteadOf` config like:
+
+"""
+$ git config --list | grep instead
+url.git://github.com/.insteadof=github:
+url.git@github.com:.pushinsteadof=github:
+"""
+
+so that I can do `git push github:petrr/obspy fix_arclink`.
+```
+
  - convert existing issue into a pull request
    - can be done using [github/hub](https://github.com/github/hub)
 ```bash
