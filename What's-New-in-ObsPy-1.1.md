@@ -1,7 +1,7 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
 
-It's has been too long but ObsPy 1.1.0 has finally arrived! It is a pretty big release accumulating changes across the code base by 36 unique contributors over the course of over 20 months! Thanks a lot to everyone involved!
+It's has been too long but ObsPy 1.1.0 has finally arrived! It is a pretty big release accumulating changes across the code base by 37 unique contributors over the course of over 20 months! Thanks a lot to everyone involved!
 
 In the future we plan to move to smaller, but more frequent, biannual releases.
 
