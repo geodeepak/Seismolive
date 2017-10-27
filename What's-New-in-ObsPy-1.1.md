@@ -306,7 +306,7 @@ MiniSEED files (see [#1141](https://github.com/obspy/obspy/pull/1141)). The calc
 ### Full Changelog
 
 ```
-master: (doi: 10.5281/zenodo.165135)
+1.1.0: (doi: 10.5281/zenodo.165135)
  - General:
    * Read support for Guralp Compressed Format (GCF) waveform data,
      obspy.io.gcf (see #1449)
@@ -315,6 +315,8 @@ master: (doi: 10.5281/zenodo.165135)
    * Add Nordic format (s-file) read/write (see #1517)
    * Read and write support for events in the SCARDEC catlogue format
      (see #1391).
+   * Read support for IASPEI ISF ISM 1.0 Bulletin event data,
+     (see #1946)
    * Write support for AH (Ad Hoc version 1) format (see #1754)
    * Client to access the Nominal Response Library (NRL) (see #1185).
    * `obspy.read_inventory()` can now read dataless SEED and RESP files
@@ -363,6 +365,8 @@ master: (doi: 10.5281/zenodo.165135)
    * Bode plots can now optionally plot the phase in degrees (see #1763).
    * `Stream.select()` now also works on the component level if channels only
      have one letter (see #1847).
+   * Now strips all invalid characters from the temporary filenames used for
+     downloading data using the `read_X()` methods (see #1958).
  - obspy.clients.earthworm:
    * Much faster trace unpacking (see #1762).
  - obspy.clients.fdsn:
@@ -395,6 +399,8 @@ master: (doi: 10.5281/zenodo.165135)
      vertical, see #1445).
  - obspy.io.arclink:
     * Read support for Arclink Inventory XML (see #1539)
+    * default for `route` parameter in metadata requests is changed to `False`
+      (see #1756)
  - obspy.io.ascii:
     * Custom formatting of sample values when writing SLIST and TSPAIR.
  - obspy.io.datamark:
@@ -451,7 +457,7 @@ master: (doi: 10.5281/zenodo.165135)
      function is also much faster. (see #1141)
    * Always hook up the libmseed logging to its Python counterpart to avoid
      some rare segfaults. (see #1658)
-   * Update to libmseed v2.19.4 (see #1703, #1780).
+   * Update to libmseed v2.19.5 (see #1703, #1780, #1939).
    * Correctly read MiniSEED files with a data offset of 48 bytes (see #1540).
    * InternalMSEEDReadingError now called InternalMSEEDError and
      InternalMSEEDReadingWarning now called InternalMSEEDWarning as both
@@ -499,6 +505,8 @@ master: (doi: 10.5281/zenodo.165135)
      available via `PPSD.psd_values` property (see #1327)
    * Fixed bug in `rotate2zne()` for non-orthogonal configurations
      (see #1913, #1927).
+   * Fixed build warnings in evalresp, partially backported from evalresp
+     4.0.6 (see #1939).
  - obspy.taup:
    * Add obspy.taup.taup_geo.calc_dist_azi, a function to return the distance,
      azimuth and backazimuth for a source - receiver pair. (see #1538)
