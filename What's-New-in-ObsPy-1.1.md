@@ -66,6 +66,7 @@ Updating should be straight-forward. So depending on your installation do
 
 ```bash
 # Anaconda Python Distribution
+# `conda install -c obspy obspy` is no longer supported for most platforms!
 $ conda update -c conda-forge obspy
 ```
 
@@ -126,8 +127,9 @@ To further our quest for world domination and the ability to gobble up every sei
 *  **Event data formats:**
     * Add **Nordic format (s-file) read/write** (see [#1517](https://github.com/obspy/obspy/pull/1517)).
     * **Read and write support for the SCARDEC catalog** format (see [#1391](https://github.com/obspy/obspy/pull/1391)).
-	* **Read support for GSE2.0 bulletin** (see [#1528](https://github.com/obspy/obspy/pull/1528)).
-	* **Read and write support for SC3ML event** (see [#1638](https://github.com/obspy/obspy/pull/1638) and [#1848](https://github.com/obspy/obspy/pull/1848)).
+    * **Read support for GSE2.0 bulletin** (see [#1528](https://github.com/obspy/obspy/pull/1528)).
+    * **Read and write support for SC3ML event** (see [#1638](https://github.com/obspy/obspy/pull/1638) and [#1848](https://github.com/obspy/obspy/pull/1848)).
+    * **Read support for the IASPEI ISF ISM 1.0 Bulletin** event format (see [#1946](https://github.com/obspy/obspy/pull/1946))
 
 
 * **Station data formats:**
