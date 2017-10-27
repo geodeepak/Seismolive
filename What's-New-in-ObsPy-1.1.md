@@ -1,7 +1,7 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
 
-It's has been too long but ObsPy 1.1.0 has finally arrived! It is a pretty big release accumulating changes across the code base by 37 unique contributors over the course of over 20 months! Thanks a lot to everyone involved!
+It's has been too long but ObsPy 1.1.0 has finally arrived! It is a pretty big release accumulating changes across the code base by 37 unique contributors over the course of over 20 months! Thanks a lot to everyone involved - it would not be possible without your help!
 
 In the future we plan to move to smaller, but more frequent, biannual releases.
 
@@ -10,6 +10,13 @@ We recommend all users to upgrade as it, aside from new features, contains a lot
 This document details significant new features and changes in ObsPy `1.1.0`. The [Full Changelog](#full-changelog) at the end is more comprehensive.
 
 Documentation and resources for this version can (as always) be found at: https://docs.obspy.org
+
+---
+
+> Aside from the occasional change and new feature, there **never was any formal funding** for ObsPy and it has been developed by enthusiastic volunteers, mostly from academia. If you use ObsPy, please consider [acknowledging](https://github.com/obspy/obspy/wiki#acknowledging) us so we can justify investing time into it.
+
+---
+
 
 ---
 
