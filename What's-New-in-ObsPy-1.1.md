@@ -55,7 +55,7 @@ Supported Operating Systems (mostly 32bit and 64bit):
 
 * `Windows`
 * `OSX`
-* `Linux` (tested with default packages on CentOS/RedHat 7, Debian 7 + 8 + 9, Fedora 25 + 26, openSUSE Leap 42.1 + 42.2, Ubuntu 14.04 + 16.04 + 17.04)
+* `Linux` (tested with default packages on CentOS/RedHat 7, Debian 7 + 8 + 9, Fedora 25 + 26, openSUSE Leap 42.2 + 42.3, Ubuntu 14.04 + 16.04 + 17.04 + 17.10)
 * `Raspberry Pi` (Raspbian Wheezy + Jessie + Stretch)
 
 ---
@@ -109,7 +109,7 @@ Module 'obspy.mseed' is deprecated and will stop working with the next ObsPy ver
 Please import module 'obspy.io.mseed' instead.
 ```
 
-Well - with this release all these deprecations are active, meaning that code that raises these warnings will no longer work and you will have to act on the warnings.
+Well - with this release all these deprecations are active, meaning that code that with ObsPy 1.0.x shows these warnings will not work anymore with ObsPy 1.1.x and instead will raise an Exception. So if you did not adapt your code so far and kept ignoring these messages, you should do so now before updating to ObsPy 1.1.x, especially for programs that run scheduled background processing tasks.
 
 ---
 
@@ -168,7 +168,7 @@ To further our quest for world domination and the ability to gobble up every sei
 ### NRL (Nominal Response Library) Client
 
 New client in `obspy.clients.nrl` to access the Nominal Response Library (NRL)
-to get ObsPy `Response` objects (see [#1185](https://github.com/obspy/obspy/pull/1185)). Usage example:
+to get ObsPy `Response` objects (see [#1185](https://github.com/obspy/obspy/pull/1185)). This means that full station metadata can now be assembled programmatically using ObsPy (see http://docs.obspy.org/tutorial/code_snippets/stationxml_file_from_scratch.html). Usage example:
 
 ```python
 >>> from obspy.clients.nrl import NRL
