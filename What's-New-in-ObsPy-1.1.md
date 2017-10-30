@@ -64,15 +64,19 @@ Supported Operating Systems (mostly 32bit and 64bit):
 
 Updating should be straight-forward. So depending on your installation do
 
+
+```bash
+# Generic Python
+#
+# For the first time we also have binary wheels for Linux and OSX so
+# this now also works without a compiler.
+$ pip install -U obspy
+```
+
 ```bash
 # Anaconda Python Distribution
 # `conda install -c obspy obspy` is no longer supported for most platforms!
 $ conda update -c conda-forge obspy
-```
-
-```bash
-# Generic Python
-$ pip install -U obspy
 ```
 
 ```bash
