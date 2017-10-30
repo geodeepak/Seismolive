@@ -174,6 +174,52 @@ $ ./package_debs.sh -tmegies:deb_1.1.0 debian_8_jessie_armhf
 
 When everybody is happy about the release candidate, do an sdist zipball with the final release version (e.g. `1.1.0`) and distribute all packaged binaries across all channels (pypi, Anaconda cloud, Debian/Ubuntu apt repo, ...).
 
+### Packaging
+
+#### Binary wheels
+
+Once wheels are generated, upload with
+
+```bash
+$ twine upload *.whl
+```
+
+##### Windows
+
+Windows wheels are done by @barsch.
+
+#### Linux
+
+From @krischer: I tried to get this going with [cibuildwheel](https://github.com/joerick/cibuildwheel) but after some cursing at the CI I just did it manually on my machine. Just install `Docker` and make sure a Python with `numpy` and `cibuildwheel` is available and run (Adapt to the ObsPy version of interest of course):
+
+```bash
+$ wget https://files.pythonhosted.org/packages/c5/f5/9a6150bc707bfb82e1d0533f83d3a7ef00ae3bdb2b8c8f85f5ac2d3b2bd9/obspy-1.1.0.zip
+$ unzip -e obspy-1.1.0.zip
+$ CIBW_BEFORE_BUILD="{pip} install numpy" CIBW_SKIP="cp27-* cp33-* *i686*" CIBW_TEST_COMMAND="obspy-runtests -r --node=wheel-builder --no-flake8" cibuildwheel --platform linux --output-dir wheelhouse obspy-1.1.0
+$ CIBW_BEFORE_BUILD="{pip} install numpy mock subprocess32==3.5.0rc1" CIBW_SKIP="cp3* *i686*" CIBW_TEST_COMMAND="obspy-runtests -r --node=wheel-builder --no-flake8" cibuildwheel --platform linux --output-dir wheelhouse obspy-1.1.0
+```
+
+The only reason for the limited versions is the availability of wheels for `matplotlib` (they don't have 32bit wheels for example).
+
+#### OSX
+
+1. Download Python distributions for the versions of interest here: https://www.python.org/downloads/mac-osx/
+2. Install all of them
+3. Run (in a folder with the ObsPy version of interest):
+
+```bash
+$ /Library/Frameworks/Python.framework/Versions/2.7/bin/pip2 install wheel delocate numpy
+$ /Library/Frameworks/Python.framework/Versions/3.4/bin/pip3 install wheel delocate numpy
+$ /Library/Frameworks/Python.framework/Versions/3.5/bin/pip3 install wheel delocate numpy
+$ /Library/Frameworks/Python.framework/Versions/3.6/bin/pip3 install wheel delocate numpy
+$ /Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7 setup.py bdist_wheel
+$ /Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4 setup.py bdist_wheel
+$ /Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5 setup.py bdist_wheel
+$ /Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 setup.py bdist_wheel
+```
+
+
+
 **TODO: Add more detailed info on all the package distribution channels..**
 
 **TODO: Add info on how to create the MaxiConda Anaconda+Obspy+Jupyter+... installers via https://github.com/obspy/anaconda-installers**
