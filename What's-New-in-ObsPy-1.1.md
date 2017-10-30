@@ -32,6 +32,7 @@ Documentation and resources for this version can (as always) be found at: https:
 * [`read_inventory()` support for (X)SEED and RESP files](#read_inventory-support-for-xseed-and-resp-files)
 * [New Things Regarding Data Downloading](#new-things-regarding-data-downloading)
 * [Quality Control Module](#quality-control-module)
+* [Iterative reading of SEGY and Seismic Unix Files](#iterative-reading-of-segy-and-seismic-unix-files)
 * [New Signal Processing Things](#new-signal-processing-things)
 * [Changes in `obspy.taup`](#changes-in-obspytaup)
 * [Miscellaneous Notable Bug Fixes and Improvements](#miscellaneous-notable-bug-fixes-and-improvements)
@@ -267,6 +268,31 @@ MiniSEED files (see [#1141](https://github.com/obspy/obspy/pull/1141)). The calc
 # Serialize to JSON with.
 >>> mseedqc.get_json_meta()
 ```
+
+---
+
+### Iterative reading of SEGY and Seismic Unix Files
+
+Useful for reading arbitrarily large files without running into memory problems:
+
+```python
+>>> from obspy.core.util import get_example_file
+>>> filename = get_example_file("00001034.sgy_first_trace")
+>>> from obspy.io.segy.segy import iread_segy
+
+>>> for tr in iread_segy(filename):
+...     # Each Trace's stats attribute will have references to the file
+...     # headers and some more information.
+...     tf = tr.stats.segy.textual_file_header
+...     bf = tr.stats.segy.binary_file_header
+...     tfe = tr.stats.segy.textual_file_header_encoding
+...     de = tr.stats.segy.data_encoding
+...     e = tr.stats.segy.endian
+...     # Also do something meaningful with each Trace.
+...     print(int(tr.data.sum() * 1E9))
+-5
+```
+
 
 ---
 
