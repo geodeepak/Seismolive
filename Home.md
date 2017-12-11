@@ -199,6 +199,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [ISOLA-ObsPy](http://geo.mff.cuni.cz/~vackar/isola-obspy/) - A seismic source inversion module. Events are described as point sources with centroid moment tensors.
    * [pySW4](https://github.com/shaharkadmiel/pySW4) - Setup, run, post process, and visualize numerical simulations, primarily for SW4.
    * [yam](https://github.com/trichter/yam) - Yet another monitoring tool using correlations of ambient noise.
+   * [PyWeed](https://github.com/iris-edu/pyweed) - a cross-platform downloadable app for retrieving event-based seismic data
 
 #### miscellaneous..
 
