@@ -123,6 +123,8 @@ Detailed information on installing the latest stable version of ObsPy on various
 * into an existing [Antelope 5.4 on RHEL/CentOS 6](http://geoffdavis.github.io/blog/2014/08/11/installing-obspy-for-antelope-5-dot-4-on-rhel-slash-centos-6/)
 * for a reproducible installation mostly aimed at servers and clusters, have a look at the [Salt formula for ObsPy](https://github.com/obspy/obspy/tree/master/misc/installer/salt-formula)
 
+If you run into problems when following the above installation instructions, you can ask for help in our gitter chat room: https://gitter.im/obspy/obspy
+
 If you intend on making changes to ObsPy or develop for it, read this:
 * [[Developer Installation|Developer Installation]]
 
