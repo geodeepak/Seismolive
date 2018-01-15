@@ -202,6 +202,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [pySW4](https://github.com/shaharkadmiel/pySW4) - Setup, run, post process, and visualize numerical simulations, primarily for SW4.
    * [yam](https://github.com/trichter/yam) - Yet another monitoring tool using correlations of ambient noise.
    * [PyWeed](https://github.com/iris-edu/pyweed) - a cross-platform downloadable app for retrieving event-based seismic data
+   * [SeisTomoPy](https://github.com/stephaniedurand/SeisTomoPy) - Fast visualization, comparison and calculations in global tomographic models
 
 #### miscellaneous..
 
