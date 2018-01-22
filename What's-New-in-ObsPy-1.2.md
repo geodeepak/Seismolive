@@ -74,7 +74,12 @@ or whatever your package manager of choice needs to be told to update a package.
 ---
 
 ### New Deprecations
-
+ * The `'domain'` keyword in the correlate function is deprecated in favor of the new `'method'` keyword to stay compatible with new SciPy versions.
 ...
+
+### New Signal Processing Things
+
+ * New `correlate_template()` function with 'full' normalization useful for template matching.
+
 
 ---
