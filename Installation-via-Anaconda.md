@@ -10,11 +10,11 @@
 $ conda config --add channels conda-forge
 ```
 
- * **We strongly recommend to work with separate Anaconda environments, and especially not use the special ``root`` environment** (that is used for all `conda` commands and environment manipulations, package installations etc.) for anything besides updating the `conda` package itself (if necessary):
+ * **We strongly recommend to work with separate Anaconda environments, and especially not use the special `base` environment** (formerly named `root` on conda versions <4.4; this environment is used for all `conda` commands and environment manipulations, package installations etc.) for anything besides updating the `conda` package itself (if necessary):
 
 ```bash
-$ conda create -n obspy python=2.7   # or e.g. python=3.5
-$ source activate obspy
+$ conda create -n obspy python=3.6   # or e.g. python=2.7
+$ conda activate obspy  # this command used to be 'source activate obspy' on older conda versions < 4.4
 (obspy) $ 
 ```
 
@@ -27,7 +27,7 @@ $ source activate obspy
  * When installing ObsPy via `conda-forge` channel, `basemap` should be installed automatically as well but in some cases (e.g. for the linux 32 bit packages) it might be necessary to manually install it (to enable the map plots for e.g. `Inventory` and `Catalog` objects):
 
 ```bash
-(obspy) $ conda install basemap  # only needed if 'conda list basemap' shows it is not installed
+(obspy) $ conda install basemap  # only needed if 'conda list basemap' shows an empty list
 ```
 
 #### Updating
@@ -46,7 +46,6 @@ Try to stick to **only using `conda` package manager to install packages wheneve
 
 #### Troubleshooting:
 
- * Windows users might have to add `conda-forge` channel to have `basemap` packages available (see [ContinuumIO/anaconda-issues#757](https://github.com/ContinuumIO/anaconda-issues/issues/757))
  * If you have problems, be sure to check out the [Troubleshooting page of Anaconda](http://conda.pydata.org/docs/troubleshooting.html)
  * Especially **beware of mixing in Python packages from outside the environment**, not handled/installed by the `conda` package manager. This is usually unwanted and coming from older (and way more sloppy) Python installations and **bound to bring forth very unexpected and hard to debug behavior and errors**. This can happen outside of anaconda's control by..
    * having [`PYTHONPATH` and `PYTHONHOME` environment variables](http://conda.pydata.org/docs/troubleshooting.html#resolution-for-python-packages-make-sure-you-do-not-have-pythonpath-or-pythonhome-set) set, or (less common) by..
