@@ -4,7 +4,7 @@
 
  * [Install Anaconda following the instructions on their site](https://www.continuum.io/downloads)
 
- * Add the `conda-forge` channel (for 32bit Linux packages also add `obspy` channel) to your Anaconda configuration (see [conda docs reagarding channels](https://conda.io/docs/channels.html)):
+ * Add the `conda-forge` channel (for 32bit Linux packages also add `obspy` channel) to your Anaconda configuration (see [conda docs regarding channels](https://conda.io/docs/channels.html)):
 
 ```bash
 $ conda config --add channels conda-forge
@@ -22,6 +22,12 @@ $ source activate obspy
 
 ```bash
 (obspy) $ conda install obspy
+```
+
+ * When installing ObsPy via `conda-forge` channel, `basemap` should be installed automatically as well but in some cases (e.g. for the linux 32 bit packages) it might be necessary to manually install it (to enable the map plots for e.g. `Inventory` and `Catalog` objects):
+
+```bash
+(obspy) $ conda install basemap  # only needed if 'conda list basemap' shows it is not installed
 ```
 
 #### Updating
