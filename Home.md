@@ -203,6 +203,7 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [yam](https://github.com/trichter/yam) - Yet another monitoring tool using correlations of ambient noise.
    * [PyWeed](https://github.com/iris-edu/pyweed) - a cross-platform downloadable app for retrieving event-based seismic data
    * [SeisTomoPy](https://github.com/stephaniedurand/SeisTomoPy) - Fast visualization, comparison and calculations in global tomographic models
+   * [Detex](https://github.com/d-chambers/Detex) - A Python package for subspace detection and waveform similarity clustering
 
 #### miscellaneous..
 
