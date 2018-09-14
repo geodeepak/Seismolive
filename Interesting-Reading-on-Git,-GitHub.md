@@ -20,7 +20,7 @@ so that I can do `git push github:petrr/obspy fix_arclink`.
 ```
 
  - convert existing issue into a pull request
-   - can be done using [github/hub](https://github.com/github/hub)
+   - can be done using [github/hub](https://github.com/github/hub) ([available for Anaconda](https://github.com/conda-forge/hub-feedstock#installing-hub))
 
        ```bash
        hub pull-request -i 1704 -b obspy:master -h obspy:trace_always_contiguous
