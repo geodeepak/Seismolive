@@ -21,15 +21,19 @@ so that I can do `git push github:petrr/obspy fix_arclink`.
 
  - convert existing issue into a pull request
    - can be done using [github/hub](https://github.com/github/hub)
-```bash
-hub pull-request -i 1704 -b obspy:master -h obspy:trace_always_contiguous
-```
+
+       ```bash
+       hub pull-request -i 1704 -b obspy:master -h obspy:trace_always_contiguous
+       ```
+
    - or via a simple POST command, e.g. using `curl`:
-```bash
-curl --user megies --request POST --data '{"issue": "2", "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/obspy/obspy/pulls
-# in case of 2-factor authentication enabled..
-curl --header "X-GitHub-OTP: 123456" --user megies --request POST --data '{"issue": "2", "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/obspy/obspy/pulls
-```
+
+       ```bash
+       curl --user megies --request POST --data '{"issue": "2", "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/obspy/obspy/pulls
+       # in case of 2-factor authentication enabled..
+       curl --header "X-GitHub-OTP: 123456" --user megies --request POST --data '{"issue": "2", "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/obspy/obspy/pulls
+       ```
+
       - **issue**: number of the *already existing* normal issue
       - **head**: *repository/branch* that should be pulled in
       - **base**: branch that the pull request should be merged into (target repository specified in the url), usually either `master` (for feature branches) or `releases` (for bug fixes)
