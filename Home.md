@@ -135,6 +135,8 @@ If you intend on performing parallel processing with Python and Obspy, please re
 
 If you are using ObsPy we **strongly recommend** you join the [ [obspy-announcements] ](http://lists.obspy.org/listinfo/obspy-announcements) and the [ [obspy-users] ](http://lists.obspy.org/listinfo/obspy-users) mailing lists. The **[obspy-announcements]** list will be the place where new additions, important changes and bug fixes will be announced and thus will be very low volume. The **[obspy-users]** list is used to contact other ObsPy users for questions and open discussions.
 
+Please keep **all conversations in English** when using the ObsPy mailing lists, thanks!
+
 
 #### [obspy-announcements]
 
