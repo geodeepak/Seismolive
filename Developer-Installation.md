@@ -1,6 +1,6 @@
 This is a companion document to the [contributor guidelines](https://github.com/obspy/obspy/blob/master/CONTRIBUTING.md).
 
-A developer installation of ObsPy will recognize any chances you make to the code base. For this you need to install all dependencies of ObsPy. A very easy way to do this is to first install ObsPy with Anaconda and then just remove ObsPy again - this will leave all dependencies installed (see [[here|Installation via Anaconda]] for more details regarding an installation with `conda`). Example (feel free to use a different environment name):
+A developer installation of ObsPy will recognize any changes you make to the code base. For this you need to install all dependencies of ObsPy. A very easy way to do this is to first install ObsPy with Anaconda and then just remove ObsPy again - this will leave all dependencies installed (see [[here|Installation via Anaconda]] for more details regarding an installation with `conda`). Example (feel free to use a different environment name):
 
 ```bash
 $ conda create -n obspy_dev python=3.6  # Use a new Python version for development!
