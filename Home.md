@@ -144,6 +144,9 @@ If you are using ObsPy we **strongly recommend** you join the [ [obspy-announcem
 
 Please keep **all conversations in English** when using the ObsPy mailing lists, thanks!
 
+To search the users mailing list tell your favorite search engine to only look at results from our archives, using e.g. this search string:
+
+`plot line site:lists.swapbytes.de/archives/obspy-users/`
 
 #### [obspy-announcements]
 
