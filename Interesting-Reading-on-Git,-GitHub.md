@@ -31,7 +31,7 @@ so that I can do `git push github:petrr/obspy fix_arclink`.
        ```bash
        curl --user megies --request POST --data '{"issue": "2", "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/obspy/obspy/pulls
        # in case of 2-factor authentication enabled..
-       curl --header "X-GitHub-OTP: 123456" --user megies --request POST --data '{"issue": "2", "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/obspy/obspy/pulls
+       curl --header "X-GitHub-OTP: 123456" --user megies --request POST --data '{"issue": 2, "head": "megies:testbranch2", "base": "master"}' https://api.github.com/repos/obspy/obspy/pulls
        ```
 
       - **issue**: number of the *already existing* normal issue
