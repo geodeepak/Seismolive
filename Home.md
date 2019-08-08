@@ -216,7 +216,8 @@ There also is a [feed for commits](https://github.com/obspy/obspy/commits/master
    * [PyWeed](https://github.com/iris-edu/pyweed) - a cross-platform downloadable app for retrieving event-based seismic data
    * [SeisTomoPy](https://github.com/stephaniedurand/SeisTomoPy) - Fast visualization, comparison and calculations in global tomographic models
    * [Detex](https://github.com/d-chambers/Detex) - A Python package for subspace detection and waveform similarity clustering
-   * [pygema](https://github.com/emmaPatagonia/pygema) - Seismic data analysis tool box for volcano monitoring.  Routines includes automatic localization of seismic events,  computation of RSAM and SSAM, magnitude calculation and sql data management. 
+   * [pygema](https://github.com/emmaPatagonia/pygema) - Seismic data analysis tool box for volcano monitoring.  Routines includes automatic localization of seismic events,  computation of RSAM and SSAM, magnitude calculation and sql data management.
+   * [FAST](https://github.com/stanford-futuredata/FAST) - Unsupervised Large‐Scale Search for Similar Earthquake Signals
 
 #### miscellaneous..
 
