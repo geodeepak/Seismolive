@@ -18,11 +18,11 @@ Currently supported releases are (see http://deb.obspy.org/pool/main/p/python-ob
     - wheezy *(i386, amd64, [armv6l](http://www.raspbian.org/))*
     - jessie *(i386, amd64, [armv6l](http://www.raspbian.org/))*
     - stretch *(i386, amd64, [armv6l](http://www.raspbian.org/))*
+    - buster *(i386, amd64, [armv6l work in progress](http://www.raspbian.org/))*
  * [Ubuntu](https://wiki.ubuntu.com/Releases):
     - trusty *(i386, amd64)*
     - xenial *(i386, amd64)*
-    - zesty *(i386, amd64)*
-    - artful *(i386, amd64)*
+    - bionic *(i386, amd64)*
  * [Raspbian wheezy, jessie and stretch (hard-float, armv6l)](http://www.raspbian.org/)
 
 If you are unsure about the codename of your installation you can use the following command to display it:
