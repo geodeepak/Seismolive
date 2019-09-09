@@ -1,3 +1,5 @@
+# Debian packaging now done in docker, see https://github.com/obspy/obspy/tree/master/misc/docker#2-obspy-deb-packaging-based-on-docker
+
 Here is a short walkthrough for doing the Debian packaging of ObsPy. It uses chroot/schroot and debootstrap to build packages for all distributions and architectures on a 64bit Debian host.
 
  - Create schroot/debootstrap environments:
