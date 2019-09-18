@@ -166,6 +166,10 @@ For more frequent news and general information on Python in seismology/science, 
 
 There also is a [feed for commits](https://github.com/obspy/obspy/commits/master.atom). To get emails concerning issues make a GitHub login, 'watch' our repository and set up email notifications for your GitHub account.
 
+#### Gitter Chat
+
+You can also get in touch with people in our gitter chat room: https://gitter.im/obspy/obspy
+
 ## Documentation
 
  - for the latest stable release
