@@ -222,6 +222,7 @@ You can also get in touch with people in our gitter chat room: https://gitter.im
    * [Detex](https://github.com/d-chambers/Detex) - A Python package for subspace detection and waveform similarity clustering
    * [pygema](https://github.com/emmaPatagonia/pygema) - Seismic data analysis tool box for volcano monitoring.  Routines includes automatic localization of seismic events,  computation of RSAM and SSAM, magnitude calculation and sql data management.
    * [FAST](https://github.com/stanford-futuredata/FAST) - Unsupervised Large‐Scale Search for Similar Earthquake Signals
+   * [Telewavesim](https://github.com/paudetseis/Telewavesim) - Python software for teleseismic body wave modeling
 
 #### miscellaneous..
 
