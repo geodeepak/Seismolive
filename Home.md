@@ -244,6 +244,8 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
 
 ## Developer Corner
 
+General information on how to contribute to the project can be found [here](https://github.com/obspy/obspy/blob/master/CONTRIBUTING.md).
+
  * [Style Guide](http://docs.obspy.org/coding_style.html)
  * [Docs or it doesn't exist!](http://lukeplant.me.uk/blog/posts/docs-or-it-doesnt-exist/)
  * [[ObsPy Git Branching Model]]
