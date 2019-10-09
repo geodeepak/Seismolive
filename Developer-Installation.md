@@ -11,7 +11,7 @@ $ conda uninstall obspy
 
 You then need to checkout ObsPy with git. Make sure you have git installed - you'll also need a C compiler for the subsequent compilation.
 
-## Installation for Developers
+### Install obspy in [pip's "editable" mode](https://pip.pypa.io/en/stable/reference/pip_install/#editable-installs) 
 
 ```bash
 $ cd /directory/where/code/lives
@@ -27,23 +27,7 @@ $ git checkout -b my-new-features  # Choose a sensible branch name!
 # The `-e` will only copy a kind of symlink to the `site-packages`
 # directory of your activate Python installation. So any changes you
 # make to the code base will be reflected when you actually run ObsPy.
-# You'll have to rerun this command any time a C source code file changed.
-$ pip install -v -e .
-```
-
-## Installation for Users Wanting to Use the Development Version
-
-```bash
-$ cd /directory/where/code/lives
-# Clone
-$ git clone https://github.com/obspy/obspy.git
-$ cd obspy
-# If you need a specific feature in some other branch make sure to check out
-# the correct branch
-$ git checkout master  # Might be different for you
-# The `-e` will only copy a kind of symlink to the `site-packages`
-# directory of your activate Python installation. So any changes you
-# make to the code base will be reflected when you actually run ObsPy.
-# You'll have to rerun this command any time a C source code file changed.
+# You'll have to rerun this command any time a C source code file or
+# entry points of the plugin system in `setup.py` were changed.
 $ pip install -v -e .
 ```
