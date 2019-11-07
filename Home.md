@@ -224,7 +224,9 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [Detex](https://github.com/d-chambers/Detex) - A Python package for subspace detection and waveform similarity clustering
    * [pygema](https://github.com/emmaPatagonia/pygema) - Seismic data analysis tool box for volcano monitoring.  Routines includes automatic localization of seismic events,  computation of RSAM and SSAM, magnitude calculation and sql data management.
    * [FAST](https://github.com/stanford-futuredata/FAST) - Unsupervised Large‐Scale Search for Similar Earthquake Signals
-   * [Telewavesim](https://github.com/paudetseis/Telewavesim) - Python software for teleseismic body wave modeling
+   * [Telewavesim](https://paudetseis.github.io/Telewavesim/) - Python software for teleseismic body wave modeling
+   * [StDb](https://schaefferaj.github.io/StDb/) - Simple seismic station tools and database generation
+   * [SplitPy](https://paudetseis.github.io/SplitPy/) - Teleseismic shear-wave splitting analysis (basic Python translation of [SplitLab](http://splitting.gm.univ-montp2.fr))
 
 #### miscellaneous..
 
