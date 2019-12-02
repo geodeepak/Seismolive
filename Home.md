@@ -227,6 +227,7 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [Telewavesim](https://paudetseis.github.io/Telewavesim/) - Python software for teleseismic body wave modeling
    * [StDb](https://schaefferaj.github.io/StDb/) - Simple seismic station tools and database generation
    * [SplitPy](https://paudetseis.github.io/SplitPy/) - Teleseismic shear-wave splitting analysis (basic Python translation of [SplitLab](http://splitting.gm.univ-montp2.fr))
+   * [QuakeMigrate](https://github.com/Ulvetanna/QuakeMigrate) - QuakeMigrate is a Python and C software package that detects and locates seismic events from raw data, using a migration and coalescence based technique
 
 #### miscellaneous..
 
