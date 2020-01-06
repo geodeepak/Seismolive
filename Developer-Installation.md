@@ -6,7 +6,7 @@ A developer installation of ObsPy will recognize any changes you make to the cod
 $ conda create -n obspy_dev python=3.6  # Use a new Python version for development!
 $ source activate obspy_dev
 $ conda install -c conda-forge obspy
-$ conda uninstall obspy
+$ conda uninstall obspy --force # Uninstall without removing dependencies
 ```
 
 You then need to checkout ObsPy with git. Make sure you have git installed - you'll also need a C compiler for the subsequent compilation.
