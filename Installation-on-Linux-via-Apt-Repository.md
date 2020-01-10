@@ -23,7 +23,7 @@ Currently supported releases are (see http://deb.obspy.org/pool/main/p/python-ob
     - trusty *(i386, amd64)*
     - xenial *(i386, amd64)*
     - bionic *(i386, amd64)*
- * [Raspbian wheezy, jessie and stretch (hard-float, armv6l)](http://www.raspbian.org/)
+ * [Raspbian wheezy, jessie, stretch and buster (hard-float, armv6l)](http://www.raspbian.org/)
 
 If you are unsure about the codename of your installation you can use the following command to display it:
 
