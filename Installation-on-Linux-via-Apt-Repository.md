@@ -18,7 +18,7 @@ Currently supported releases are (see http://deb.obspy.org/pool/main/p/python-ob
     - wheezy *(i386, amd64, [armv6l](http://www.raspbian.org/))*
     - jessie *(i386, amd64, [armv6l](http://www.raspbian.org/))*
     - stretch *(i386, amd64, [armv6l](http://www.raspbian.org/))*
-    - buster *(i386, amd64, [armv6l work in progress](http://www.raspbian.org/))*
+    - buster *(i386, amd64, [armv6l](http://www.raspbian.org/))*
  * [Ubuntu](https://wiki.ubuntu.com/Releases):
     - trusty *(i386, amd64)*
     - xenial *(i386, amd64)*
