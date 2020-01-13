@@ -18,12 +18,12 @@ Currently supported releases are (see http://deb.obspy.org/pool/main/p/python-ob
     - wheezy *(i386, amd64, [armv6l](http://www.raspbian.org/))*
     - jessie *(i386, amd64, [armv6l](http://www.raspbian.org/))*
     - stretch *(i386, amd64, [armv6l](http://www.raspbian.org/))*
-    - buster *(i386, amd64, [armv6l](http://www.raspbian.org/))*
+    - buster *(i386, amd64, [armv6l](http://www.raspbian.org/))*  * *see note below for Raspbian*
  * [Ubuntu](https://wiki.ubuntu.com/Releases):
     - trusty *(i386, amd64)*
     - xenial *(i386, amd64)*
     - bionic *(i386, amd64)*
- * [Raspbian wheezy, jessie, stretch and buster (hard-float, armv6l)](http://www.raspbian.org/)
+ * [Raspbian wheezy, jessie, stretch and buster (hard-float, armv6l)](http://www.raspbian.org/) * *see note below for Raspbian*
 
 If you are unsure about the codename of your installation you can use the following command to display it:
 
@@ -52,3 +52,7 @@ $ sudo apt-get remove python-obspy python3-obspy
 ```
 
 For newer Debian (starting with "jessie") and Ubuntu (starting with "trusty") releases, `python3-obspy` package will be available. Furthermore data and image files only needed to run ObsPy's test suites are contained in a separate package `python-obspy-dbg` which can be opted-out when installing with e.g. `aptitude install -R python-obspy`.
+
+### Notes on Raspbian
+
+Raspbian buster (and maybe other versions as well) has some packages specifically recompiled for ARM architecture it seems. This can cause dependency resolution issues, as seen in [#2530](https://github.com/obspy/obspy/issues/2530). Use `aptitude` and check alternative solutions offered for resolving these conflicts (downgrading custom Raspbian packages to canonical version numbers in this case).
