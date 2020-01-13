@@ -229,6 +229,7 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [SplitPy](https://paudetseis.github.io/SplitPy/) - Teleseismic shear-wave splitting analysis (basic Python translation of [SplitLab](http://splitting.gm.univ-montp2.fr))
    * [Ppol](https://gitlab.com/johnrobertscholz/ppol) - P-wave polarization analysis to determine (mis-)orientations of ocean-bottom and terrestrial seismometers.
    * [QuakeMigrate](https://github.com/Ulvetanna/QuakeMigrate) - QuakeMigrate is a Python and C software package that detects and locates seismic events from raw data, using a migration and coalescence based technique
+   * [Seisplotjs](http://crotwell.github.io/seisplotjs/) - Javascript seismology library that allows using a web browser as the waveform display for ObsPY 
 
 #### miscellaneous..
 
