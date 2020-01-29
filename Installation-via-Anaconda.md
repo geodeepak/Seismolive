@@ -4,7 +4,7 @@
 
  * [Install Anaconda following the instructions on their site](https://www.continuum.io/downloads)
 
- * Add the `conda-forge` channel (for 32bit Linux packages also add `obspy` channel) to your Anaconda configuration (see [conda docs regarding channels](https://conda.io/docs/channels.html)):
+ * Add the `conda-forge` channel (for 32bit Linux packages also add `obspy` channel) to your Anaconda configuration (see [conda docs regarding channels](https://conda.io/projects/conda/en/latest/user-guide/concepts/channels.html)):
 
 ```bash
 $ conda config --add channels conda-forge
