@@ -34,7 +34,7 @@ lsb_release -cs
 Next you need to import the ObsPy gnupg key so that apt is able to check the integrity of the downloaded packages. The following command needs to be executed only once:
 
 ```bash
-$ wget --quiet -O - https://raw.github.com/obspy/obspy/master/misc/debian/public.key | sudo apt-key add -
+$ wget --quiet -O - https://raw.githubusercontent.com/obspy/obspy/master/misc/debian/public.key | sudo apt-key add -
 ```
 
 To install ObsPy including all dependencies:
