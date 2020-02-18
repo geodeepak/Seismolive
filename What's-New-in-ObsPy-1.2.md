@@ -36,9 +36,7 @@ institutions/companies and grants (in alphabetical order):
  - The European Union’s Horizon 2020 research and innovation programme under
    the ChEESE project, grant agreement No. 823844
  - The Royal Observatory of Belgium
- - U.S. Geological Survey---
-
----
+ - U.S. Geological Survey
 
 
 ---
