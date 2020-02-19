@@ -48,7 +48,7 @@ institutions/companies and grants (in alphabetical order):
 * [Farewell Python2](#farewell-python2)
 * [New Deprecations](#new-deprecations)
 * [New Signal Processing Things](#new-signal-processing-things)
-* [Notable Changes in obspy.core](#notable-changes-in-obspy.core) 
+* [Notable Changes in obspy.core](#notable-changes-in-obspycore) 
 * [Additional Support for Nordic Format](#additional-support-for-nordic-format)
 * [Miscellaneous Notable Bug Fixes and Improvements](#miscellaneous-notable-bug-fixes-and-improvements)
 * [Full Changelog](#full-changelog)
