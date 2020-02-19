@@ -3,7 +3,7 @@
 
 ***NOT YET RELEASED - THIS DOCUMENT IS WORK IN PROGRESS!!***
 
-This document details significant new features and changes in ObsPy `1.2.0`. The [Full Changelog](#full-changelog) at the end is more comprehensive.  This release is based on XX contributors over the course of 13 months.
+This document details significant new features and changes in ObsPy `1.2.0`. The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around 50 individual contributors over the course of 15 months since the last major release `1.1.0`.
 
 Documentation and resources for this version can (as always) be found at: https://docs.obspy.org
 
@@ -45,6 +45,7 @@ institutions/companies and grants (in alphabetical order):
 
 * [Supported Systems](#supported-systems)
 * [Updating ObsPy](#updating-obspy)
+* [Farewell Python2](#farewell-python2)
 * [New Deprecations](#new-deprecations)
 * [New Signal Processing Things](#new-signal-processing-things)
 * [Notable Changes in obspy.core](#notable-changes-in-obspy.core) 
@@ -105,6 +106,12 @@ or whatever your package manager of choice needs to be told to update a package.
 
 ---
 
+### Farewell Python2
+
+ObsPy `1.2.0` will be the last version to support both Python 2 and 3. Right after the release all Python 2 compatibility will be removed from `master` branch. New features after `1.2.0` will only be released with Python 3 support. Please consider switching all your production code relying on ObsPy to Python 3 as soon as possible.
+
+---
+
 ### New Deprecations
  * The `'domain'` keyword in the correlate function is deprecated in favor of the new `'method'` keyword to stay compatible with new SciPy versions.
 * `obspy.core.UTCDateTime`: Deprecation warnings now occur when comparing attributes outside init or comparing different precisions.
@@ -144,7 +151,7 @@ The ability to read and write focal mechanisms as well as moment tensors in Nord
 ### Full Changelog
 
 ```
-1.2.0: (doi: XXXYYY)
+1.2.0: (doi: 10.5281/zenodo.3674646)
 - obspy.core:
    * inventory objects have been adapted to StationXML 1.1 for details on
      changes see #2510 and
