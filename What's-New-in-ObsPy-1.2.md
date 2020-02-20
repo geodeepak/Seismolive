@@ -50,6 +50,7 @@ institutions/companies and grants (in alphabetical order):
 * [New Signal Processing Things](#new-signal-processing-things)
 * [Notable Changes in obspy.core](#notable-changes-in-obspycore) 
 * [Additional Support for Nordic Format](#additional-support-for-nordic-format)
+* [Additional Reading Support](#additional-reading-support)
 * [Miscellaneous Notable Bug Fixes and Improvements](#miscellaneous-notable-bug-fixes-and-improvements)
 * [Full Changelog](#full-changelog)
 
@@ -124,11 +125,19 @@ ObsPy `1.2.0` will be the last version to support both Python 2 and 3. Right aft
 
  * New `correlate_template()` function with 'full' normalization useful for template matching.
 
+ * Stream now has a stacking method allowing for linear or phase-weighted stacks of a stream using `Stream.stack()`.
+
+ * Representation of earthquake models from Clinton & Heaton (2002) was added into the `PPSD` plotting method.  
 
 ---
+
 ### Notable Changes in obspy.core
 
 * StationXML support has now been changed to versions 1.1 (see [#2510](https://github.com/obspy/obspy/pull/2510)) 
+
+* Added almost equal support for Stream and Trace classes (see [#2286] (https://github.com/obspy/obspy/pull/2286))
+
+* Copy and remove methods were added to the Inventory class (see [#2088] (https://github.com/obspy/obspy/pull/2088) and [#2322] (https://github.com/obspy/obspy/pull/2322))
 
 * Wildcard support for url and `read_inventory` was implemented (see [#2326] (https://github.com/obspy/obspy/pull/2326)).
 
@@ -141,6 +150,14 @@ ObsPy `1.2.0` will be the last version to support both Python 2 and 3. Right aft
 The ability to read and write focal mechanisms as well as moment tensors in Nordic format was added.  It is also possible to convert between covariance matrix uncertainty to a confidence ellipsoid using `obspy.io.nordic.core.xyz_to_confidence_ellipsoid` as well as in the other direction using `obspy.io.nordic.core.confidence_ellipsoid_to_xyz`.  
 
 ---
+
+### Additional Reading Support 
+
+Support was added for reading Reftek data that was encoded as uncompressed 16/32 bit integers (see [#2058] (https://github.com/obspy/obspy/pull/2058) and [#2059] (https://github.com/obspy/obspy/pull.2059)).
+
+Support was added for reading ranger gatherer 16 "node" format using `obspy.io.rg16`.  
+
+Additional support for handling seg2 code 3 trace data was added.  Improved parsing of free-form entries was added as well as correcting non-native endian data upon loading.
 
 ###  Miscellaneous Notable Bug Fixes and Improvements 
 * `obspy.signal.polarization` fixed an issue when selecting Z/N/E from a given trace (see [#2365] (https://github.com/obspy/obspy/pull/2365)).
