@@ -123,7 +123,7 @@ ObsPy `1.2.0` will be the last version to support both Python 2 and 3. Right aft
 
 ### New Signal Processing Things
 
- * New `correlate_template()` function with 'full' normalization useful for template matching.
+ * New `correlate_template()`, `correlate_stream_template()` and `correlation_detector()` functions with 'full' normalization useful for template matching.
 
  * Stream now has a stacking method allowing for linear or phase-weighted stacks of a stream using `Stream.stack()`.
 
