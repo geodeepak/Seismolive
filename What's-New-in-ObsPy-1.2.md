@@ -159,6 +159,8 @@ Support was added for reading ranger gatherer 16 "node" format using `obspy.io.r
 
 Additional support for handling seg2 code 3 trace data was added.  Improved parsing of free-form entries was added as well as correcting non-native endian data upon loading.
 
+Support was added for reading HypoDD "pha" and SeismicHandler "evt" files.
+
 ###  Miscellaneous Notable Bug Fixes and Improvements 
 * `obspy.signal.polarization` fixed an issue when selecting Z/N/E from a given trace (see [#2365] (https://github.com/obspy/obspy/pull/2365)).
 * `obspy.signal.PPSD` fixed the check for whether new slices should be added or they would be unwanted duplicated data (see [#2229] (https://github.com/obspy/obspy/pull/2229)).
