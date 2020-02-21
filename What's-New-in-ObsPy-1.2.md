@@ -116,7 +116,7 @@ ObsPy `1.2.0` will be the last version to support both Python 2 and 3. Right aft
 ### New Deprecations
  * The `'domain'` keyword in the correlate function is deprecated in favor of the new `'method'` keyword to stay compatible with new SciPy versions.
 * `obspy.core.UTCDateTime`: Deprecation warnings now occur when comparing attributes outside init or comparing different precisions.
-* `obspy.core.convert_id_to_quakeml_uri`: Is being deprecated and replaced by `ResourceIdentifier` (see [#2303] (https://github.com/obspy/obspy/pull2303)) 
+* `obspy.core.convert_id_to_quakeml_uri`: Is being deprecated and replaced by `ResourceIdentifier` (see [#2303](https://github.com/obspy/obspy/pull2303)) 
 * `obspy.core.get_quakemk_uri` is being deprecated and replaced by `obspy.core.get_quakemk_uri_str`.
 
 ---
@@ -135,13 +135,13 @@ ObsPy `1.2.0` will be the last version to support both Python 2 and 3. Right aft
 
 * StationXML support has now been changed to versions 1.1 (see [#2510](https://github.com/obspy/obspy/pull/2510)) 
 
-* Added almost equal support for Stream and Trace classes (see [#2286] (https://github.com/obspy/obspy/pull/2286))
+* Added almost equal support for Stream and Trace classes (see [#2286](https://github.com/obspy/obspy/pull/2286))
 
-* Copy and remove methods were added to the Inventory class (see [#2088] (https://github.com/obspy/obspy/pull/2088) and [#2322] (https://github.com/obspy/obspy/pull/2322))
+* Copy and remove methods were added to the Inventory class (see [#2088](https://github.com/obspy/obspy/pull/2088) and [#2322](https://github.com/obspy/obspy/pull/2322))
 
-* Wildcard support for url and `read_inventory` was implemented (see [#2326] (https://github.com/obspy/obspy/pull/2326)).
+* Wildcard support for url and `read_inventory` was implemented (see [#2326](https://github.com/obspy/obspy/pull/2326)).
 
-* Support for selecting inventory with geographic locations was added (see [#2515] (https://github.com/obspy/obspy/pull/2515)).
+* Support for selecting inventory with geographic locations was added (see [#2515](https://github.com/obspy/obspy/pull/2515)).
 
 ---
 
@@ -153,7 +153,7 @@ The ability to read and write focal mechanisms as well as moment tensors in Nord
 
 ### Additional Reading Support 
 
-Support was added for reading Reftek data that was encoded as uncompressed 16/32 bit integers (see [#2058] (https://github.com/obspy/obspy/pull/2058) and [#2059] (https://github.com/obspy/obspy/pull.2059)).
+Support was added for reading Reftek data that was encoded as uncompressed 16/32 bit integers (see [#2058](https://github.com/obspy/obspy/pull/2058) and [#2059](https://github.com/obspy/obspy/pull.2059)).
 
 Support was added for reading ranger gatherer 16 "node" format using `obspy.io.rg16`.  
 
@@ -162,8 +162,8 @@ Additional support for handling seg2 code 3 trace data was added.  Improved pars
 Support was added for reading HypoDD "pha" and SeismicHandler "evt" files.
 
 ###  Miscellaneous Notable Bug Fixes and Improvements 
-* `obspy.signal.polarization` fixed an issue when selecting Z/N/E from a given trace (see [#2365] (https://github.com/obspy/obspy/pull/2365)).
-* `obspy.signal.PPSD` fixed the check for whether new slices should be added or they would be unwanted duplicated data (see [#2229] (https://github.com/obspy/obspy/pull/2229)).
+* `obspy.signal.polarization` fixed an issue when selecting Z/N/E from a given trace (see [#2365](https://github.com/obspy/obspy/pull/2365)).
+* `obspy.signal.PPSD` fixed the check for whether new slices should be added or they would be unwanted duplicated data (see [#2229](https://github.com/obspy/obspy/pull/2229)).
  
 ---
 
