@@ -31,11 +31,11 @@ institutions/companies and grants (in alphabetical order):
  - Ludwig-Maximilians-Universität München
  - National Institute for Occupational Safety and Health
  - Royal Netherlands Meteorological Institute (KNMI)
+ - Royal Observatory of Belgium (ROB)
  - School of Geography, Environment and Earth Sciences, Victoria University of
    Wellington
  - The European Union’s Horizon 2020 research and innovation programme under
    the ChEESE project, grant agreement No. 823844
- - The Royal Observatory of Belgium
  - U.S. Geological Survey
 
 
@@ -62,7 +62,7 @@ We officially support the following systems (meaning we test that they work with
 
 Python modules:
 
-* `Python`: 2.7, 3.4, 3.5, 3.6
+* `Python`: 2.7, 3.4, 3.5, 3.6, 3.7, 3.8
 * `NumPy`: 1.6.2 - 1.14
 * `SciPy`: 0.11.0 - 1.0
 * `matplotlib`: 1.1.1 - 2.1
@@ -155,11 +155,13 @@ The ability to read and write focal mechanisms as well as moment tensors in Nord
 
 Support was added for reading Reftek data that was encoded as uncompressed 16/32 bit integers (see [#2058](https://github.com/obspy/obspy/pull/2058) and [#2059](https://github.com/obspy/obspy/pull.2059)).
 
-Support was added for reading ranger gatherer 16 "node" format using `obspy.io.rg16`.  
+Support was added for reading FairField range gatherer 16 "node" format using `obspy.io.rg16`.
+
+Support was added for reading INGV's DMX format using `obspy.io.dmx`.
 
 Additional support for handling seg2 code 3 trace data was added.  Improved parsing of free-form entries was added as well as correcting non-native endian data upon loading.
 
-Support was added for reading HypoDD "pha" and SeismicHandler "evt" files.
+Support was added for reading HypoDD "pha" files, SeismicHandler "evt" files and FOCMEC "out" and "lst" files.
 
 ###  Miscellaneous Notable Bug Fixes and Improvements 
 * `obspy.signal.polarization` fixed an issue when selecting Z/N/E from a given trace (see [#2365](https://github.com/obspy/obspy/pull/2365)).
