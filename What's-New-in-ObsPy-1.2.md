@@ -48,7 +48,7 @@ institutions/companies and grants (in alphabetical order):
 * [Farewell Python2](#farewell-python2)
 * [New Deprecations](#new-deprecations)
 * [New Signal Processing Things](#new-signal-processing-things)
-* [Notable Changes in obspy.core](#notable-changes-in-obspycore) 
+* [Notable Changes in obspy.core](#notable-changes-in-core-packages) 
 * [Additional Support for Nordic Format](#additional-support-for-nordic-format)
 * [Additional Reading Support](#additional-reading-support)
 * [Miscellaneous Notable Bug Fixes and Improvements](#miscellaneous-notable-bug-fixes-and-improvements)
@@ -63,24 +63,23 @@ We officially support the following systems (meaning we test that they work with
 Python modules:
 
 * `Python`: 2.7, 3.4, 3.5, 3.6, 3.7, 3.8
-* `NumPy`: 1.6.2 - 1.14
-* `SciPy`: 0.11.0 - 1.0
-* `matplotlib`: 1.1.1 - 2.1
-* `basemap`: 1.0.2 - 1.1.0
+* `NumPy`: 1.6.2 - 1.18.1
+* `SciPy`: 0.11.0 - 1.4.1
+* `matplotlib`: 1.1.1 - 3.1.1
+* `basemap`: 1.0.2 - 1.2.1
 
 Supported Operating Systems (mostly 32bit and 64bit):
 
 * `Windows`
 * `OSX`
-* `Linux` (tested with default packages on CentOS/RedHat 7, Debian 7 + 8 + 9, Fedora 25 + 26, openSUSE Leap 42.2 + 42.3, Ubuntu 14.04 + 16.04 + 17.04 + 17.10)
-* `Raspberry Pi` (Raspbian Wheezy + Jessie + Stretch)
+* `Linux` (tested with default packages on CentOS/RedHat 7 + 8, Debian 8 + 9 + 10, Fedora 30 + 31, openSUSE Leap 15.1, Ubuntu 14.04 + 16.04 + 18.04)
+* `Raspberry Pi` (Raspbian 8 + 9 + 10)
 
 ---
 
 ### Updating ObsPy
 
 Updating should be straight-forward. So depending on your installation do
-
 
 ```bash
 # Generic Python
@@ -92,7 +91,6 @@ $ pip install -U obspy
 
 ```bash
 # Anaconda Python Distribution
-# `conda install -c obspy obspy` is no longer supported for most platforms!
 $ conda update -c conda-forge obspy
 ```
 
@@ -131,17 +129,18 @@ ObsPy `1.2.0` will be the last version to support both Python 2 and 3. Right aft
 
 ---
 
-### Notable Changes in obspy.core
+### Notable Changes in Core Packages
 
 * StationXML support has now been changed to versions 1.1 (see [#2510](https://github.com/obspy/obspy/pull/2510)) 
 
-* Added almost equal support for Stream and Trace classes (see [#2286](https://github.com/obspy/obspy/pull/2286))
+* Added `almost_equal` comparison for Stream and Trace classes (see [#2286](https://github.com/obspy/obspy/pull/2286))
 
 * Copy and remove methods were added to the Inventory class (see [#2088](https://github.com/obspy/obspy/pull/2088) and [#2322](https://github.com/obspy/obspy/pull/2322))
 
-* Wildcard support for url and `read_inventory` was implemented (see [#2326](https://github.com/obspy/obspy/pull/2326)).
+* Wildcard and URL support for `read_inventory()` was added (see [#2326](https://github.com/obspy/obspy/pull/2326)).
 
 * Support for selecting inventory with geographic locations was added (see [#2515](https://github.com/obspy/obspy/pull/2515)).
+
 
 ---
 
@@ -153,15 +152,13 @@ The ability to read and write focal mechanisms as well as moment tensors in Nord
 
 ### Additional Reading Support 
 
-Support was added for reading Reftek data that was encoded as uncompressed 16/32 bit integers (see [#2058](https://github.com/obspy/obspy/pull/2058) and [#2059](https://github.com/obspy/obspy/pull.2059)).
+ * Reftek data that was encoded as uncompressed 16/32 bit integers (see [#2058](https://github.com/obspy/obspy/pull/2058) and [#2059](https://github.com/obspy/obspy/pull.2059)).
+ * FairField range gatherer 16 "node" format
+ * INGV's DMX format using
+ * SEG2 format code 3 trace data
+ * HypoDD "pha" files, SeismicHandler "evt" files and FOCMEC "out" and "lst" files.
+ * SC3ML 0.10
 
-Support was added for reading FairField range gatherer 16 "node" format using `obspy.io.rg16`.
-
-Support was added for reading INGV's DMX format using `obspy.io.dmx`.
-
-Additional support for handling seg2 code 3 trace data was added.  Improved parsing of free-form entries was added as well as correcting non-native endian data upon loading.
-
-Support was added for reading HypoDD "pha" files, SeismicHandler "evt" files and FOCMEC "out" and "lst" files.
 
 ###  Miscellaneous Notable Bug Fixes and Improvements 
 * `obspy.signal.polarization` fixed an issue when selecting Z/N/E from a given trace (see [#2365](https://github.com/obspy/obspy/pull/2365)).
