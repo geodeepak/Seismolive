@@ -24,10 +24,10 @@ $ conda activate obspy  # this command used to be 'source activate obspy' on old
 (obspy) $ conda install obspy
 ```
 
- * When installing ObsPy via `conda-forge` channel, `basemap` should be installed automatically as well but in some cases (e.g. for the linux 32 bit packages) it might be necessary to manually install it (to enable the map plots for e.g. `Inventory` and `Catalog` objects):
+ * The conda package by default does not install a mapping package. ObsPy, as of early 2020, is compatible with `cartopy` (recommended) as well as `basemap`. If you wish to plot maps, please install one or the other manually:
 
 ```bash
-(obspy) $ conda install basemap  # only needed if 'conda list basemap' shows an empty list
+(obspy) $ conda install cartopy
 ```
 
 #### Updating
