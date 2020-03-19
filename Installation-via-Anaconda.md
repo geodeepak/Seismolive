@@ -13,7 +13,7 @@ $ conda config --add channels conda-forge
  * **We strongly recommend to work with separate Anaconda environments, and especially not use the special `base` environment** (formerly named `root` on conda versions <4.4; this environment is used for all `conda` commands and environment manipulations, package installations etc.) for anything besides updating the `conda` package itself (if necessary):
 
 ```bash
-$ conda create -n obspy python=3.7   # or e.g. python=2.7
+$ conda create -n obspy python=3.7   # or other supported Python version
 $ conda activate obspy  # this command used to be 'source activate obspy' on older conda versions < 4.4
 (obspy) $ 
 ```
