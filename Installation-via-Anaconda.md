@@ -4,7 +4,7 @@
 
  * [Install Anaconda following the instructions on their site](https://www.continuum.io/downloads)
 
- * Add the `conda-forge` channel (for 32bit Linux packages also add `obspy` channel) to your Anaconda configuration (see [conda docs regarding channels](https://conda.io/projects/conda/en/latest/user-guide/concepts/channels.html)):
+ * Add the `conda-forge` channel to your Anaconda configuration (see [conda docs regarding channels](https://conda.io/projects/conda/en/latest/user-guide/concepts/channels.html)):
 
 ```bash
 $ conda config --add channels conda-forge
@@ -24,7 +24,7 @@ $ conda activate obspy  # this command used to be 'source activate obspy' on old
 (obspy) $ conda install obspy
 ```
 
- * The conda package by default does not install a mapping package. ObsPy, as of early 2020, is compatible with `cartopy` (recommended) as well as `basemap`. If you wish to plot maps, please install one or the other manually:
+ * The conda package by default **does not install a mapping package**. ObsPy, as of early 2020, is compatible with `cartopy` (recommended) as well as `basemap`. If you wish to plot maps, please install one or the other manually:
 
 ```bash
 (obspy) $ conda install cartopy
