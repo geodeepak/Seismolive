@@ -1,5 +1,9 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
+### UPDATE
+ObsPy `1.2.1` has been released to fix an installation issue with version `1.2.0` that is exclusive to the installation with `pip` or from source and with the newest versions of setuptools installed, see https://github.com/obspy/obspy/releases/tag/1.2.1.
+
+---
 
 This document details significant new features and changes in ObsPy `1.2.0` (DOI for this version: `10.5281/zenodo.3674646`). The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around 50 individual contributors over the course of the last 2 years since the last major release `1.1.0`.
 
