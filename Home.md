@@ -247,7 +247,10 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [FAST](https://github.com/stanford-futuredata/FAST) - Unsupervised Large‐Scale Search for Similar Earthquake Signals
    * [Telewavesim](https://paudetseis.github.io/Telewavesim/) - Python software for teleseismic body wave modeling
    * [StDb](https://schaefferaj.github.io/StDb/) - Simple seismic station tools and database generation
+   * [RfPy](https://paudetseis.github.io/RfPy/) - Single-station receiver functions and post-processing
    * [SplitPy](https://paudetseis.github.io/SplitPy/) - Teleseismic shear-wave splitting analysis (basic Python translation of [SplitLab](http://splitting.gm.univ-montp2.fr))
+   * [OBStools](https://nfsi-canada.github.io/OBStools/) - Python software for processing broadband ocean-bottom seismic data
+   * [OrientPy](https://nfsi-canada.github.io/OrientPy/) - Seismic station orientation tools
    * [Ppol](https://gitlab.com/johnrobertscholz/ppol) - P-wave polarization analysis to determine (mis-)orientations of ocean-bottom and terrestrial seismometers.
    * [QuakeMigrate](https://github.com/Ulvetanna/QuakeMigrate) - QuakeMigrate is a Python and C software package that detects and locates seismic events from raw data, using a migration and coalescence based technique
    * [Seisplotjs](http://crotwell.github.io/seisplotjs/) - Javascript seismology library that allows using a web browser as the waveform display for ObsPY 
