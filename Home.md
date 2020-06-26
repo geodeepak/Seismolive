@@ -1,6 +1,6 @@
 <img class="right" style="width: 60%" src="https://raw.github.com/obspy/website/master/logo/obspy_logo_full_highres.png" />
 
-ObsPy is an open-source project dedicated to provide a **Python framework for processing seismological** data. It provides parsers for common file formats, clients to access data centers and seismological signal processing routines which allow the manipulation of seismological time series.
+ObsPy is an open-source project dedicated to provide a **Python framework for processing seismological data**. It provides parsers for common file formats, clients to access data centers and seismological signal processing routines which allow the manipulation of seismological time series.
 
 The goal of the ObsPy project is to facilitate **rapid application development for seismology**.
 
