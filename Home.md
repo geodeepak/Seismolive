@@ -203,6 +203,7 @@ You can also get in touch with people in our gitter chat room: https://gitter.im
 
 Feel free to [add your own project to the list](https://github.com/obspy/obspy/wiki/Home/_edit).
 
+   * [HiPerSeis](https://github.com/GeoscienceAustralia/hiperseis)
    * [ObsPyck](https://github.com/megies/obspyck/wiki)
    * [SeismicHandler](http://www.seismic-handler.org)
    * [SeisHub](https://github.com/barsch/seishub.core)
