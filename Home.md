@@ -202,7 +202,6 @@ You can also get in touch with people in our gitter chat room: https://gitter.im
 ## Use Cases / Applications Using ObsPy
 
 Feel free to [add your own project to the list](https://github.com/obspy/obspy/wiki/Home/_edit).
-   * [EQTransformer](https://eqtransformer.readthedocs.io/en/latest/index.html) - AI-based Earthquake Signal Detector and Phase Picker.
    * [HiPerSeis](https://github.com/GeoscienceAustralia/hiperseis) - High Performance Seismological Tools
    * [ObsPyck](https://github.com/megies/obspyck/wiki)
    * [SeismicHandler](http://www.seismic-handler.org)
@@ -224,6 +223,7 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [HASHpy: Python wrapped fork of HASH first motion focal mechanism code](https://github.com/markcwill/hashpy)
    * [waveloc](http://amaggi.github.io/waveloc/index.html) [(on GitHub)](https://github.com/amaggi/rt-waveloc)
    * [scisola](http://students.ceid.upatras.gr/~triantafyl/scisola/) [(on GitHub)](https://github.com/nikosT/scisola)
+   * [EQTransformer](https://eqtransformer.readthedocs.io/en/latest/index.html) - AI-based Earthquake Signal Detector and Phase Picker.
    * [instaseis](http://www.instaseis.net) - Instant Global High Frequency Seismograms
    * [LASIF](http://www.lasif.net) - Large-Scale Seismic Inversion Framework
    * [pyflex](http://krischer.github.io/pyflex) - Enhanced port of FLEXWIN
