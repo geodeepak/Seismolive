@@ -161,7 +161,7 @@ If you intend on performing parallel processing with Python and Obspy, please re
 
 ## Stay Informed
 
-If you are using ObsPy we **strongly recommend** you join the [ [obspy-announcements] ](http://lists.obspy.org/listinfo/obspy-announcements) and the [ [obspy-users] ](http://lists.obspy.org/listinfo/obspy-users) mailing lists. The **[obspy-announcements]** list will be the place where new additions, important changes and bug fixes will be announced and thus will be very low volume. The **[obspy-users]** list is used to contact other ObsPy users for questions and open discussions.
+If you are using ObsPy we **strongly recommend** you join the [ [obspy-announcements] ](http://lists.swapbytes.de/listinfo/obspy-announcements) and the [ [obspy-users] ](http://lists.swapbytes.de/listinfo/obspy-users) mailing lists. The **[obspy-announcements]** list will be the place where new additions, important changes and bug fixes will be announced and thus will be very low volume. The **[obspy-users]** list is used to contact other ObsPy users for questions and open discussions.
 
 Please keep **all conversations in English** when using the ObsPy mailing lists, thanks!
 
@@ -172,13 +172,13 @@ To search the users mailing list tell your favorite search engine to only look a
 #### [obspy-announcements]
 
   * [Subscribe](mailto:obspy-announcements-request@lists.swapbytes.de?subject=subscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20subscribe.) / [Unsubscribe](mailto:obspy-announcements-request@lists.swapbytes.de?subject=unsubscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20unsubscribe.)
-  * [Browse the archive](http://lists.obspy.org/pipermail/obspy-announcements/)
+  * [Browse the archive](http://lists.swapbytes.de/pipermail/obspy-announcements/)
 
 #### [obspy-users]
 
   * [Subscribe](mailto:obspy-users-request@lists.swapbytes.de?subject=subscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20subscribe.) / [Unsubscribe](mailto:obspy-users-request@lists.swapbytes.de?subject=unsubscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20unsubscribe.)
   * [Post a message](mailto:users@obspy.org)
-  * [Browse the archive](http://lists.obspy.org/pipermail/obspy-users/)
+  * [Browse the archive](http://lists.swapbytes.de/pipermail/obspy-users/)
 
 
 #### Follow us on Twitter
