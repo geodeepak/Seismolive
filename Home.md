@@ -10,7 +10,7 @@ The goal of the ObsPy project is to facilitate **rapid application development f
  * [News](#news)
  * [Getting Started](#getting-started)
  * [Installation](#installation)
- * [Stay Informed, Get in touch!](#stay-informed)
+ * [Stay Informed, Get in Touch!](#stay-informed)
  * [Documentation](#documentation)
  * [Use Cases / Applications Using ObsPy](#use-cases--applications-using-obspy)
  * [Developer Corner](#developer-corner)
@@ -165,7 +165,7 @@ If you intend on making changes to ObsPy or develop for it, read this:
 If you intend on performing parallel processing with Python and Obspy, please read the following:
 * [[Notes on Parallel Processing with Python and ObsPy|Notes on Parallel Processing with Python and ObsPy]]
 
-## Stay Informed
+## Stay Informed, Get in Touch!
 
 #### New: [ObsPy Discourse](https://discourse.obspy.org/)
 
