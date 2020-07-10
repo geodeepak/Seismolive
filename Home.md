@@ -10,7 +10,7 @@ The goal of the ObsPy project is to facilitate **rapid application development f
  * [News](#news)
  * [Getting Started](#getting-started)
  * [Installation](#installation)
- * [Stay Informed](#stay-informed)
+ * [Stay Informed, Get in touch!](#stay-informed)
  * [Documentation](#documentation)
  * [Use Cases / Applications Using ObsPy](#use-cases--applications-using-obspy)
  * [Developer Corner](#developer-corner)
@@ -36,6 +36,12 @@ You can also cite the used ObsPy version:<br>
 [DOIs for released ObsPy versions](https://zenodo.org/search?ln=en&p=obspy&sort=mostrecent) (e.g. for ObsPy 1.2.0: [10.5281/zenodo.3674646](http://dx.doi.org/10.5281/zenodo.3674646))
 
 ## News
+
+##### [Jul 9 2020] ObsPy discourse has landed!
+
+We started our own self-hosted Discourse server for all discussions around ObsPy: https://discourse.obspy.org/
+
+This is real new right now, so we will have to see how it goes, but we feel this might eventually replace the users mailing list. You can login with existing GitHub, Google or Twitter accounts, or create a new user bound to an email address directly on site.
 
 ##### [Mar 6 2020] Release of ObsPy 1.2.0
 
@@ -151,7 +157,7 @@ Detailed information on installing the latest stable version of ObsPy on various
 * into an existing [Antelope 5.4 on RHEL/CentOS 6](http://geoffdavis.github.io/blog/2014/08/11/installing-obspy-for-antelope-5-dot-4-on-rhel-slash-centos-6/)
 * for a reproducible installation mostly aimed at servers and clusters, have a look at the [Salt formula for ObsPy](https://github.com/obspy/obspy/tree/master/misc/installer/salt-formula)
 
-If you run into problems when following the above installation instructions, you can ask for help in our gitter chat room: https://gitter.im/obspy/obspy
+If you run into problems when following the above installation instructions, you can ask for help in our discourse: https://discourse.obspy.org/c/installation-issues/5
 
 If you intend on making changes to ObsPy or develop for it, read this:
 * [[Developer Installation|Developer Installation]]
@@ -160,6 +166,12 @@ If you intend on performing parallel processing with Python and Obspy, please re
 * [[Notes on Parallel Processing with Python and ObsPy|Notes on Parallel Processing with Python and ObsPy]]
 
 ## Stay Informed
+
+#### New: [ObsPy Discourse](https://discourse.obspy.org/)
+
+Since July 2020 we also have a discourse at https://discourse.obspy.org/. You can discuss, get in touch with other ObsPy users and ask for help there. We plan this to replace the users mailing list eventually, but this is in it's early stage right now, so we will see where it goes. It also has the complete users mailing list as a read-only category in it, so you can more easily search through older user discussion on there!
+
+#### Mailing Lists
 
 If you are using ObsPy we **strongly recommend** you join the [ [obspy-announcements] ](http://lists.swapbytes.de/listinfo/obspy-announcements) and the [ [obspy-users] ](http://lists.swapbytes.de/listinfo/obspy-users) mailing lists. The **[obspy-announcements]** list will be the place where new additions, important changes and bug fixes will be announced and thus will be very low volume. The **[obspy-users]** list is used to contact other ObsPy users for questions and open discussions.
 
@@ -175,6 +187,8 @@ To search the users mailing list tell your favorite search engine to only look a
   * [Browse the archive](http://lists.swapbytes.de/pipermail/obspy-announcements/)
 
 #### [obspy-users]
+
+Note: we might at some point discontinue the users mailing list in favor of the discourse forum, so consider jumping on there right away, if you are new here!
 
   * [Subscribe](mailto:obspy-users-request@lists.swapbytes.de?subject=subscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20subscribe.) / [Unsubscribe](mailto:obspy-users-request@lists.swapbytes.de?subject=unsubscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20unsubscribe.)
   * [Post a message](mailto:users@obspy.org)
@@ -200,6 +214,8 @@ You can also get in touch with people in our gitter chat room: https://gitter.im
  - [archive for other versions](http://docs.obspy.org/archive)
 
 ## Use Cases / Applications Using ObsPy
+
+If you want to showcase and/or discuss your projects built on top of ObsPy, you can now also do so in our Discourse: https://discourse.obspy.org/c/obspy-related-projects/7
 
 Feel free to [add your own project to the list](https://github.com/obspy/obspy/wiki/Home/_edit).
    * [HiPerSeis](https://github.com/GeoscienceAustralia/hiperseis) - High Performance Seismological Tools
