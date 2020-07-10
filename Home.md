@@ -10,7 +10,7 @@ The goal of the ObsPy project is to facilitate **rapid application development f
  * [News](#news)
  * [Getting Started](#getting-started)
  * [Installation](#installation)
- * [Stay Informed, Get in Touch!](#stay-informed)
+ * [Stay Informed, Get in Touch!](#stay-informed-get-in-touch)
  * [Documentation](#documentation)
  * [Use Cases / Applications Using ObsPy](#use-cases--applications-using-obspy)
  * [Developer Corner](#developer-corner)
