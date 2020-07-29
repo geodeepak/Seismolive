@@ -1,5 +1,3 @@
-## News Archive
-
 This is were older, outdated news items get archived.
 
 ##### [Feb 17 2019] Release of ObsPy 1.1.1
