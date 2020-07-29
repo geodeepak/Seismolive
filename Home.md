@@ -37,7 +37,9 @@ You can also cite the used ObsPy version:<br>
 
 ## News
 
-##### [Jul 23 2020] ObsPy discourse has landed!
+More details on important news/announcement can be found on [our discourse forum](https://discourse.obspy.org/c/announcements/11) in the future.
+
+##### [Jul 23 2020] ObsPy now on liberapay
 
 ObsPy is now on [liberapay](https://liberapay.com/ObsPy), to raise the funds for our rented server providing some of our services. [Read all the details in our Discourse forum](https://discourse.obspy.org/t/2020-07-23-obspy-now-on-liberapay/994).
 
