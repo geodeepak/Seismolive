@@ -3,6 +3,10 @@
 [![Coverage Status](https://codecov.io/gh/obspy/obspy/branch/master/graph/badge.svg)](https://codecov.io/gh/obspy/obspy)<br/>
 [![PyPI Version](https://img.shields.io/pypi/v/obspy.svg)](https://pypi.python.org/pypi/obspy)<br />
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/obspy.svg)](https://pypi.python.org/pypi/obspy/)<br />
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.48254.svg)](https://dx.doi.org/10.5281/zenodo.48254)<br/>
+[![Conda](https://img.shields.io/conda/dn/conda-forge/obspy?label=conda%20downloads)](https://anaconda.org/conda-forge/obspy)<br />
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.3921997.svg)](http://dx.doi.org/10.5281/zenodo.3921997)<br />
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/obspy/obspy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![LGPLv3](https://www.gnu.org/graphics/lgplv3-88x31.png)](https://www.gnu.org/licenses/lgpl.html)
+[![LGPLv3](https://www.gnu.org/graphics/lgplv3-88x31.png)](https://www.gnu.org/licenses/lgpl.html)<br />
+[![Discourse status](https://img.shields.io/discourse/status?server=https%3A%2F%2Fdiscourse.obspy.org)](https://discourse.obspy.org)<br />
+[![Twitter Follow](https://img.shields.io/twitter/follow/obspy?style=social)](https://twitter.com/obspy/)<br />
+[![Liberapay patrons](https://img.shields.io/liberapay/patrons/obspy?style=social)](https://liberapay.com/ObsPy/)<br />
