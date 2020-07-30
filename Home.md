@@ -112,37 +112,21 @@ If you intend on performing parallel processing with Python and Obspy, please re
 
 #### New: [ObsPy Discourse](https://discourse.obspy.org/)
 
-Since July 2020 we also have a discourse at https://discourse.obspy.org/. You can discuss, get in touch with other ObsPy users and ask for help there. We plan this to replace the users mailing list eventually, but this is in it's early stage right now, so we will see where it goes. It also has the complete users mailing list as a read-only category in it, so you can more easily search through older user discussion on there!
+Since July 2020 we also have a discourse at https://discourse.obspy.org/. You can discuss, get in touch with other ObsPy users and ask for help there. This has replaced the old users mailing list. It has the complete [users mailing list archive as a read-only category](https://discourse.obspy.org/c/archive/9) in it, so you can search through older user discussion on there.
 
-#### Mailing Lists
+It also has a [category for announcements](https://discourse.obspy.org/c/announcements/11). These will be mirrored on the new read-only mailing list (see below) but on our discourse there is the option to comment/reply to announcements and you have full control over what you get email notifications from our discourse for.
 
-If you are using ObsPy we **strongly recommend** you join the [ [obspy-announcements] ](http://lists.swapbytes.de/listinfo/obspy-announcements) and the [ [obspy-users] ](http://lists.swapbytes.de/listinfo/obspy-users) mailing lists. The **[obspy-announcements]** list will be the place where new additions, important changes and bug fixes will be announced and thus will be very low volume. The **[obspy-users]** list is used to contact other ObsPy users for questions and open discussions.
+Please keep **all conversations in English** on our discourse forum, thanks!
 
-Please keep **all conversations in English** when using the ObsPy mailing lists, thanks!
+#### Mailing List
 
-To search the users mailing list tell your favorite search engine to only look at results from our archives, using e.g. this search string:
-
-`plot line site:lists.swapbytes.de/archives/obspy-users/`
-
-#### [obspy-announcements]
-
-  * [Subscribe](mailto:obspy-announcements-request@lists.swapbytes.de?subject=subscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20subscribe.) / [Unsubscribe](mailto:obspy-announcements-request@lists.swapbytes.de?subject=unsubscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20unsubscribe.)
-  * [Browse the archive](http://lists.swapbytes.de/pipermail/obspy-announcements/)
-
-#### [obspy-users]
-
-Note: we might at some point discontinue the users mailing list in favor of the discourse forum, so consider jumping on there right away, if you are new here!
-
-  * [Subscribe](mailto:obspy-users-request@lists.swapbytes.de?subject=subscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20subscribe.) / [Unsubscribe](mailto:obspy-users-request@lists.swapbytes.de?subject=unsubscribe&body=Send%20this%20message%20from%20the%20address%20you%20want%20to%20unsubscribe.)
-  * [Post a message](mailto:users@obspy.org)
-  * [Browse the archive](http://lists.swapbytes.de/pipermail/obspy-users/)
-
+If you do not want to use the above option to keep in touch and well informed with announcements, you can also use the [new read-only mailing list on the official python.org mailman server](https://mail.python.org/mailman3/lists/obspy.python.org/). If you are using ObsPy we **strongly recommend** you join the discourse or at least the mailing list to stay informed. The mailing list will contain important changes and bug fixes and similar announcements only and thus is very low volume.
 
 #### Follow us on Twitter
 
-For more frequent news and general information on Python in seismology/science, follow us on twitter: **[@obspy](https://twitter.com/obspy)**
+For more frequent news and general information on Python in seismology/science, follow us on twitter!
 
-There also is a [feed for commits](https://github.com/obspy/obspy/commits/master.atom). To get emails concerning issues make a GitHub login, 'watch' our repository and set up email notifications for your GitHub account.
+[![Twitter Follow](https://img.shields.io/twitter/follow/obspy?style=social)](https://twitter.com/obspy/)
 
 #### Gitter Chat
 
