@@ -199,6 +199,7 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [QuakeMigrate](https://github.com/Ulvetanna/QuakeMigrate) - QuakeMigrate is a Python and C software package that detects and locates seismic events from raw data, using a migration and coalescence based technique
    * [Seisplotjs](http://crotwell.github.io/seisplotjs/) - Javascript seismology library that allows using a web browser as the waveform display for ObsPY 
    * [noisi](https://github.com/lermert/noisi) - A Python tool for ambient noise correlation modeling
+   * [Pytheas](https://github.com/ispingos/pytheas-splitting) - A Python tool for analyzing shear-wave splitting from local data
 
 #### miscellaneous..
 
