@@ -2,7 +2,7 @@
 
 **Anaconda works on most systems without root access!**
 
- * [Install Anaconda following the instructions on their site](https://www.continuum.io/downloads)
+ * [Install Anaconda following the instructions on their site](https://www.anaconda.com/products/individual#Downloads)
 
  * Add the `conda-forge` channel to your Anaconda configuration (see [conda docs regarding channels](https://conda.io/projects/conda/en/latest/user-guide/concepts/channels.html)):
 
