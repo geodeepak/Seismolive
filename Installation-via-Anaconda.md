@@ -218,4 +218,4 @@ $ obspy-runtests
 
 ### Offline installation
 
-For installation of Anaconda including ObsPy in an offline environment, see http://lists.swapbytes.de/archives/obspy-users/2017-February/002298.html
+For installation of Anaconda including ObsPy in an offline environment, see https://discourse.obspy.org/t/obspy-update-failure-following-anaconda-failure-and-subsequent-re-install/607/3
