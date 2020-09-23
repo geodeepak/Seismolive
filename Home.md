@@ -200,6 +200,7 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [Seisplotjs](http://crotwell.github.io/seisplotjs/) - Javascript seismology library that allows using a web browser as the waveform display for ObsPY 
    * [noisi](https://github.com/lermert/noisi) - A Python tool for ambient noise correlation modeling
    * [Pytheas](https://github.com/ispingos/pytheas-splitting) - A Python tool for analyzing shear-wave splitting from local data
+   * [seismatch](https://gitlab.seismo.ethz.ch/microEQ/TM) - A Python framework to perform template matching (aka matched filter detection)
 
 #### miscellaneous..
 
