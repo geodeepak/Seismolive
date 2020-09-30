@@ -196,6 +196,7 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [OBStools](https://nfsi-canada.github.io/OBStools/) - Python software for processing broadband ocean-bottom seismic data
    * [OrientPy](https://nfsi-canada.github.io/OrientPy/) - Seismic station orientation tools
    * [Ppol](https://gitlab.com/johnrobertscholz/ppol) - P-wave polarization analysis to determine (mis-)orientations of ocean-bottom and terrestrial seismometers.
+   * [SEISglitch](https://pss-gitlab.math.univ-paris-diderot.fr/data-processing-wg/seisglitch) - Package to detect, remove, and plot "glitches" (accleration steps convolved with instrument response), tailored for InSight's seismic data from Mars
    * [QuakeMigrate](https://github.com/Ulvetanna/QuakeMigrate) - QuakeMigrate is a Python and C software package that detects and locates seismic events from raw data, using a migration and coalescence based technique
    * [Seisplotjs](http://crotwell.github.io/seisplotjs/) - Javascript seismology library that allows using a web browser as the waveform display for ObsPY 
    * [noisi](https://github.com/lermert/noisi) - A Python tool for ambient noise correlation modeling
