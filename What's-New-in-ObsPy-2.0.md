@@ -96,7 +96,15 @@ ObsPy `2.0.0` is the first version only supporting Python 3, specifically only s
 ### Backwards Incompatible / Breaking Changes
 
  * ...
- * ...
+ * The deprecated `xcorr` cross correlation was removed. Please use the `correlate` or `correlate_template` functions which return the full cross correlation function. To determine the shift of the maximum in the cross correlation function use the `xcorr_max` function. Migration of old code:
+```
+    Old: maxshift, ccval = xcorr(a, b, shift)
+    New: cc = correlate(a, b, shift)
+         maxshift, ccval = xcorr_max(cc)
+
+    Old: _, _, cc = xcorr(a, b, shift, full_xcorr=True)
+    New: cc = correlate(a, b, shift)
+```
 
 ---
 
