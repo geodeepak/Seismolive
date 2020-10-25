@@ -49,7 +49,7 @@ ObsPy is now on [liberapay](https://liberapay.com/ObsPy), to raise the funds for
 
 We started our own self-hosted Discourse server for all discussions around ObsPy: https://discourse.obspy.org/
 
-This is real new right now, so we will have to see how it goes, but we feel this might eventually replace the users mailing list. You can login with existing GitHub, Google or Twitter accounts, or create a new user bound to an email address directly on site.
+This replaces our old users mailing list. You can login with existing GitHub, Google or Twitter accounts, or create a new user bound to an email address directly on site.
 
 #### [Mar 6 2020] Release of ObsPy 1.2.0
 
