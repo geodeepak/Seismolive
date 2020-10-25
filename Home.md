@@ -120,7 +120,7 @@ Please keep **all conversations in English** on our discourse forum, thanks!
 
 #### Mailing List
 
-If you do not want to use the above option to keep in touch and well informed with announcements, you can also use the [new read-only mailing list on the official python.org mailman server](https://mail.python.org/mailman3/lists/obspy.python.org/). If you are using ObsPy we **strongly recommend** you join the discourse or at least the mailing list to stay informed. The mailing list will contain important changes and bug fixes and similar announcements only and thus is very low volume.
+If you do not want to use the above option to keep in touch and well informed with announcements, you can also subscribe to the [new read-only mailing list on the official python.org mailman server](https://mail.python.org/mailman3/lists/obspy.python.org/). If you are using ObsPy we **strongly recommend** you join the discourse or at least the mailing list to stay informed. The mailing list will contain important changes and bug fixes and similar announcements only and thus is very low volume.
 
 #### Follow us on Twitter
 
