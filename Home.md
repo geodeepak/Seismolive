@@ -202,6 +202,7 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [noisi](https://github.com/lermert/noisi) - A Python tool for ambient noise correlation modeling
    * [Pytheas](https://github.com/ispingos/pytheas-splitting) - A Python tool for analyzing shear-wave splitting from local data
    * [seismatch](https://gitlab.seismo.ethz.ch/microEQ/TM) - A Python framework to perform template matching (aka matched filter detection)
+   * [SeismoPlot](https://seismoplot.anvil.app) - A web tool has been plotting miniseed Time Series and Acceleration Response Spectrum for seismology. 
 
 #### miscellaneous..
 
