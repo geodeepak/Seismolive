@@ -186,7 +186,6 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [yam](https://github.com/trichter/yam) - Yet another monitoring tool using correlations of ambient noise.
    * [PyWeed](https://github.com/iris-edu/pyweed) - a cross-platform downloadable app for retrieving event-based seismic data
    * [SeisTomoPy](https://github.com/stephaniedurand/SeisTomoPy) - Fast visualization, comparison and calculations in global tomographic models
-   * [Detex](https://github.com/d-chambers/Detex) - A Python package for subspace detection and waveform similarity clustering
    * [pygema](https://github.com/emmaPatagonia/pygema) - Seismic data analysis tool box for volcano monitoring.  Routines includes automatic localization of seismic events,  computation of RSAM and SSAM, magnitude calculation and sql data management.
    * [FAST](https://github.com/stanford-futuredata/FAST) - Unsupervised Large‐Scale Search for Similar Earthquake Signals
    * [Telewavesim](https://paudetseis.github.io/Telewavesim/) - Python software for teleseismic body wave modeling
@@ -203,6 +202,7 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [Pytheas](https://github.com/ispingos/pytheas-splitting) - A Python tool for analyzing shear-wave splitting from local data
    * [seismatch](https://gitlab.seismo.ethz.ch/microEQ/TM) - A Python framework to perform template matching (aka matched filter detection)
    * [SeismoPlot](https://seismoplot.anvil.app) - A web tool has been plotting miniseed Time Series and Acceleration Response Spectrum for seismology. 
+   * [ObsPlus](https://github.com/niosh-mining/obsplus) - A Pandas-centric ObsPy expansion pack.
 
 #### miscellaneous..
 
