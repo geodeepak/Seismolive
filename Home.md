@@ -203,6 +203,7 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * [seismatch](https://gitlab.seismo.ethz.ch/microEQ/TM) - A Python framework to perform template matching (aka matched filter detection)
    * [SeismoPlot](https://seismoplot.anvil.app) - A web tool has been plotting miniseed Time Series and Acceleration Response Spectrum for seismology. 
    * [ObsPlus](https://github.com/niosh-mining/obsplus) - A Pandas-centric ObsPy expansion pack.
+   * [FrosPy](https://github.com/s-schneider/frospy) - A Python toolbox for Earth's free oscillations and normal modes.
 
 #### miscellaneous..
 
