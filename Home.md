@@ -41,10 +41,6 @@ More details on important news/announcement can be found on [our discourse forum
 
 Older News get archived in the [[News Archive|News-Archive]].
 
-#### [Jul 23 2020] ObsPy now on liberapay
-
-ObsPy is now on [liberapay](https://liberapay.com/ObsPy), to raise the funds for our rented server providing some of our services. [Read all the details in our Discourse forum](https://discourse.obspy.org/t/2020-07-23-obspy-now-on-liberapay/994).
-
 #### [Jul 9 2020] ObsPy discourse has landed!
 
 We started our own self-hosted Discourse server for all discussions around ObsPy: https://discourse.obspy.org/
