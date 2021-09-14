@@ -141,6 +141,8 @@ You can also get in touch with people in our gitter chat room: https://gitter.im
 If you want to showcase and/or discuss your projects built on top of ObsPy, you can now also do so in our Discourse: https://discourse.obspy.org/c/obspy-related-projects/7
 
 Feel free to [add your own project to the list](https://github.com/obspy/obspy/wiki/Home/_edit).
+   * [hvsrpy](https://github.com/jpvantassel/hvsrpy) -  Python package for horizontal-to-vertical spectral ratio processing.
+   * [swprocess](https://github.com/jpvantassel/swprocess) - Python package for surface wave processing.
    * [HiPerSeis](https://github.com/GeoscienceAustralia/hiperseis) - High Performance Seismological Tools
    * [ObsPyck](https://github.com/megies/obspyck/wiki)
    * [SeismicHandler](http://www.seismic-handler.org)
