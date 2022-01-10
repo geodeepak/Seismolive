@@ -38,13 +38,13 @@ We officially support the following systems (meaning we test that they work with
 
 Python modules:
 
-* `Python`: 2.7, 3.4, 3.5, 3.6, 3.7, 3.8
-* `NumPy`: 1.6.2 - 1.18.1
-* `SciPy`: 0.11.0 - 1.4.1
-* `matplotlib`: 1.1.1 - 3.1.1
-* `basemap`: 1.0.2 - 1.2.1
+* `Python`: 3.7, 3.8, 3.9 and 3.10
+* `NumPy`: 1.6.2 - 1.18.1 **TODO**
+* `SciPy`: 0.11.0 - 1.4.1 **TODO**
+* `matplotlib`: 1.1.1 - 3.1.1 **TODO**
+* `basemap`: 1.0.2 - 1.2.1 **TODO**
 
-Supported Operating Systems (mostly 32bit and 64bit):
+Supported Operating Systems (mostly 32bit (**TODO** STILL?) and 64bit):
 
 * `Windows`
 * `OSX`
