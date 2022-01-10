@@ -2,12 +2,7 @@ TODO, placeholder, with 1.2.1/1.2.0 content:
 
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
-### UPDATE
-ObsPy `1.2.1` has been released to fix an installation issue with version `1.2.0` that is exclusive to the installation with `pip` or from source and with the newest versions of setuptools installed, see https://github.com/obspy/obspy/releases/tag/1.2.1.
-
----
-
-This document details significant new features and changes in ObsPy `1.2.0` (DOI for this version: `10.5281/zenodo.3674646`). The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around 50 individual contributors over the course of the last 2 years since the last major release `1.1.0`.
+This document details significant new features and changes in ObsPy `1.3.0` (DOI for this version: **TODO**). The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around **TODO** individual contributors over the course of the last **TODO** years since the last major release `1.2.0`.
 
 Documentation and resources for this version can (as always) be found at: https://docs.obspy.org
 
@@ -17,30 +12,7 @@ Documentation and resources for this version can (as always) be found at: https:
 
 Work on this release was in parts and among others supported by the following
 institutions/companies and grants (in alphabetical order):
- - Earthquake Commision of New Zealand (EQC), grant 18/753
- - École et Observatoire des Sciences de la Terre - Université de Strasbourg
- - ETH Zürich
- - Friedrich-Schiller-Universität Jena
- - Geoscience Australia
- - Incorporated Research Institutions for Seismology (IRIS), NSF (SAGE) award
-   :: EAR-1851048
- - Institut de Physique du Globe de Strasbourg
- - Institut de Physique du Globe de Paris
- - Institutions for Seismology (IRIS) through the PASSCAL Instrument Center at
-   New Mexico Tech. The facilities of the IRIS Consortium are supported by the
-   National Science Foundation under Cooperative Agreement EAR-1261681 and the
-   DOE National Nuclear Security Administration.
- - Istituto Nazionale di Geofisica e Vulcanologia, Osservatorio Etneo (Italy),
-   Allegato B2 DPC-INGV 2012-2021 Task 10
- - Ludwig-Maximilians-Universität München
- - National Institute for Occupational Safety and Health
- - Royal Netherlands Meteorological Institute (KNMI)
- - Royal Observatory of Belgium (ROB)
- - School of Geography, Environment and Earth Sciences, Victoria University of
-   Wellington
- - The European Union’s Horizon 2020 research and innovation programme under
-   the ChEESE project, grant agreement No. 823844
- - U.S. Geological Survey
+**TODO**
 
 
 ---
