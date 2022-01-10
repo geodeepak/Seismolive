@@ -83,7 +83,7 @@ or whatever your package manager of choice needs to be told to update a package.
 
 ### Farewell Python2
 
-ObsPy `1.2.0` will be the last version to support both Python 2 and 3. Right after the release all Python 2 compatibility will be removed from `master` branch. New features after `1.2.0` will only be released with Python 3 support. Please consider switching all your production code relying on ObsPy to Python 3 as soon as possible.
+ObsPy `1.2.0` was be the last version to support both Python 2 and 3. New features after `1.3.0` are now only released with Python 3 support. Please consider switching all your production code relying on ObsPy to Python 3 as soon as possible.
 
 ---
 
