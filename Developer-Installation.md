@@ -11,7 +11,7 @@ The easiest easy way to get a working developer installation of ObsPy is via Ana
 ```bash
 # "git" package not needed if already installed in the system
 # "c-compiler" package may not be needed if system has a proper C compiler setup
-(base) $ conda create -n obspy_dev -c conda-forge python=3.6 obspy git c-compiler
+(base) $ conda create -n obspy_dev -c conda-forge python=3.7 obspy git c-compiler
 (base) $ conda activate obspy_dev
 (obspy_dev) $ conda uninstall --offline --force obspy  # Uninstall without removing dependencies
 ```
