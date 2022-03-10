@@ -10,24 +10,18 @@
 $ conda config --add channels conda-forge
 ```
 
- * **We strongly recommend to work with separate Anaconda environments, and especially not use the special `base` environment** (formerly named `root` on conda versions <4.4; this environment is used for all `conda` commands and environment manipulations, package installations etc.) for anything besides updating the `conda` package itself (if necessary):
+ * **We strongly recommend to work with separate Anaconda environments, and especially not use the special `base` environment** (formerly named `root` on conda versions <4.4; this environment is used for all `conda` commands and environment manipulations, package installations etc.) for anything besides updating the `conda` package itself (if necessary). All needed packages can be installed simultaneously while creating the new environment. The conda package by default **does not install a mapping package**. ObsPy, as of early 2022, is compatible with `cartopy` which can be installed alongside ObsPy. We also recommend to install `pytest` and `pytest-json-report` packages which are needed to run the tests.
 
 ```bash
-$ conda create -n obspy python=3.7   # or other supported Python version
-$ conda activate obspy  # this command used to be 'source activate obspy' on older conda versions < 4.4
+$ conda create -n obspy python=3.10 obspy cartopy pytest pytest-json    # or other supported Python version
+$ conda activate obspy  # activate the obspy environment
 (obspy) $ 
 ```
 
- * Install pre-compiled [ObsPy conda package from Anaconda cloud](https://anaconda.org/obspy/obspy) with:
+ * If some packages were missed when creating the environment they can be installed after activation with:
 
 ```bash
 (obspy) $ conda install obspy
-```
-
- * The conda package by default **does not install a mapping package**. ObsPy, as of early 2020, is compatible with `cartopy` (recommended) as well as `basemap`. If you wish to plot maps, please install one or the other manually:
-
-```bash
-(obspy) $ conda install cartopy
 ```
 
 #### Updating
