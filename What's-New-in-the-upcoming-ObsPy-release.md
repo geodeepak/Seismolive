@@ -7,7 +7,7 @@ ObsPy ... has been released to fix an installation issue with version ... that i
 
 ---
 
-This document details significant new features and changes in ObsPy `2.0.0` (DOI for this version: `10.5281/zenodo.XXXXXXX`). The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around XXX individual contributors over the course of the last XXX years since the last major release `XXXX`.
+This document details significant new features and changes in ObsPy `X.X.0` (DOI for this version: `10.5281/zenodo.XXXXXXX`). The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around XXX individual contributors over the course of the last XXX years since the last major release `XXXX`.
 
 Documentation and resources for this version can (as always) be found at: https://docs.obspy.org
 
@@ -87,24 +87,9 @@ or whatever your package manager of choice needs to be told to update a package.
 
 ---
 
-### Farewell Python2
-
-ObsPy `2.0.0` is the first version only supporting Python 3, specifically only supporting Python >=3.7. Numpy minimum version number will loosely follow this [NEP](https://numpy.org/neps/nep-0029-deprecation_policy.html).
-
----
-
 ### Backwards Incompatible / Breaking Changes
 
  * ...
- * The deprecated `xcorr` cross correlation was removed. Please use the `correlate` or `correlate_template` functions which return the full cross correlation function. To determine the shift of the maximum in the cross correlation function use the `xcorr_max` function. Migration of old code:
-```
-    Old: maxshift, ccval = xcorr(a, b, shift)
-    New: cc = correlate(a, b, shift)
-         maxshift, ccval = xcorr_max(cc)
-
-    Old: _, _, cc = xcorr(a, b, shift, full_xcorr=True)
-    New: cc = correlate(a, b, shift)
-```
 
 ---
 
@@ -143,7 +128,7 @@ ObsPy `2.0.0` is the first version only supporting Python 3, specifically only s
 ### Full Changelog
 
 ```
-2.0.0: (doi: ...)
+X.X.0: (doi: ...)
  - obspy.core:
    * ...
    * ...
