@@ -33,7 +33,7 @@ Please support the project by acknowledging the use of it. This helps us keep it
   DOI: [10.1088/1749-4699/8/1/014003](http://dx.doi.org/10.1088/1749-4699/8/1/014003)
 
 You can also cite the used ObsPy version:<br>
-[DOIs for released ObsPy versions](https://zenodo.org/search?ln=en&p=obspy&sort=mostrecent) (e.g. for ObsPy 1.2.0: [10.5281/zenodo.3674646](http://dx.doi.org/10.5281/zenodo.3674646))
+[DOIs for released ObsPy versions](https://zenodo.org/search?ln=en&p=obspy&sort=mostrecent) (e.g. for ObsPy 1.3.0: [10.5281/zenodo.6327346](http://dx.doi.org/10.5281/zenodo.6327346))
 
 ## News
 
