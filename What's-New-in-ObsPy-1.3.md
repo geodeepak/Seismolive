@@ -1,6 +1,6 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
-This document details significant new features and changes in ObsPy `1.3.0` (DOI for this version: `10.5281/zenodo.6327346`). The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around **TODO** individual contributors over the course of the last 2 years since the last major release `1.2.0`.
+This document details significant new features and changes in ObsPy `1.3.0` (DOI for this version: `10.5281/zenodo.6327346`). The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around 680 commits of around 40 individual contributors over the course of the last 2 years since the last major release `1.2.0`.
 
 Documentation and resources for this version can (as always) be found at: https://docs.obspy.org
 
@@ -15,11 +15,11 @@ Documentation and resources for this version can (as always) be found at: https:
 * [Supported Systems](#supported-systems)
 * [Updating ObsPy](#updating-obspy)
 * [Farewell Python2](#farewell-python2)
+* [Backwards Incompatible / Breaking Changes](#backwards-Incompatible--Breaking-Changes)
 * [New Deprecations](#new-deprecations)
-* [New Signal Processing Things](#new-signal-processing-things)
 * [Notable Changes in Core Packages](#notable-changes-in-core-packages) 
-* [Additional Support for Nordic Format](#additional-support-for-nordic-format)
-* [Additional Reading Support](#additional-reading-support)
+* [New Signal Processing Things](#new-signal-processing-things)
+* [Notable Changes in IO modules](#notable-changes-in-io-modules)
 * [Miscellaneous Notable Bug Fixes and Improvements](#miscellaneous-notable-bug-fixes-and-improvements)
 * [Full Changelog](#full-changelog)
 
@@ -36,7 +36,7 @@ Python modules:
 * `SciPy`: 1.0.0 - 1.8.0
 * `matplotlib`: 3.2.0 - 3.5.1
 * `basemap`: **not supported anymore**
-* `cartopy`: 0.20.x -
+* `cartopy`: 0.20.x
 
 Supported Operating Systems:
 
@@ -58,12 +58,12 @@ Updating should be straight-forward. So depending on your installation do
 #
 # For the first time we also have binary wheels for Linux and OSX so
 # this now also works without a compiler.
-$ pip install -U obspy
+$ pip install -U obspy pytest pytest-json-report
 ```
 
 ```bash
 # Anaconda Python Distribution
-$ conda update -c conda-forge obspy
+$ conda update -c conda-forge obspy pytest pytest-json-report
 ```
 
 ..or whatever your package manager of choice needs to be told to update a package.
@@ -74,7 +74,16 @@ $ conda update -c conda-forge obspy
 
 ObsPy `1.2.x` were the last versions to support both Python 2 and 3. Starting with version `1.3.0` all releases are Python 3 only.
 
+---
+
 ### Backwards Incompatible / Breaking Changes
+
+ * The tests suites now use pytest under the hood and for running the tests `pytest` and `pytest-json-report` need to be installed. It is recommended but not necessary to install these packages alongside ObsPy as in the above update commands.
+The calling syntax of `obspy-runtests` also changed significantly.
+
+ * Removed `basemap`, now only `cartopy` is supported for maps
+
+ * The deprecated `clients.arclink` submodule was removed completely, since ArcLink was officially deprecated and deactivated on all big datacenters years ago
 
  * The deprecated `xcorr` cross correlation was removed. Please use the `correlate` or `correlate_template` functions which return the full cross correlation function. To determine the shift of the maximum in the cross correlation function use the `xcorr_max` function. Migration of old code:
 ```
@@ -89,28 +98,50 @@ ObsPy `1.2.x` were the last versions to support both Python 2 and 3. Starting wi
 ---
 
 ### New Deprecations
- * ...
 
----
+ * The `clients.seishub` and `db` submodules were marked as deprecated and will be removed with the next major release.
 
-### New Signal Processing Things
-
- *...
+ * The `loglevel` keywords are deprecated and have no effect anymore.
 
 ---
 
 ### Notable Changes in Core Packages
 
-* ...
+ * The whole continuous integration workflow was overhauled, including testing, doc building and building binary distributions.
+ * Speed up import of obspy
+ * Remove individual logging configurations in Obspy, logging can be
+     configured by the user. 
+
+---
+
+### New Signal Processing Things
+
+ * Improve clarity and speed of several STA/LTA triggers methods, namely
+     classic_sta_lta_py, z_detector, and recursive_sta_lta_py
+ * Add simple AIC method by Maeda 
 
 
-### Additional Reading Support 
+---
 
- * ...
+### Notable Changes in IO modules
 
+ * Add support for pathlib.Path objects in read(), read_inventory() and
+     read_events() functions
 
+ * Add read support for SC3ML format versions 0.11 and 0.12
+
+ * Add read and write support for new Nordic format and enhance the Nordic reader significantly
+
+ * Add HypoDD PHA write support 
+
+ * Add support to resolve the SEED id of picks for nlloc hyp files and
+     nordic files, refactor the same functionality for SeismicHandler evt
+     and HypoDD pha files. Some parameter names therefore changed in the
+     latter, but former parameter names are still supported.
+
+---
 ###  Miscellaneous Notable Bug Fixes and Improvements 
-* ...
+* Fix import error with newest NumPy release `1.22`
  
 ---
 
