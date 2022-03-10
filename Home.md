@@ -75,7 +75,7 @@ st.plot()
 
 ## Installation
 
-ObsPy is currently [running and tested](http://tests.obspy.org) on Linux (32 and 64 bit), Windows (32 bit and/or 64 bit) and Mac OS X.
+ObsPy is currently [running and tested](http://tests.obspy.org) on Linux, Windows and Mac OS X.
 
 ObsPy runs on Python 3.7 and up. We recommend you use the latest version of python 3 if possible. 
 
