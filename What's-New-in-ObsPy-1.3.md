@@ -134,11 +134,6 @@ The calling syntax of `obspy-runtests` also changed significantly.
 
  * Add HypoDD PHA write support 
 
- * Add support to resolve the SEED id of picks for nlloc hyp files and
-     nordic files, refactor the same functionality for SeismicHandler evt
-     and HypoDD pha files. Some parameter names therefore changed in the
-     latter, but former parameter names are still supported.
-
 ---
 ###  Miscellaneous Notable Bug Fixes and Improvements 
 * Fix import error with newest NumPy release `1.22`
