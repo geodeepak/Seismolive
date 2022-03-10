@@ -41,18 +41,18 @@ More details on important news/announcement can be found on [our discourse forum
 
 Older News get archived in the [[News Archive|News-Archive]].
 
+#### [Mar 10 2022] Release of ObsPy 1.3.0
+
+This is a major release with new features, bug fixes, and general improvements and we strongly recommend all users to update. Follow these link to learn more:
+
+* [[What's New in ObsPy 1.3 (currently being updated)|What's New in ObsPy 1.3]]
+* [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/1.3.0)
+
 #### [Jul 9 2020] ObsPy discourse has landed!
 
 We started our own self-hosted Discourse server for all discussions around ObsPy: https://discourse.obspy.org/
 
 This replaces our old users mailing list. You can login with existing GitHub, Google or Twitter accounts, or create a new user bound to an email address directly on site.
-
-#### [Mar 6 2020] Release of ObsPy 1.2.0
-
-This is a major release with a lot of new features, bug fixes, and general improvements and we strongly recommend all users to update. Follow these link to learn more:
-
-* [[What's New in ObsPy 1.2|What's New in ObsPy 1.2]]
-* [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/1.2.0)
 
 ## Getting Started
 
