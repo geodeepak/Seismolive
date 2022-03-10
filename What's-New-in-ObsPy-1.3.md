@@ -1,6 +1,6 @@
 ![Logo](http://i.imgur.com/EnyL91L.png)
 
-This document details significant new features and changes in ObsPy `1.3.0` (DOI for this version: `10.5281/zenodo.6327346`). The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around 680 commits of around 40 individual contributors over the course of the last 2 years since the last major release `1.2.0`.
+This document details significant new features and changes in ObsPy `1.3.0` (DOI for this version: `10.5281/zenodo.6327346`). The [Full Changelog](#full-changelog) at the end is more comprehensive. This release is based on around 680 commits of ca 40 individual contributors over the course of the last 2 years since the last major release `1.2.0`.
 
 Documentation and resources for this version can (as always) be found at: https://docs.obspy.org
 
