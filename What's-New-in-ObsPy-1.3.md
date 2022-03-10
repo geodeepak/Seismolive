@@ -77,7 +77,7 @@ $ conda update -c conda-forge obspy
 
 ### Farewell Python2
 
-ObsPy `1.2.x` were the versions to support both Python 2 and 3. Starting with version `1.3.0` all releases are Python 3 only.
+ObsPy `1.2.x` were the last versions to support both Python 2 and 3. Starting with version `1.3.0` all releases are Python 3 only.
 
 ---
 
