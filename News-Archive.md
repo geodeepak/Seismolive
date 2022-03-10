@@ -1,5 +1,12 @@
 This is were older, outdated news items get archived.
 
+#### [Mar 6 2020] Release of ObsPy 1.2.0
+
+This is a major release with a lot of new features, bug fixes, and general improvements and we strongly recommend all users to update. Follow these link to learn more:
+
+* [[What's New in ObsPy 1.2|What's New in ObsPy 1.2]]
+* [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/1.2.0)
+
 ##### [Feb 17 2019] Release of ObsPy 1.1.1
 This is the first bug fix release in the 1.1.x release cycle. It does not change functionality/API but fixes quite a number of bugs resulting in an overall more stable ObsPy package. It is planned to be the only bug fix release for 1.1.x as well as we plan to do the release of 1.2.0 as soon as possible. 
 
