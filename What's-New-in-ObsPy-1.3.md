@@ -43,12 +43,14 @@ Python modules:
 * `basemap`: **not supported anymore**
 * `cartopy`: 0.20.x
 
-Supported Operating Systems (mostly 32bit (**TODO** STILL?) and 64bit):
+Supported Operating Systems:
 
 * `Windows`
 * `OSX`
 * `Linux`
 * `Raspberry Pi`
+
+See [test reports for version 1.3.0](https://tests.obspy.org/?version=1.3.0).
 
 ---
 
@@ -69,20 +71,13 @@ $ pip install -U obspy
 $ conda update -c conda-forge obspy
 ```
 
-```bash
-# Debian/Ubuntu
-# add debs.obspy.org to your /etc/apt/sources.list first
-$ apt-get update
-$ apt-get upgrade python-obspy  # and/or python3-obspy
-```
-
-or whatever your package manager of choice needs to be told to update a package.
+..or whatever your package manager of choice needs to be told to update a package.
 
 ---
 
 ### Farewell Python2
 
-ObsPy `1.2.0` was be the last version to support both Python 2 and 3. New features after `1.3.0` are now only released with Python 3 support. Please consider switching all your production code relying on ObsPy to Python 3 as soon as possible.
+ObsPy `1.2.x` were the versions to support both Python 2 and 3. Starting with version `1.3.0` all releases are Python 3 only.
 
 ---
 
