@@ -34,22 +34,23 @@ institutions/companies and grants (in alphabetical order):
 
 ### Supported Systems
 
-We officially support the following systems (meaning we test that they work with ObsPy; other versions - especially newer ones, might work, but we cannot guarantee that).
+We officially support the following systems (meaning we test that they work with ObsPy; other versions - especially newer ones, might work, but we cannot guarantee that, upper boundary is basically versions available through `conda-forge` at time of release).
 
 Python modules:
 
 * `Python`: 3.7, 3.8, 3.9 and 3.10
-* `NumPy`: 1.6.2 - 1.18.1 **TODO**
-* `SciPy`: 0.11.0 - 1.4.1 **TODO**
-* `matplotlib`: 1.1.1 - 3.1.1 **TODO**
-* `basemap`: 1.0.2 - 1.2.1 **TODO**
+* `NumPy`: 1.15.0 - 1.22.3
+* `SciPy`: 1.0.0 - 1.8.0
+* `matplotlib`: 3.2.0 - 3.5.1
+* `basemap`: **not supported anymore**
+* `cartopy`: 0.20.x
 
 Supported Operating Systems (mostly 32bit (**TODO** STILL?) and 64bit):
 
 * `Windows`
 * `OSX`
-* `Linux` (tested with default packages on CentOS/RedHat 7 + 8, Debian 8 + 9 + 10, Fedora 30 + 31, openSUSE Leap 15.1, Ubuntu 14.04 + 16.04 + 18.04)
-* `Raspberry Pi` (Raspbian 8 + 9 + 10)
+* `Linux`
+* `Raspberry Pi`
 
 ---
 
