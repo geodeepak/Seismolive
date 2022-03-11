@@ -87,6 +87,9 @@ Detailed information on installing the latest stable version of ObsPy on various
 * via [Anaconda](https://www.anaconda.com/products/individual), a scientific Python distribution (all systems) **(works without root access)**
   * [[normal installation via Anaconda installer|Installation via Anaconda]]
   * [[installation using bundled Anaconda installer|Installation via ObsPy-bundled Anaconda installer]] (might not always be available for latest obspy version)
+
+Other packaging efforts might or might not get updated alongside:
+
 * [[Debian/Ubuntu|Installation on Linux via Apt Repository]] via the package manager
 * [[Fedora/CentOS|Installation on Linux via RPM Repository]] via the package manager
 * Mac OS X via [[Homebrew|Installation on OS X using Homebrew]] or [[MacPorts|Installation on Mac OS X using Macports]]
