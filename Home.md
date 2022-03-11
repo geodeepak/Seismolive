@@ -45,7 +45,7 @@ Older News get archived in the [[News Archive|News-Archive]].
 
 This is a major release with new features, bug fixes, and general improvements and we strongly recommend all users to update. Follow these link to learn more:
 
-* [[What's New in ObsPy 1.3 (currently being updated)|What's New in ObsPy 1.3]]
+* [[What's New in ObsPy 1.3|What's New in ObsPy 1.3]]
 * [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/1.3.0)
 * [DOI: `10.5281/zenodo.6327346`](http://dx.doi.org/10.5281/zenodo.6327346)
 
