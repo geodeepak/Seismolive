@@ -7,8 +7,6 @@ make coverage
 make html
 ```
 
-Sphinx version 1.1 or higher has to be installed (e.g. via ```easy_install sphinx==1.1```). In case of error messages involving ```matplotlib.sphinxext``` try updating the matplotlib installation.
-
 The docs are continuously build within the following environment:
 https://github.com/obspy/obspy/blob/master/.github/docs_conda_env.yml
 
