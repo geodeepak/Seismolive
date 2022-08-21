@@ -221,6 +221,9 @@ Feel free to [add your own project to the list](https://github.com/obspy/obspy/w
    * https://github.com/samhaug/seispy
    * https://github.com/oceanobservatories/mi-instrument
    * https://github.com/echavess/Focal-mechanisms-Pressure-and-Tension-Axis
+   * https://skillcombo.com/topic/python/
+
+
 
 
 ## Developer Corner
