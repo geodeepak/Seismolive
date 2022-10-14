@@ -43,6 +43,15 @@ Older News get archived in the [[News Archive|News-Archive]].
 
 #### [Mar 10 2022] Release of ObsPy 1.3.0
 
+This is the first bugfix release in the 1.3.x release cycle. It does not change functionality/API but fixes quite a number of bugs resulting in an overall more stable ObsPy package. It is planned to be the only bug fix release for 1.3.x as well as we plan to do the release of 1.4.0 as soon as possible and from thereon focus maintenance on the 1.4.x release cycle.
+
+We recommend all users to upgrade their installations. Please see the full changelog for all details:
+
+* [Release Including Full Changelog](https://github.com/obspy/obspy/releases/tag/1.3.1)
+* [DOI: `10.5281/zenodo.7193374`](http://dx.doi.org/10.5281/zenodo.7193374)
+
+#### [Mar 10 2022] Release of ObsPy 1.3.0
+
 This is a major release with new features, bug fixes, and general improvements and we strongly recommend all users to update. Follow these link to learn more:
 
 * [[What's New in ObsPy 1.3|What's New in ObsPy 1.3]]
