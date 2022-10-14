@@ -41,7 +41,7 @@ More details on important news/announcement can be found on [our discourse forum
 
 Older News get archived in the [[News Archive|News-Archive]].
 
-#### [Mar 10 2022] Release of ObsPy 1.3.0
+#### [Oct 14 2022] Release of ObsPy 1.3.1
 
 This is the first bugfix release in the 1.3.x release cycle. It does not change functionality/API but fixes quite a number of bugs resulting in an overall more stable ObsPy package. It is planned to be the only bug fix release for 1.3.x as well as we plan to do the release of 1.4.0 as soon as possible and from thereon focus maintenance on the 1.4.x release cycle.
 
