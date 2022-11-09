@@ -9,4 +9,4 @@
 [![Announcements Mailing List](https://img.shields.io/badge/mailing%20list-announcements-blue)](https://mail.python.org/mailman3/lists/obspy.python.org/)<br />
 [![Discourse status](https://img.shields.io/discourse/status?server=https%3A%2F%2Fdiscourse.obspy.org)](https://discourse.obspy.org)<br />
 [![Twitter Follow](https://img.shields.io/twitter/follow/obspy?style=social)](https://twitter.com/obspy/)<br />
-![Mastodon Follow](https://img.shields.io/mastodon/follow/109309284431089274?domain=https%3A%2F%2Ffosstodon.org&style=social)<br />
+[![Mastodon Follow](https://img.shields.io/mastodon/follow/109309284431089274?domain=https%3A%2F%2Ffosstodon.org&style=social)](https://fosstodon.org/@obspy)<br />
